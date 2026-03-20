@@ -4,6 +4,8 @@ import { RepresentativeCard } from "@/components/representative-card";
 import { SectionHeading } from "@/components/section-heading";
 import { officeLevelOptions, searchRepresentatives } from "@/lib/data";
 
+export const dynamic = "force-dynamic";
+
 type FindPageProps = {
   searchParams?: Promise<{
     query?: string;

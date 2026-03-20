@@ -6,6 +6,8 @@ import { RepresentativeCard } from "@/components/representative-card";
 import { SectionHeading } from "@/components/section-heading";
 import { StatCard } from "@/components/stat-card";
 
+export const dynamic = "force-dynamic";
+
 export default async function HomePage() {
   const { events, regions, representatives, siteStats } = await getHomePageData();
 

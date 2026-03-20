@@ -1,6 +1,8 @@
 import { SectionHeading } from "@/components/section-heading";
 import { getMethodologyCards } from "@/lib/data";
 
+export const dynamic = "force-dynamic";
+
 export default async function MethodologyPage() {
   const methodologyCards = await getMethodologyCards();
 

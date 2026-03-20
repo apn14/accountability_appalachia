@@ -4,6 +4,8 @@ import { logoutAdminAction, runWvHouseRosterSyncAction } from "@/app/actions";
 import { requireAdminSession } from "@/lib/auth";
 import { getAdminDashboardSummary } from "@/lib/data";
 
+export const dynamic = "force-dynamic";
+
 type AdminPageProps = {
   searchParams?: Promise<{
     status?: string;

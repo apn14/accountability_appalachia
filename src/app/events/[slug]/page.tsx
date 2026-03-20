@@ -3,6 +3,8 @@ import { notFound } from "next/navigation";
 import { submitQuestionAction, submitRsvpAction } from "@/app/actions";
 import { getEventDetail } from "@/lib/data";
 
+export const dynamic = "force-dynamic";
+
 type EventPageProps = {
   params: Promise<{ slug: string }>;
   searchParams?: Promise<{

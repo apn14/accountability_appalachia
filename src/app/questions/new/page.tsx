@@ -1,6 +1,8 @@
 import { submitQuestionAction } from "@/app/actions";
 import { getRepresentativeOptions } from "@/lib/data";
 
+export const dynamic = "force-dynamic";
+
 type QuestionSubmissionPageProps = {
   searchParams?: Promise<{
     status?: string;

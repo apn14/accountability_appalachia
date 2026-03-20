@@ -3,6 +3,8 @@ import Link from "next/link";
 import { SectionHeading } from "@/components/section-heading";
 import { getTransparencyOverview } from "@/lib/data";
 
+export const dynamic = "force-dynamic";
+
 export default async function TransparencyPage() {
   const { regions, representatives } = await getTransparencyOverview();
 

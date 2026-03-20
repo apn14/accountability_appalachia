@@ -2,6 +2,8 @@ import { notFound } from "next/navigation";
 
 import { getRegionDetail } from "@/lib/data";
 
+export const dynamic = "force-dynamic";
+
 type RegionPageProps = {
   params: Promise<{ slug: string }>;
 };

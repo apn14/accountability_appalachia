@@ -2,6 +2,8 @@ import { EventCard } from "@/components/event-card";
 import { SectionHeading } from "@/components/section-heading";
 import { getEvents } from "@/lib/data";
 
+export const dynamic = "force-dynamic";
+
 type EventsPageProps = {
   searchParams?: Promise<{
     status?: string;

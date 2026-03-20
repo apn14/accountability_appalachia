@@ -4,6 +4,8 @@ import { notFound } from "next/navigation";
 import { ScorePill } from "@/components/score-pill";
 import { getRepresentativeProfile } from "@/lib/data";
 
+export const dynamic = "force-dynamic";
+
 type RepresentativePageProps = {
   params: Promise<{ slug: string }>;
 };

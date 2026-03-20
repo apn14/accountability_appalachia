@@ -7,6 +7,8 @@ import {
 import { requireAdminSession } from "@/lib/auth";
 import { getReviewQueue } from "@/lib/data";
 
+export const dynamic = "force-dynamic";
+
 export default async function ReviewQueuePage() {
   await requireAdminSession();
   const queue = await getReviewQueue();

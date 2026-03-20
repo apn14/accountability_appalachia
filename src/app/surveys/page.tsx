@@ -2,6 +2,8 @@ import { submitSurveyResponseAction } from "@/app/actions";
 import { SectionHeading } from "@/components/section-heading";
 import { getSurveys } from "@/lib/data";
 
+export const dynamic = "force-dynamic";
+
 type SurveysPageProps = {
   searchParams?: Promise<{
     status?: string;

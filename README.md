@@ -66,6 +66,7 @@ npm run ingest:wv-house
 - public read and write API endpoints backed by Prisma
 - seeded regional pilot data for local testing
 - official WV House roster ingestion connector with review-flag generation
+- free hourly WV House rescrape automation via GitHub Actions and a protected ingestion endpoint
 
 ## Notes
 
@@ -73,3 +74,4 @@ npm run ingest:wv-house
 - The Prisma schema is intentionally broader than the seeded MVP data so the platform can expand without a rewrite.
 - Public, inferred, and opinion-based signals are intended to remain clearly separated in both the schema and the user experience.
 - For Vercel deployment, use a hosted Postgres `DATABASE_URL` and initialize that database before the first production deploy. See [vercel-deployment.md](/c:/Users/ajayn/Documents/Various_Projects_Folder/accountability_appalachia/docs/vercel-deployment.md).
+- Hourly free scraping is configured through [hourly-wv-house-sync.yml](/c:/Users/ajayn/Documents/Various_Projects_Folder/accountability_appalachia/.github/workflows/hourly-wv-house-sync.yml), because Vercel Hobby cron does not support hourly schedules.

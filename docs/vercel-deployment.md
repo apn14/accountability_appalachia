@@ -28,6 +28,7 @@ Set these in Vercel:
 - `ADMIN_EMAIL`
 - `ADMIN_PASSWORD`
 - `SESSION_SECRET`
+- `CRON_SECRET`
 
 Use [.env.vercel.example](/c:/Users/ajayn/Documents/Various_Projects_Folder/accountability_appalachia/.env.vercel.example) as the template.
 
@@ -103,3 +104,36 @@ The connector creates:
 - `DataGapFlag` review items for inferred or incomplete data
 
 That keeps ingestion useful without auto-publishing uncertain claims.
+
+## Hourly automation on a free setup
+
+For a free hourly setup, this repo uses GitHub Actions instead of Vercel Cron:
+
+- workflow file: [.github/workflows/hourly-wv-house-sync.yml](/c:/Users/ajayn/Documents/Various_Projects_Folder/accountability_appalachia/.github/workflows/hourly-wv-house-sync.yml)
+- protected ingestion endpoint: [route.ts](/c:/Users/ajayn/Documents/Various_Projects_Folder/accountability_appalachia/src/app/api/internal/ingest/wv-house/route.ts)
+
+### Required GitHub repository secrets
+
+- `CRON_INGEST_URL`
+- `CRON_SECRET`
+
+Example `CRON_INGEST_URL`:
+
+```text
+https://your-production-domain.vercel.app/api/internal/ingest/wv-house
+```
+
+Use the same `CRON_SECRET` value in both:
+
+- GitHub repository secrets
+- Vercel environment variables
+
+### Schedule details
+
+The workflow runs at minute 17 of every hour in UTC:
+
+```text
+17 * * * *
+```
+
+That offset is intentional to reduce contention around the top of the hour.

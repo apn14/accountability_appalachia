@@ -1,0 +1,40 @@
+{
+  "name": "accountability-appalachia",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "postinstall": "node scripts/prisma-run.js generate",
+    "prisma:generate": "node scripts/prisma-run.js generate",
+    "prisma:migrate": "node scripts/prisma-run.js migrate dev",
+    "prisma:migrate:deploy": "node scripts/prisma-run.js migrate deploy",
+    "prisma:push": "node scripts/prisma-run.js db push",
+    "prisma:seed": "node -r dotenv/config prisma/seed.js",
+    "prisma:studio": "node scripts/prisma-run.js studio",
+    "ingest:wv-house": "tsx scripts/run-wv-house-sync.ts"
+  },
+  "dependencies": {
+    "@prisma/client": "^6.5.0",
+    "cheerio": "^1.2.0",
+    "clsx": "^2.1.1",
+    "lucide-react": "^0.511.0",
+    "next": "^15.3.0",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
+    "zod": "^3.24.2"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.0",
+    "@types/react": "^19.1.2",
+    "@types/react-dom": "^19.1.2",
+    "autoprefixer": "^10.4.21",
+    "postcss": "^8.5.3",
+    "prisma": "^6.5.0",
+    "tailwindcss": "^3.4.17",
+    "tsx": "^4.21.0",
+    "typescript": "^5.8.3"
+  }
+}

@@ -1,0 +1,813 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+enum UserStatus {
+  ACTIVE
+  INVITED
+  SUSPENDED
+}
+
+enum RoleKey {
+  CONSTITUENT
+  ORGANIZER
+  RESEARCHER
+  MODERATOR
+  ADMIN
+  REPRESENTATIVE_STAFF
+}
+
+enum RegionType {
+  STATE
+  COUNTY
+  CITY
+  DISTRICT_CLUSTER
+  SERVICE_AREA
+}
+
+enum OfficeLevel {
+  LOCAL
+  COUNTY
+  STATE
+}
+
+enum JurisdictionType {
+  STATE
+  COUNTY
+  MUNICIPAL
+  SCHOOL_DISTRICT
+  LEGISLATIVE
+  SPECIAL_DISTRICT
+}
+
+enum VoteValue {
+  YES
+  NO
+  ABSTAIN
+  PRESENT
+  ABSENT
+}
+
+enum EventType {
+  TOWN_HALL
+  OFFICE_HOURS
+  PUBLIC_MEETING
+  COMMUNITY_MEETUP
+  LISTENING_SESSION
+  FORUM
+}
+
+enum InvitationStatus {
+  INVITED
+  ACCEPTED
+  DECLINED
+  NO_RESPONSE
+  ATTENDED
+}
+
+enum RSVPStatus {
+  GOING
+  WAITLISTED
+  CANCELLED
+  ATTENDED
+  NO_SHOW
+}
+
+enum ModerationStatus {
+  PENDING
+  APPROVED
+  REJECTED
+  FLAGGED
+}
+
+enum QuestionStatus {
+  PENDING
+  ANSWERED
+  NO_RESPONSE
+  DECLINED_PARTICIPATION
+}
+
+enum ResponseStatus {
+  DRAFT
+  PUBLISHED
+  WITHHELD
+}
+
+enum ScoreType {
+  TRANSPARENCY
+  RESPONSIVENESS
+  EVENT_PARTICIPATION
+  SATISFACTION
+}
+
+enum MethodologyStatus {
+  DRAFT
+  ACTIVE
+  RETIRED
+}
+
+enum SatisfactionSentiment {
+  POSITIVE
+  MIXED
+  NEGATIVE
+  INSUFFICIENT_DATA
+}
+
+enum SurveyStatus {
+  DRAFT
+  SCHEDULED
+  ACTIVE
+  CLOSED
+  ARCHIVED
+}
+
+enum SurveyQuestionType {
+  SINGLE_SELECT
+  MULTI_SELECT
+  SHORT_TEXT
+  LONG_TEXT
+  SCALE
+  ZIP_CODE
+  COUNTY
+  AGE_RANGE
+}
+
+enum VisibilityScope {
+  PUBLIC
+  INTERNAL
+  RESTRICTED
+}
+
+enum SourceType {
+  WEBSITE
+  API
+  PDF
+  CSV
+  MANUAL_ENTRY
+  NEWS_ARTICLE
+  SOCIAL_POST
+}
+
+enum CitationConfidence {
+  VERIFIED
+  HIGH
+  MEDIUM
+  LOW
+}
+
+enum IngestionStatus {
+  QUEUED
+  RUNNING
+  COMPLETED
+  COMPLETED_WITH_FLAGS
+  FAILED
+}
+
+enum GapSeverity {
+  LOW
+  MEDIUM
+  HIGH
+  CRITICAL
+}
+
+enum ReviewStatus {
+  OPEN
+  RESOLVED
+  DISMISSED
+}
+
+model User {
+  id                 String               @id @default(cuid())
+  email              String               @unique
+  passwordHash       String?
+  displayName        String
+  phoneE164          String?
+  status             UserStatus           @default(ACTIVE)
+  homeRegionId       String?
+  createdAt          DateTime             @default(now())
+  updatedAt          DateTime             @updatedAt
+  homeRegion         Region?              @relation(fields: [homeRegionId], references: [id])
+  roles              UserRole[]
+  rsvps              RSVP[]
+  surveyResponses    SurveyResponse[]
+  questions          ConstituentQuestion[]
+  responsesAuthored  Response[]
+  auditLogs          AuditLog[]
+  citationsVerified  SourceCitation[]     @relation("CitationVerifier")
+}
+
+model Role {
+  id          String    @id @default(cuid())
+  key         RoleKey   @unique
+  label       String
+  description String?
+  createdAt   DateTime  @default(now())
+  userRoles   UserRole[]
+}
+
+model UserRole {
+  id        String    @id @default(cuid())
+  userId    String
+  roleId    String
+  regionId  String?
+  createdAt DateTime  @default(now())
+  user      User      @relation(fields: [userId], references: [id], onDelete: Cascade)
+  role      Role      @relation(fields: [roleId], references: [id], onDelete: Cascade)
+  region    Region?   @relation(fields: [regionId], references: [id])
+
+  @@unique([userId, roleId, regionId])
+}
+
+model Region {
+  id                 String              @id @default(cuid())
+  name               String
+  slug               String              @unique
+  type               RegionType
+  stateCode          String?
+  parentRegionId     String?
+  summary            String?
+  geoJsonUrl         String?
+  createdAt          DateTime            @default(now())
+  updatedAt          DateTime            @updatedAt
+  parentRegion       Region?             @relation("RegionHierarchy", fields: [parentRegionId], references: [id])
+  childRegions       Region[]            @relation("RegionHierarchy")
+  users              User[]
+  userRoles          UserRole[]
+  jurisdictions      Jurisdiction[]
+  districts          District[]
+  events             Event[]
+  questions          ConstituentQuestion[]
+  surveys            Survey[]
+  surveyResponses    SurveyResponse[]
+  outreachCampaigns  OutreachCampaign[]
+  sources            Source[]
+  ingestionJobs      DataIngestionJob[]
+  dataGapFlags       DataGapFlag[]
+  overrides          DataOverride[]
+  satisfactionScores SatisfactionScore[]
+}
+
+model Jurisdiction {
+  id          String         @id @default(cuid())
+  regionId    String
+  parentId    String?
+  name        String
+  slug        String         @unique
+  type        JurisdictionType
+  externalRef String?
+  summary     String?
+  createdAt   DateTime       @default(now())
+  updatedAt   DateTime       @updatedAt
+  region      Region         @relation(fields: [regionId], references: [id], onDelete: Cascade)
+  parent      Jurisdiction?  @relation("JurisdictionHierarchy", fields: [parentId], references: [id])
+  children    Jurisdiction[] @relation("JurisdictionHierarchy")
+  offices     Office[]
+  districts   District[]
+  committees  Committee[]
+  bills       Bill[]
+  events      Event[]
+}
+
+model District {
+  id                   String                @id @default(cuid())
+  regionId             String
+  jurisdictionId       String
+  officeId             String?
+  name                 String
+  slug                 String                @unique
+  districtCode         String
+  mapGeoJsonUrl        String?
+  populationEstimate   Int?
+  createdAt            DateTime              @default(now())
+  updatedAt            DateTime              @updatedAt
+  region               Region                @relation(fields: [regionId], references: [id], onDelete: Cascade)
+  jurisdiction         Jurisdiction          @relation(fields: [jurisdictionId], references: [id], onDelete: Cascade)
+  office               Office?               @relation(fields: [officeId], references: [id])
+  representativeTerms  RepresentativeTerm[]
+
+  @@index([jurisdictionId, districtCode])
+}
+
+model Party {
+  id              String           @id @default(cuid())
+  name            String
+  shortCode       String           @unique
+  colorHex        String?
+  representatives Representative[]
+}
+
+model Office {
+  id                  String               @id @default(cuid())
+  jurisdictionId      String
+  title               String
+  slug                String               @unique
+  level               OfficeLevel
+  districtLabel       String?
+  summary             String?
+  sortOrder           Int                  @default(0)
+  isActive            Boolean              @default(true)
+  createdAt           DateTime             @default(now())
+  updatedAt           DateTime             @updatedAt
+  jurisdiction        Jurisdiction         @relation(fields: [jurisdictionId], references: [id], onDelete: Cascade)
+  districts           District[]
+  representativeTerms RepresentativeTerm[]
+
+  @@index([jurisdictionId, level])
+}
+
+model Representative {
+  id                     String                @id @default(cuid())
+  slug                   String                @unique
+  fullName               String
+  preferredName          String?
+  biography              String?
+  partyId                String?
+  photoUrl               String?
+  websiteUrl             String?
+  emailPublic            String?
+  phonePublic            String?
+  officeAddress          String?
+  profileStatus          String                @default("draft")
+  isClaimable            Boolean               @default(false)
+  lastVerifiedAt         DateTime?
+  dataFreshnessCheckedAt DateTime?
+  createdAt              DateTime              @default(now())
+  updatedAt              DateTime              @updatedAt
+  party                  Party?                @relation(fields: [partyId], references: [id])
+  committeeAssignments   CommitteeAssignment[]
+  billSponsorships       BillSponsorship[]
+  votes                  Vote[]
+  issuePositions         IssuePosition[]
+  promises               PromiseCommitment[]
+  eventInvitations       EventInvitation[]
+  questions              ConstituentQuestion[]
+  responses              Response[]
+  scoreInputs            ScoreInput[]
+  transparencyScores     TransparencyScore[]
+  satisfactionScores     SatisfactionScore[]
+  representativeTerms    RepresentativeTerm[]
+
+  @@index([fullName])
+}
+
+model RepresentativeTerm {
+  id               String          @id @default(cuid())
+  representativeId String
+  officeId         String
+  districtId       String?
+  startDate        DateTime
+  endDate          DateTime?
+  isCurrent        Boolean         @default(true)
+  createdAt        DateTime        @default(now())
+  updatedAt        DateTime        @updatedAt
+  representative   Representative  @relation(fields: [representativeId], references: [id], onDelete: Cascade)
+  office           Office          @relation(fields: [officeId], references: [id], onDelete: Cascade)
+  district         District?       @relation(fields: [districtId], references: [id])
+
+  @@index([officeId, isCurrent])
+  @@index([representativeId, isCurrent])
+}
+
+model Committee {
+  id             String               @id @default(cuid())
+  jurisdictionId String
+  name           String
+  slug           String               @unique
+  description    String?
+  jurisdiction   Jurisdiction         @relation(fields: [jurisdictionId], references: [id], onDelete: Cascade)
+  assignments    CommitteeAssignment[]
+}
+
+model CommitteeAssignment {
+  id               String          @id @default(cuid())
+  representativeId String
+  committeeId      String
+  roleTitle        String?
+  startDate        DateTime?
+  endDate          DateTime?
+  representative   Representative  @relation(fields: [representativeId], references: [id], onDelete: Cascade)
+  committee        Committee       @relation(fields: [committeeId], references: [id], onDelete: Cascade)
+}
+
+model Bill {
+  id             String            @id @default(cuid())
+  jurisdictionId String
+  billNumber     String
+  sessionLabel   String
+  title          String
+  summary        String?
+  statusLabel    String?
+  introducedAt   DateTime?
+  lastActionAt   DateTime?
+  sourceUrl      String?
+  createdAt      DateTime          @default(now())
+  updatedAt      DateTime          @updatedAt
+  jurisdiction   Jurisdiction      @relation(fields: [jurisdictionId], references: [id], onDelete: Cascade)
+  sponsorships   BillSponsorship[]
+  votes          Vote[]
+
+  @@unique([jurisdictionId, sessionLabel, billNumber])
+}
+
+model BillSponsorship {
+  id               String          @id @default(cuid())
+  billId           String
+  representativeId String
+  sponsorshipType  String
+  createdAt        DateTime        @default(now())
+  bill             Bill            @relation(fields: [billId], references: [id], onDelete: Cascade)
+  representative   Representative  @relation(fields: [representativeId], references: [id], onDelete: Cascade)
+
+  @@unique([billId, representativeId, sponsorshipType])
+}
+
+model Vote {
+  id               String          @id @default(cuid())
+  billId           String
+  representativeId String
+  voteValue        VoteValue
+  votedAt          DateTime?
+  sourceUrl        String?
+  bill             Bill            @relation(fields: [billId], references: [id], onDelete: Cascade)
+  representative   Representative  @relation(fields: [representativeId], references: [id], onDelete: Cascade)
+
+  @@unique([billId, representativeId])
+}
+
+model Issue {
+  id              String           @id @default(cuid())
+  slug            String           @unique
+  name            String
+  description     String?
+  issuePositions  IssuePosition[]
+  surveyQuestions SurveyQuestion[]
+  surveyAnswers   SurveyAnswer[]
+}
+
+model IssuePosition {
+  id               String          @id @default(cuid())
+  representativeId String
+  issueId          String
+  positionLabel    String
+  summary          String?
+  evidenceType     String
+  confidenceLabel  String?
+  lastUpdatedAt    DateTime?
+  representative   Representative  @relation(fields: [representativeId], references: [id], onDelete: Cascade)
+  issue            Issue           @relation(fields: [issueId], references: [id], onDelete: Cascade)
+}
+
+model PromiseCommitment {
+  id               String          @id @default(cuid())
+  representativeId String
+  title            String
+  summary          String?
+  statusLabel      String?
+  madeOn           DateTime?
+  dueOn            DateTime?
+  fulfilledOn      DateTime?
+  createdAt        DateTime        @default(now())
+  updatedAt        DateTime        @updatedAt
+  representative   Representative  @relation(fields: [representativeId], references: [id], onDelete: Cascade)
+}
+
+model Event {
+  id              String            @id @default(cuid())
+  regionId        String
+  jurisdictionId  String?
+  slug            String            @unique
+  title           String
+  type            EventType
+  description     String?
+  venueName       String?
+  streetAddress   String?
+  city            String?
+  stateCode       String?
+  startsAt        DateTime
+  endsAt          DateTime?
+  isVirtual       Boolean           @default(false)
+  capacity        Int?
+  registrationUrl String?
+  summary         String?
+  isPublished     Boolean           @default(false)
+  createdAt       DateTime          @default(now())
+  updatedAt       DateTime          @updatedAt
+  region          Region            @relation(fields: [regionId], references: [id], onDelete: Cascade)
+  jurisdiction    Jurisdiction?     @relation(fields: [jurisdictionId], references: [id])
+  invitations     EventInvitation[]
+  rsvps           RSVP[]
+  questions       ConstituentQuestion[]
+}
+
+model EventInvitation {
+  id               String            @id @default(cuid())
+  eventId          String
+  representativeId String
+  status           InvitationStatus  @default(INVITED)
+  invitedAt        DateTime          @default(now())
+  respondedAt      DateTime?
+  notes            String?
+  event            Event             @relation(fields: [eventId], references: [id], onDelete: Cascade)
+  representative   Representative    @relation(fields: [representativeId], references: [id], onDelete: Cascade)
+
+  @@unique([eventId, representativeId])
+}
+
+model RSVP {
+  id                  String      @id @default(cuid())
+  eventId             String
+  userId              String?
+  guestName           String?
+  guestEmail          String?
+  status              RSVPStatus  @default(GOING)
+  attendanceCheckedAt DateTime?
+  createdAt           DateTime    @default(now())
+  event               Event       @relation(fields: [eventId], references: [id], onDelete: Cascade)
+  user                User?       @relation(fields: [userId], references: [id])
+}
+
+model ConstituentQuestion {
+  id               String            @id @default(cuid())
+  regionId         String
+  representativeId String?
+  eventId          String?
+  userId           String?
+  submittedName    String?
+  submittedEmail   String?
+  topicLabel       String?
+  questionText     String
+  moderationStatus ModerationStatus  @default(PENDING)
+  publicVisibility VisibilityScope   @default(PUBLIC)
+  responseStatus   QuestionStatus    @default(PENDING)
+  createdAt        DateTime          @default(now())
+  updatedAt        DateTime          @updatedAt
+  region           Region            @relation(fields: [regionId], references: [id], onDelete: Cascade)
+  representative   Representative?   @relation(fields: [representativeId], references: [id])
+  event            Event?            @relation(fields: [eventId], references: [id])
+  user             User?             @relation(fields: [userId], references: [id])
+  responses        Response[]
+}
+
+model Response {
+  id               String               @id @default(cuid())
+  questionId       String
+  representativeId String?
+  responderUserId  String?
+  body             String
+  isOfficial       Boolean              @default(false)
+  status           ResponseStatus       @default(DRAFT)
+  respondedAt      DateTime?
+  createdAt        DateTime             @default(now())
+  updatedAt        DateTime             @updatedAt
+  question         ConstituentQuestion  @relation(fields: [questionId], references: [id], onDelete: Cascade)
+  representative   Representative?      @relation(fields: [representativeId], references: [id])
+  responderUser    User?                @relation(fields: [responderUserId], references: [id])
+}
+
+model ScoreMethodology {
+  id                 String               @id @default(cuid())
+  key                String
+  version            Int
+  title              String
+  description        String?
+  weightsJson        Json
+  rulesJson          Json?
+  status             MethodologyStatus   @default(DRAFT)
+  effectiveFrom      DateTime?
+  effectiveTo        DateTime?
+  createdAt          DateTime            @default(now())
+  updatedAt          DateTime            @updatedAt
+  scoreInputs        ScoreInput[]
+  transparencyScores TransparencyScore[]
+  satisfactionScores SatisfactionScore[]
+
+  @@unique([key, version])
+}
+
+model ScoreInput {
+  id               String           @id @default(cuid())
+  representativeId String
+  methodologyId    String
+  scoreType        ScoreType
+  componentKey     String
+  componentValue   Decimal
+  evidenceCount    Int?
+  sourceCount      Int?
+  computedAt       DateTime         @default(now())
+  metadataJson     Json?
+  representative   Representative   @relation(fields: [representativeId], references: [id], onDelete: Cascade)
+  methodology      ScoreMethodology @relation(fields: [methodologyId], references: [id], onDelete: Cascade)
+
+  @@index([representativeId, scoreType])
+}
+
+model TransparencyScore {
+  id                 String           @id @default(cuid())
+  representativeId   String
+  methodologyId      String
+  scoreType          ScoreType
+  scoreValue         Decimal?
+  scoreBand          String?
+  confidenceLabel    String?
+  insufficientData   Boolean          @default(false)
+  insufficientReason String?
+  summary            String?
+  computedAt         DateTime         @default(now())
+  metadataJson       Json?
+  representative     Representative   @relation(fields: [representativeId], references: [id], onDelete: Cascade)
+  methodology        ScoreMethodology @relation(fields: [methodologyId], references: [id], onDelete: Cascade)
+
+  @@index([representativeId, scoreType, computedAt])
+}
+
+model SatisfactionScore {
+  id               String                @id @default(cuid())
+  representativeId String?
+  regionId         String?
+  methodologyId    String?
+  sampleSize       Int?
+  scoreValue       Decimal?
+  sentiment        SatisfactionSentiment @default(INSUFFICIENT_DATA)
+  summary          String?
+  measuredAt       DateTime              @default(now())
+  representative   Representative?       @relation(fields: [representativeId], references: [id])
+  region           Region?               @relation(fields: [regionId], references: [id])
+  methodology      ScoreMethodology?     @relation(fields: [methodologyId], references: [id])
+}
+
+model Survey {
+  id               String           @id @default(cuid())
+  regionId         String
+  slug             String           @unique
+  title            String
+  description      String?
+  purposeStatement String
+  status           SurveyStatus     @default(DRAFT)
+  visibilityScope  VisibilityScope  @default(PUBLIC)
+  requiresConsent  Boolean          @default(true)
+  opensAt          DateTime?
+  closesAt         DateTime?
+  createdAt        DateTime         @default(now())
+  updatedAt        DateTime         @updatedAt
+  region           Region           @relation(fields: [regionId], references: [id], onDelete: Cascade)
+  questions        SurveyQuestion[]
+  responses        SurveyResponse[]
+}
+
+model SurveyQuestion {
+  id            String             @id @default(cuid())
+  surveyId      String
+  issueId       String?
+  prompt        String
+  helpText      String?
+  questionType  SurveyQuestionType
+  displayOrder  Int
+  isRequired    Boolean            @default(false)
+  configJson    Json?
+  survey        Survey             @relation(fields: [surveyId], references: [id], onDelete: Cascade)
+  issue         Issue?             @relation(fields: [issueId], references: [id])
+  answers       SurveyAnswer[]
+
+  @@index([surveyId, displayOrder])
+}
+
+model SurveyResponse {
+  id                 String            @id @default(cuid())
+  surveyId           String
+  userId             String?
+  regionId           String?
+  outreachCampaignId String?
+  respondentHash     String?
+  consentedAt        DateTime?
+  submittedAt        DateTime          @default(now())
+  visibilityScope    VisibilityScope   @default(RESTRICTED)
+  survey             Survey            @relation(fields: [surveyId], references: [id], onDelete: Cascade)
+  user               User?             @relation(fields: [userId], references: [id])
+  region             Region?           @relation(fields: [regionId], references: [id])
+  outreachCampaign   OutreachCampaign? @relation(fields: [outreachCampaignId], references: [id])
+  answers            SurveyAnswer[]
+}
+
+model SurveyAnswer {
+  id               String          @id @default(cuid())
+  surveyResponseId String
+  surveyQuestionId String
+  issueId          String?
+  answerText       String?
+  answerNumber     Decimal?
+  answerJson       Json?
+  surveyResponse   SurveyResponse  @relation(fields: [surveyResponseId], references: [id], onDelete: Cascade)
+  surveyQuestion   SurveyQuestion  @relation(fields: [surveyQuestionId], references: [id], onDelete: Cascade)
+  issue            Issue?          @relation(fields: [issueId], references: [id])
+}
+
+model OutreachCampaign {
+  id              String           @id @default(cuid())
+  regionId        String
+  name            String
+  channelLabel    String
+  description     String?
+  startedAt       DateTime?
+  endedAt         DateTime?
+  createdAt       DateTime         @default(now())
+  region          Region           @relation(fields: [regionId], references: [id], onDelete: Cascade)
+  surveyResponses SurveyResponse[]
+}
+
+model Source {
+  id            String             @id @default(cuid())
+  regionId      String?
+  sourceType    SourceType
+  title         String
+  publisher     String?
+  url           String?
+  publishedAt   DateTime?
+  retrievedAt   DateTime           @default(now())
+  checksum      String?
+  createdAt     DateTime           @default(now())
+  region        Region?            @relation(fields: [regionId], references: [id])
+  citations     SourceCitation[]
+  ingestionJobs DataIngestionJob[]
+}
+
+model SourceCitation {
+  id               String             @id @default(cuid())
+  sourceId         String
+  targetTable      String
+  targetId         String
+  fieldName        String?
+  citationLabel    String?
+  excerpt          String?
+  confidence       CitationConfidence @default(MEDIUM)
+  verifiedByUserId String?
+  verifiedAt       DateTime?
+  createdAt        DateTime           @default(now())
+  source           Source             @relation(fields: [sourceId], references: [id], onDelete: Cascade)
+  verifiedBy       User?              @relation("CitationVerifier", fields: [verifiedByUserId], references: [id])
+
+  @@index([targetTable, targetId])
+}
+
+model DataIngestionJob {
+  id             String          @id @default(cuid())
+  regionId       String?
+  sourceId       String?
+  connectorKey   String
+  status         IngestionStatus @default(QUEUED)
+  startedAt      DateTime?
+  completedAt    DateTime?
+  recordsFetched Int?
+  recordsChanged Int?
+  errorMessage   String?
+  summaryJson    Json?
+  createdAt      DateTime        @default(now())
+  region         Region?         @relation(fields: [regionId], references: [id])
+  source         Source?         @relation(fields: [sourceId], references: [id])
+}
+
+model DataGapFlag {
+  id              String        @id @default(cuid())
+  regionId        String?
+  entityType      String
+  entityId        String
+  fieldName       String?
+  severity        GapSeverity
+  reason          String
+  reviewStatus    ReviewStatus  @default(OPEN)
+  detectedAt      DateTime      @default(now())
+  resolvedAt      DateTime?
+  resolutionNotes String?
+  region          Region?       @relation(fields: [regionId], references: [id])
+}
+
+model DataOverride {
+  id            String   @id @default(cuid())
+  regionId      String?
+  entityType    String
+  entityId      String
+  fieldName     String
+  overrideValue Json
+  reason        String
+  createdAt     DateTime @default(now())
+  region        Region?  @relation(fields: [regionId], references: [id])
+}
+
+model AuditLog {
+  id          String    @id @default(cuid())
+  actorUserId String?
+  action      String
+  entityType  String
+  entityId    String
+  beforeJson  Json?
+  afterJson   Json?
+  reason      String?
+  createdAt   DateTime  @default(now())
+  actorUser   User?     @relation(fields: [actorUserId], references: [id])
+
+  @@index([entityType, entityId, createdAt])
+}

@@ -72,4 +72,4 @@ npm run ingest:wv-house
 - Admin login uses the local `.env` credentials. Default local values are defined in `.env.example`.
 - The Prisma schema is intentionally broader than the seeded MVP data so the platform can expand without a rewrite.
 - Public, inferred, and opinion-based signals are intended to remain clearly separated in both the schema and the user experience.
-- For Vercel deployment, use a hosted Postgres `DATABASE_URL`. See [vercel-deployment.md](/c:/Users/ajayn/Documents/Various_Projects_Folder/accountability_appalachia/docs/vercel-deployment.md).
+- For Vercel deployment, use a hosted Postgres `DATABASE_URL` and initialize that database before the first production deploy. See [vercel-deployment.md](/c:/Users/ajayn/Documents/Various_Projects_Folder/accountability_appalachia/docs/vercel-deployment.md).

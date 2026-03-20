@@ -41,10 +41,33 @@ Use [.env.vercel.example](/c:/Users/ajayn/Documents/Various_Projects_Folder/acco
 This repo includes [vercel.json](/c:/Users/ajayn/Documents/Various_Projects_Folder/accountability_appalachia/vercel.json), which runs:
 
 ```bash
-npm run prisma:push && npm run build
+npm run build
 ```
 
-That is a pragmatic MVP deploy path. For a stricter production workflow later, replace `db push` with checked-in migrations and `prisma migrate deploy`.
+This avoids mutating the production schema during every deployment.
+
+## Database initialization before first deploy
+
+Because Vercel no longer runs schema sync as part of the build, you must initialize the hosted database before the first successful production deployment.
+
+Pragmatic MVP path:
+
+1. Point `DATABASE_URL` locally at your hosted Postgres database.
+2. Run:
+
+```bash
+npm run prisma:push
+npm run prisma:seed
+```
+
+3. Add the same `DATABASE_URL` in Vercel.
+4. Redeploy.
+
+Safer long-term production path:
+
+- create checked-in Prisma migrations
+- run `npm run prisma:migrate:deploy` from CI or a controlled release step
+- keep Vercel builds read-only with respect to schema changes
 
 ## Local to production workflow
 

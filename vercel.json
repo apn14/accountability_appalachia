@@ -1,4 +1,3 @@
 {
-  "buildCommand": "npm run prisma:push && npm run build"
+  "buildCommand": "npm run build"
 }
-

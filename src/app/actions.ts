@@ -2,7 +2,14 @@
 
 import crypto from "node:crypto";
 
-import { ModerationStatus, QuestionStatus, ReviewStatus, RSVPStatus, VisibilityScope } from "@prisma/client";
+import {
+  GapSeverity,
+  ModerationStatus,
+  QuestionStatus,
+  ReviewStatus,
+  RSVPStatus,
+  VisibilityScope
+} from "@prisma/client";
 import { revalidatePath } from "next/cache";
 import { redirect } from "next/navigation";
 import { z } from "zod";
@@ -341,6 +348,97 @@ export async function dismissGapFlagAction(formData: FormData) {
   });
 
   revalidatePath("/admin/review");
+}
+
+export async function publishRepresentativeAction(formData: FormData) {
+  await requireAdminSession();
+  const representativeId = String(formData.get("representativeId") ?? "");
+  const actorUserId = await getAdminActorId();
+
+  const representative = await prisma.representative.findUnique({
+    where: { id: representativeId },
+    include: {
+      representativeTerms: {
+        where: { isCurrent: true },
+        select: { id: true }
+      }
+    }
+  });
+
+  if (!representative) {
+    redirect("/admin/review?status=missing-representative");
+  }
+
+  const currentTermIds = representative.representativeTerms.map((term) => term.id);
+  const [citationCount, blockingFlags] = await Promise.all([
+    prisma.sourceCitation.count({
+      where: {
+        targetTable: "Representative",
+        targetId: representative.id
+      }
+    }),
+    prisma.dataGapFlag.count({
+      where: {
+        reviewStatus: ReviewStatus.OPEN,
+        severity: {
+          in: [GapSeverity.HIGH, GapSeverity.CRITICAL]
+        },
+        OR: [
+          {
+            entityType: "Representative",
+            entityId: representative.id
+          },
+          ...(currentTermIds.length
+            ? [
+                {
+                  entityType: "RepresentativeTerm",
+                  entityId: {
+                    in: currentTermIds
+                  }
+                }
+              ]
+            : [])
+        ]
+      }
+    })
+  ]);
+
+  if (!currentTermIds.length || citationCount === 0 || blockingFlags > 0) {
+    redirect("/admin/review?status=publish-blocked");
+  }
+
+  await prisma.representative.update({
+    where: { id: representative.id },
+    data: {
+      profileStatus: "published",
+      lastVerifiedAt: new Date(),
+      dataFreshnessCheckedAt: new Date()
+    }
+  });
+
+  await prisma.auditLog.create({
+    data: {
+      actorUserId,
+      action: "representative.published",
+      entityType: "Representative",
+      entityId: representative.id,
+      beforeJson: {
+        profileStatus: representative.profileStatus
+      },
+      afterJson: {
+        profileStatus: "published"
+      },
+      reason: "Published from admin review queue after source and term review"
+    }
+  });
+
+  revalidatePath("/");
+  revalidatePath("/find");
+  revalidatePath("/transparency");
+  revalidatePath("/admin");
+  revalidatePath("/admin/review");
+  revalidatePath(`/representatives/${representative.slug}`);
+  redirect("/admin/review?status=representative-published");
 }
 
 export async function runWvHouseRosterSyncAction() {

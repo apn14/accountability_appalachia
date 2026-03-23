@@ -200,7 +200,11 @@ export async function getHomePageData() {
         take: 2
       }),
       getRegions(),
-      prisma.representative.count(),
+      prisma.representative.count({
+        where: {
+          profileStatus: "published"
+        }
+      }),
       prisma.constituentQuestion.count({
         where: {
           moderationStatus: ModerationStatus.PENDING
@@ -237,7 +241,7 @@ export async function getHomePageData() {
     })),
     regions: regionRecords,
     siteStats: [
-      { label: "Representatives tracked", value: String(representativeCount) },
+      { label: "Published representatives", value: String(representativeCount) },
       { label: "Upcoming civic events", value: String(eventCount) },
       { label: "Open survey responses", value: String(surveyCount) },
       { label: "Records awaiting review", value: String(reviewCount + pendingQuestionCount) }
@@ -581,7 +585,7 @@ export async function getTransparencyOverview() {
 }
 
 export async function getAdminDashboard() {
-  const [openGapFlags, pendingQuestions, methodologyDrafts, pendingEvents, ingestionJobs] = await Promise.all([
+  const [openGapFlags, pendingQuestions, methodologyDrafts, pendingEvents, ingestionJobs, draftRepresentatives] = await Promise.all([
     prisma.dataGapFlag.count({
       where: { reviewStatus: ReviewStatus.OPEN }
     }),
@@ -594,14 +598,20 @@ export async function getAdminDashboard() {
     prisma.event.count({
       where: { isPublished: false }
     }),
-    prisma.dataIngestionJob.count()
+    prisma.dataIngestionJob.count(),
+    prisma.representative.count({
+      where: {
+        profileStatus: "draft"
+      }
+    })
   ]);
 
   return {
-    openReviewItems: openGapFlags + pendingQuestions,
+    openReviewItems: openGapFlags + pendingQuestions + draftRepresentatives,
     pendingEventApprovals: pendingEvents,
     methodologyDrafts,
-    ingestionJobs
+    ingestionJobs,
+    draftRepresentatives
   };
 }
 
@@ -629,7 +639,7 @@ export async function getAdminDashboardSummary() {
 }
 
 export async function getReviewQueue() {
-  const [gapFlags, pendingQuestions] = await Promise.all([
+  const [gapFlags, pendingQuestions, draftRepresentatives] = await Promise.all([
     prisma.dataGapFlag.findMany({
       where: { reviewStatus: ReviewStatus.OPEN },
       orderBy: { detectedAt: "desc" }
@@ -641,10 +651,137 @@ export async function getReviewQueue() {
         event: true
       },
       orderBy: { createdAt: "desc" }
+    }),
+    prisma.representative.findMany({
+      where: { profileStatus: "draft" },
+      include: {
+        party: true,
+        representativeTerms: {
+          where: { isCurrent: true },
+          include: {
+            office: true,
+            district: true
+          },
+          take: 1
+        }
+      },
+      orderBy: { updatedAt: "desc" }
     })
   ]);
 
+  const currentTermIds = draftRepresentatives
+    .flatMap((representative) => representative.representativeTerms.map((term) => term.id));
+  const representativeIds = draftRepresentatives.map((representative) => representative.id);
+
+  const [draftFlags, citations] =
+    representativeIds.length || currentTermIds.length
+      ? await Promise.all([
+          prisma.dataGapFlag.findMany({
+            where: {
+              reviewStatus: ReviewStatus.OPEN,
+              OR: [
+                ...(representativeIds.length
+                  ? [
+                      {
+                        entityType: "Representative",
+                        entityId: {
+                          in: representativeIds
+                        }
+                      }
+                    ]
+                  : []),
+                ...(currentTermIds.length
+                  ? [
+                      {
+                        entityType: "RepresentativeTerm",
+                        entityId: {
+                          in: currentTermIds
+                        }
+                      }
+                    ]
+                  : [])
+              ]
+            }
+          }),
+          prisma.sourceCitation.findMany({
+            where: {
+              targetTable: "Representative",
+              targetId: {
+                in: representativeIds
+              }
+            },
+            select: {
+              targetId: true
+            }
+          })
+        ])
+      : [[], []];
+
+  const termToRepresentative = new Map(
+    draftRepresentatives.flatMap((representative) =>
+      representative.representativeTerms.map((term) => [term.id, representative.id] as const)
+    )
+  );
+
+  const flagsByRepresentative = new Map<string, typeof draftFlags>();
+
+  for (const flag of draftFlags) {
+    const ownerId =
+      flag.entityType === "Representative"
+        ? flag.entityId
+        : flag.entityType === "RepresentativeTerm"
+          ? termToRepresentative.get(flag.entityId)
+          : null;
+
+    if (!ownerId) {
+      continue;
+    }
+
+    const existingFlags = flagsByRepresentative.get(ownerId) ?? [];
+    existingFlags.push(flag);
+    flagsByRepresentative.set(ownerId, existingFlags);
+  }
+
+  const citationCounts = new Map<string, number>();
+
+  for (const citation of citations) {
+    citationCounts.set(citation.targetId, (citationCounts.get(citation.targetId) ?? 0) + 1);
+  }
+
   return {
+    draftRepresentatives: draftRepresentatives.map((item) => {
+      const currentTerm = item.representativeTerms[0];
+      const openFlags = flagsByRepresentative.get(item.id) ?? [];
+      const blockingFlags = openFlags.filter(
+        (flag) => flag.severity === GapSeverity.HIGH || flag.severity === GapSeverity.CRITICAL
+      );
+      const citationCount = citationCounts.get(item.id) ?? 0;
+      const canPublish = Boolean(currentTerm) && citationCount > 0 && blockingFlags.length === 0;
+
+      return {
+        id: item.id,
+        slug: item.slug,
+        name: item.preferredName ?? item.fullName,
+        party: item.party?.name ?? "Nonpartisan",
+        officeTitle: currentTerm?.office.title ?? "Office pending verification",
+        district: currentTerm?.district?.name ?? "District pending verification",
+        websiteUrl: item.websiteUrl,
+        emailPublic: item.emailPublic,
+        phonePublic: item.phonePublic,
+        updatedLabel: `Updated ${formatDate(item.updatedAt)}`,
+        openFlagCount: openFlags.length,
+        blockingFlagCount: blockingFlags.length,
+        citationCount,
+        canPublish,
+        publishReason: !currentTerm
+          ? "Current term is missing. Review the district assignment before publication."
+          : citationCount === 0
+            ? "At least one representative citation is required before publication."
+            : blockingFlags.length
+              ? "Resolve all high-severity review flags before publication."
+              : "Ready for publication."
+      };
+    }),
     gapFlags: gapFlags.map((item) => ({
       id: item.id,
       entity: item.entityType,

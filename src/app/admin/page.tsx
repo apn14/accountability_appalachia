@@ -41,6 +41,7 @@ export default async function AdminPage({ searchParams }: AdminPageProps) {
       <section className="grid gap-5 md:grid-cols-3">
         {[
           { label: "Open review items", value: String(dashboard.openReviewItems) },
+          { label: "Draft representative profiles", value: String(dashboard.draftRepresentatives) },
           { label: "Pending event approvals", value: String(dashboard.pendingEventApprovals) },
           { label: "Methodology drafts", value: String(dashboard.methodologyDrafts) }
         ].map((item) => (

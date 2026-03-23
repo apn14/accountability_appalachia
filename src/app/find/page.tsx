@@ -2,7 +2,11 @@ import Link from "next/link";
 
 import { RepresentativeCard } from "@/components/representative-card";
 import { SectionHeading } from "@/components/section-heading";
-import { officeLevelOptions, searchRepresentatives } from "@/lib/data";
+import {
+  getRepresentativeSearchResolution,
+  officeLevelOptions,
+  searchRepresentatives
+} from "@/lib/data";
 
 export const dynamic = "force-dynamic";
 
@@ -16,6 +20,7 @@ type FindPageProps = {
 export default async function FindPage({ searchParams }: FindPageProps) {
   const params = (await searchParams) ?? {};
   const representatives = await searchRepresentatives(params.query, params.officeLevel);
+  const resolution = getRepresentativeSearchResolution(params.query);
   const levels = officeLevelOptions();
 
   return (
@@ -23,7 +28,7 @@ export default async function FindPage({ searchParams }: FindPageProps) {
       <SectionHeading
         eyebrow="Find my representative"
         title="Search by address, zip code, county, district, office, or name."
-        description="This MVP view demonstrates the mobile-first discovery flow. In production, address resolution would map to districts and current officeholders through verified jurisdiction data."
+        description="This MVP supports district and name search plus West Virginia ZIP-based district lookup. Full street-address geocoding is a later step and should not be implied before it is verified."
       />
 
       <form className="rounded-[32px] border border-border bg-white p-6 shadow-soft">
@@ -56,13 +61,23 @@ export default async function FindPage({ searchParams }: FindPageProps) {
           </button>
         </div>
         <div className="mt-5 flex flex-wrap gap-2 text-xs font-medium text-muted">
-          {["Kanawha County", "District 41", "Commission", "Jordan Ellis"].map((hint) => (
+          {["25301", "Kanawha County", "District 41", "Jordan Ellis"].map((hint) => (
             <span key={hint} className="rounded-full bg-sand px-3 py-2 text-ink">
               Suggested: {hint}
             </span>
           ))}
         </div>
       </form>
+
+      {resolution ? (
+        <div className="rounded-[28px] border border-border bg-white p-5 text-sm text-muted shadow-soft">
+          <p className="font-semibold text-ink">
+            ZIP lookup {resolution.zipCode}
+            {resolution.districtLabel ? ` maps to ${resolution.districtLabel}` : " is outside current WV pilot coverage"}.
+          </p>
+          <p className="mt-2 leading-6">{resolution.methodology}</p>
+        </div>
+      ) : null}
 
       <section className="space-y-5">
         <div className="flex items-center justify-between">
@@ -79,7 +94,7 @@ export default async function FindPage({ searchParams }: FindPageProps) {
           </div>
         ) : (
           <div className="rounded-[28px] border border-border bg-white p-6 text-sm text-muted shadow-soft">
-            No representatives matched that search yet. Try a broader county, district, or office query.
+            No representatives matched that search yet. Try a ZIP code, broader county, district, office, or name query.
           </div>
         )}
       </section>

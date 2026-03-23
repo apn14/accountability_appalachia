@@ -1,0 +1,6009 @@
+{
+  "sourceUrl": "https://www.wvlegislature.gov/legisdocs/redistricting/house/datafiles/HODfinal_json.zip",
+  "generatedAt": "2026-03-23T16:55:40.823Z",
+  "methodology": "WV ZIP codes are resolved to House districts by matching each ZIP centroid to the official WV House district boundary GeoJSON. This is useful for pilot discovery but remains approximate for ZIPs that span multiple districts.",
+  "zipCount": 857,
+  "resolvedCount": 857,
+  "unresolvedCount": 0,
+  "zipToDistrict": {
+    "24701": {
+      "districtCode": "37",
+      "city": "Bluefield",
+      "state": "WV",
+      "latitude": 37.2698,
+      "longitude": -81.2223
+    },
+    "24712": {
+      "districtCode": "41",
+      "city": "Athens",
+      "state": "WV",
+      "latitude": 37.4323,
+      "longitude": -80.9974
+    },
+    "24714": {
+      "districtCode": "39",
+      "city": "Beeson",
+      "state": "WV",
+      "latitude": 37.4909,
+      "longitude": -81.2062
+    },
+    "24715": {
+      "districtCode": "37",
+      "city": "Bramwell",
+      "state": "WV",
+      "latitude": 37.3321,
+      "longitude": -81.3256
+    },
+    "24716": {
+      "districtCode": "35",
+      "city": "Bud",
+      "state": "WV",
+      "latitude": 37.5376,
+      "longitude": -81.3793
+    },
+    "24719": {
+      "districtCode": "35",
+      "city": "Covel",
+      "state": "WV",
+      "latitude": 37.4909,
+      "longitude": -81.3226
+    },
+    "24724": {
+      "districtCode": "37",
+      "city": "Freeman",
+      "state": "WV",
+      "latitude": 37.3309,
+      "longitude": -81.2998
+    },
+    "24726": {
+      "districtCode": "35",
+      "city": "Herndon",
+      "state": "WV",
+      "latitude": 37.5054,
+      "longitude": -81.3404
+    },
+    "24729": {
+      "districtCode": "39",
+      "city": "Hiawatha",
+      "state": "WV",
+      "latitude": 37.4401,
+      "longitude": -81.244
+    },
+    "24731": {
+      "districtCode": "39",
+      "city": "Kegley",
+      "state": "WV",
+      "latitude": 37.3971,
+      "longitude": -81.1318
+    },
+    "24732": {
+      "districtCode": "39",
+      "city": "Kellysville",
+      "state": "WV",
+      "latitude": 37.3448,
+      "longitude": -80.9279
+    },
+    "24733": {
+      "districtCode": "39",
+      "city": "Lashmeet",
+      "state": "WV",
+      "latitude": 37.442,
+      "longitude": -81.2138
+    },
+    "24736": {
+      "districtCode": "39",
+      "city": "Matoaka",
+      "state": "WV",
+      "latitude": 37.4201,
+      "longitude": -81.2432
+    },
+    "24737": {
+      "districtCode": "37",
+      "city": "Montcalm",
+      "state": "WV",
+      "latitude": 37.3539,
+      "longitude": -81.2518
+    },
+    "24738": {
+      "districtCode": "37",
+      "city": "Nemours",
+      "state": "WV",
+      "latitude": 37.3015,
+      "longitude": -81.3043
+    },
+    "24739": {
+      "districtCode": "38",
+      "city": "Princeton",
+      "state": "WV",
+      "latitude": 37.3662,
+      "longitude": -81.1026
+    },
+    "24740": {
+      "districtCode": "38",
+      "city": "Princeton",
+      "state": "WV",
+      "latitude": 37.3799,
+      "longitude": -81.1175
+    },
+    "24747": {
+      "districtCode": "39",
+      "city": "Rock",
+      "state": "WV",
+      "latitude": 37.4142,
+      "longitude": -81.1784
+    },
+    "24751": {
+      "districtCode": "37",
+      "city": "Wolfe",
+      "state": "WV",
+      "latitude": 37.3073,
+      "longitude": -81.3287
+    },
+    "24801": {
+      "districtCode": "36",
+      "city": "Welch",
+      "state": "WV",
+      "latitude": 37.4329,
+      "longitude": -81.5846
+    },
+    "24808": {
+      "districtCode": "36",
+      "city": "Anawalt",
+      "state": "WV",
+      "latitude": 37.3362,
+      "longitude": -81.4151
+    },
+    "24811": {
+      "districtCode": "36",
+      "city": "Avondale",
+      "state": "WV",
+      "latitude": 37.4126,
+      "longitude": -81.7843
+    },
+    "24813": {
+      "districtCode": "36",
+      "city": "Bartley",
+      "state": "WV",
+      "latitude": 37.3407,
+      "longitude": -81.7376
+    },
+    "24815": {
+      "districtCode": "36",
+      "city": "Berwind",
+      "state": "WV",
+      "latitude": 37.2687,
+      "longitude": -81.6668
+    },
+    "24816": {
+      "districtCode": "36",
+      "city": "Big Sandy",
+      "state": "WV",
+      "latitude": 37.4643,
+      "longitude": -81.6982
+    },
+    "24817": {
+      "districtCode": "36",
+      "city": "Bradshaw",
+      "state": "WV",
+      "latitude": 37.3518,
+      "longitude": -81.7987
+    },
+    "24818": {
+      "districtCode": "35",
+      "city": "Brenton",
+      "state": "WV",
+      "latitude": 37.5988,
+      "longitude": -81.6264
+    },
+    "24822": {
+      "districtCode": "35",
+      "city": "Clear Fork",
+      "state": "WV",
+      "latitude": 37.6309,
+      "longitude": -81.6829
+    },
+    "24823": {
+      "districtCode": "35",
+      "city": "Coal Mountain",
+      "state": "WV",
+      "latitude": 37.6696,
+      "longitude": -81.7284
+    },
+    "24826": {
+      "districtCode": "36",
+      "city": "Cucumber",
+      "state": "WV",
+      "latitude": 37.2779,
+      "longitude": -81.6268
+    },
+    "24827": {
+      "districtCode": "35",
+      "city": "Cyclone",
+      "state": "WV",
+      "latitude": 37.7329,
+      "longitude": -81.6887
+    },
+    "24828": {
+      "districtCode": "36",
+      "city": "Davy",
+      "state": "WV",
+      "latitude": 37.4784,
+      "longitude": -81.6534
+    },
+    "24829": {
+      "districtCode": "36",
+      "city": "Eckman",
+      "state": "WV",
+      "latitude": 37.3752,
+      "longitude": -81.6539
+    },
+    "24830": {
+      "districtCode": "36",
+      "city": "Elbert",
+      "state": "WV",
+      "latitude": 37.3354,
+      "longitude": -81.5393
+    },
+    "24831": {
+      "districtCode": "36",
+      "city": "Elkhorn",
+      "state": "WV",
+      "latitude": 37.3857,
+      "longitude": -81.4109
+    },
+    "24834": {
+      "districtCode": "35",
+      "city": "Fanrock",
+      "state": "WV",
+      "latitude": 37.5532,
+      "longitude": -81.6305
+    },
+    "24836": {
+      "districtCode": "36",
+      "city": "Gary",
+      "state": "WV",
+      "latitude": 37.3658,
+      "longitude": -81.5544
+    },
+    "24839": {
+      "districtCode": "35",
+      "city": "Hanover",
+      "state": "WV",
+      "latitude": 37.563,
+      "longitude": -81.8136
+    },
+    "24842": {
+      "districtCode": "36",
+      "city": "Hemphill",
+      "state": "WV",
+      "latitude": 37.44,
+      "longitude": -81.59
+    },
+    "24843": {
+      "districtCode": "36",
+      "city": "Hensley",
+      "state": "WV",
+      "latitude": 37.474,
+      "longitude": -81.6998
+    },
+    "24844": {
+      "districtCode": "36",
+      "city": "Iaeger",
+      "state": "WV",
+      "latitude": 37.4499,
+      "longitude": -81.812
+    },
+    "24845": {
+      "districtCode": "35",
+      "city": "Ikes Fork",
+      "state": "WV",
+      "latitude": 37.5221,
+      "longitude": -81.8043
+    },
+    "24846": {
+      "districtCode": "34",
+      "city": "Isaban",
+      "state": "WV",
+      "latitude": 37.5301,
+      "longitude": -81.8882
+    },
+    "24847": {
+      "districtCode": "35",
+      "city": "Itmann",
+      "state": "WV",
+      "latitude": 37.5734,
+      "longitude": -81.4182
+    },
+    "24848": {
+      "districtCode": "36",
+      "city": "Jenkinjones",
+      "state": "WV",
+      "latitude": 37.2937,
+      "longitude": -81.4259
+    },
+    "24849": {
+      "districtCode": "35",
+      "city": "Jesse",
+      "state": "WV",
+      "latitude": 37.6608,
+      "longitude": -81.5628
+    },
+    "24850": {
+      "districtCode": "36",
+      "city": "Jolo",
+      "state": "WV",
+      "latitude": 37.3324,
+      "longitude": -81.8316
+    },
+    "24851": {
+      "districtCode": "34",
+      "city": "Justice",
+      "state": "WV",
+      "latitude": 37.5887,
+      "longitude": -81.8354
+    },
+    "24853": {
+      "districtCode": "36",
+      "city": "Kimball",
+      "state": "WV",
+      "latitude": 37.4421,
+      "longitude": -81.512
+    },
+    "24854": {
+      "districtCode": "43",
+      "city": "Kopperston",
+      "state": "WV",
+      "latitude": 37.744,
+      "longitude": -81.575
+    },
+    "24855": {
+      "districtCode": "36",
+      "city": "Kyle",
+      "state": "WV",
+      "latitude": 37.4082,
+      "longitude": -81.4257
+    },
+    "24857": {
+      "districtCode": "35",
+      "city": "Lynco",
+      "state": "WV",
+      "latitude": 37.6982,
+      "longitude": -81.6771
+    },
+    "24859": {
+      "districtCode": "35",
+      "city": "Marianna",
+      "state": "WV",
+      "latitude": 37.6033,
+      "longitude": -81.54
+    },
+    "24860": {
+      "districtCode": "35",
+      "city": "Matheny",
+      "state": "WV",
+      "latitude": 37.6624,
+      "longitude": -81.607
+    },
+    "24861": {
+      "districtCode": "36",
+      "city": "Maybeury",
+      "state": "WV",
+      "latitude": 37.3709,
+      "longitude": -81.3665
+    },
+    "24862": {
+      "districtCode": "36",
+      "city": "Mohawk",
+      "state": "WV",
+      "latitude": 37.5048,
+      "longitude": -81.9151
+    },
+    "24866": {
+      "districtCode": "36",
+      "city": "Newhall",
+      "state": "WV",
+      "latitude": 37.2637,
+      "longitude": -81.6187
+    },
+    "24867": {
+      "districtCode": "35",
+      "city": "New Richmond",
+      "state": "WV",
+      "latitude": 37.5701,
+      "longitude": -81.4887
+    },
+    "24868": {
+      "districtCode": "36",
+      "city": "Northfork",
+      "state": "WV",
+      "latitude": 37.4194,
+      "longitude": -81.4058
+    },
+    "24869": {
+      "districtCode": "35",
+      "city": "North Spring",
+      "state": "WV",
+      "latitude": 37.5682,
+      "longitude": -81.8254
+    },
+    "24870": {
+      "districtCode": "43",
+      "city": "Oceana",
+      "state": "WV",
+      "latitude": 37.7407,
+      "longitude": -81.5831
+    },
+    "24871": {
+      "districtCode": "36",
+      "city": "Pageton",
+      "state": "WV",
+      "latitude": 37.3493,
+      "longitude": -81.4654
+    },
+    "24872": {
+      "districtCode": "36",
+      "city": "Panther",
+      "state": "WV",
+      "latitude": 37.4834,
+      "longitude": -81.896
+    },
+    "24873": {
+      "districtCode": "36",
+      "city": "Paynesville",
+      "state": "WV",
+      "latitude": 37.3315,
+      "longitude": -81.8915
+    },
+    "24874": {
+      "districtCode": "35",
+      "city": "Pineville",
+      "state": "WV",
+      "latitude": 37.584,
+      "longitude": -81.5336
+    },
+    "24878": {
+      "districtCode": "36",
+      "city": "Premier",
+      "state": "WV",
+      "latitude": 37.4223,
+      "longitude": -81.6437
+    },
+    "24879": {
+      "districtCode": "36",
+      "city": "Raysal",
+      "state": "WV",
+      "latitude": 37.3244,
+      "longitude": -81.7614
+    },
+    "24880": {
+      "districtCode": "35",
+      "city": "Rock View",
+      "state": "WV",
+      "latitude": 37.6179,
+      "longitude": -81.539
+    },
+    "24881": {
+      "districtCode": "36",
+      "city": "Roderfield",
+      "state": "WV",
+      "latitude": 37.4504,
+      "longitude": -81.7057
+    },
+    "24882": {
+      "districtCode": "35",
+      "city": "Simon",
+      "state": "WV",
+      "latitude": 37.6197,
+      "longitude": -81.7586
+    },
+    "24884": {
+      "districtCode": "36",
+      "city": "Squire",
+      "state": "WV",
+      "latitude": 37.2384,
+      "longitude": -81.6098
+    },
+    "24887": {
+      "districtCode": "36",
+      "city": "Switchback",
+      "state": "WV",
+      "latitude": 37.3712,
+      "longitude": -81.3857
+    },
+    "24888": {
+      "districtCode": "36",
+      "city": "Thorpe",
+      "state": "WV",
+      "latitude": 37.3687,
+      "longitude": -81.5165
+    },
+    "24892": {
+      "districtCode": "36",
+      "city": "War",
+      "state": "WV",
+      "latitude": 37.3012,
+      "longitude": -81.6909
+    },
+    "24894": {
+      "districtCode": "36",
+      "city": "Warriormine",
+      "state": "WV",
+      "latitude": 37.2929,
+      "longitude": -81.6971
+    },
+    "24895": {
+      "districtCode": "36",
+      "city": "Wilcoe",
+      "state": "WV",
+      "latitude": 37.3752,
+      "longitude": -81.6539
+    },
+    "24898": {
+      "districtCode": "35",
+      "city": "Wyoming",
+      "state": "WV",
+      "latitude": 37.5823,
+      "longitude": -81.6018
+    },
+    "24901": {
+      "districtCode": "47",
+      "city": "Lewisburg",
+      "state": "WV",
+      "latitude": 37.8083,
+      "longitude": -80.4407
+    },
+    "24902": {
+      "districtCode": "47",
+      "city": "Fairlea",
+      "state": "WV",
+      "latitude": 37.7747,
+      "longitude": -80.4615
+    },
+    "24910": {
+      "districtCode": "47",
+      "city": "Alderson",
+      "state": "WV",
+      "latitude": 37.7371,
+      "longitude": -80.661
+    },
+    "24915": {
+      "districtCode": "66",
+      "city": "Arbovale",
+      "state": "WV",
+      "latitude": 38.4546,
+      "longitude": -79.7934
+    },
+    "24916": {
+      "districtCode": "47",
+      "city": "Asbury",
+      "state": "WV",
+      "latitude": 37.8313,
+      "longitude": -80.5747
+    },
+    "24918": {
+      "districtCode": "40",
+      "city": "Ballard",
+      "state": "WV",
+      "latitude": 37.498,
+      "longitude": -80.7614
+    },
+    "24920": {
+      "districtCode": "66",
+      "city": "Bartow",
+      "state": "WV",
+      "latitude": 38.5513,
+      "longitude": -79.7952
+    },
+    "24924": {
+      "districtCode": "46",
+      "city": "Buckeye",
+      "state": "WV",
+      "latitude": 38.186,
+      "longitude": -80.1345
+    },
+    "24925": {
+      "districtCode": "46",
+      "city": "Caldwell",
+      "state": "WV",
+      "latitude": 37.7807,
+      "longitude": -80.394
+    },
+    "24927": {
+      "districtCode": "66",
+      "city": "Cass",
+      "state": "WV",
+      "latitude": 38.388,
+      "longitude": -79.9906
+    },
+    "24931": {
+      "districtCode": "47",
+      "city": "Crawley",
+      "state": "WV",
+      "latitude": 37.9397,
+      "longitude": -80.6309
+    },
+    "24934": {
+      "districtCode": "66",
+      "city": "Dunmore",
+      "state": "WV",
+      "latitude": 38.3636,
+      "longitude": -79.8556
+    },
+    "24935": {
+      "districtCode": "40",
+      "city": "Forest Hill",
+      "state": "WV",
+      "latitude": 37.5608,
+      "longitude": -80.8111
+    },
+    "24938": {
+      "districtCode": "46",
+      "city": "Frankford",
+      "state": "WV",
+      "latitude": 37.9154,
+      "longitude": -80.3353
+    },
+    "24941": {
+      "districtCode": "40",
+      "city": "Gap Mills",
+      "state": "WV",
+      "latitude": 37.589,
+      "longitude": -80.3401
+    },
+    "24943": {
+      "districtCode": "47",
+      "city": "Grassy Meadows",
+      "state": "WV",
+      "latitude": 37.8268,
+      "longitude": -80.7209
+    },
+    "24944": {
+      "districtCode": "66",
+      "city": "Green Bank",
+      "state": "WV",
+      "latitude": 38.4097,
+      "longitude": -79.8015
+    },
+    "24945": {
+      "districtCode": "40",
+      "city": "Greenville",
+      "state": "WV",
+      "latitude": 37.5435,
+      "longitude": -80.6826
+    },
+    "24946": {
+      "districtCode": "46",
+      "city": "Hillsboro",
+      "state": "WV",
+      "latitude": 38.1109,
+      "longitude": -80.2641
+    },
+    "24951": {
+      "districtCode": "40",
+      "city": "Lindside",
+      "state": "WV",
+      "latitude": 37.4817,
+      "longitude": -80.6203
+    },
+    "24954": {
+      "districtCode": "46",
+      "city": "Marlinton",
+      "state": "WV",
+      "latitude": 38.2586,
+      "longitude": -80.1046
+    },
+    "24957": {
+      "districtCode": "47",
+      "city": "Maxwelton",
+      "state": "WV",
+      "latitude": 37.8765,
+      "longitude": -80.4192
+    },
+    "24961": {
+      "districtCode": "46",
+      "city": "White Sulphur Springs",
+      "state": "WV",
+      "latitude": 37.97,
+      "longitude": -80.11
+    },
+    "24962": {
+      "districtCode": "40",
+      "city": "Pence Springs",
+      "state": "WV",
+      "latitude": 37.6621,
+      "longitude": -80.7202
+    },
+    "24963": {
+      "districtCode": "40",
+      "city": "Peterstown",
+      "state": "WV",
+      "latitude": 37.4147,
+      "longitude": -80.7686
+    },
+    "24966": {
+      "districtCode": "47",
+      "city": "Renick",
+      "state": "WV",
+      "latitude": 37.9922,
+      "longitude": -80.3653
+    },
+    "24970": {
+      "districtCode": "47",
+      "city": "Ronceverte",
+      "state": "WV",
+      "latitude": 37.7418,
+      "longitude": -80.4626
+    },
+    "24974": {
+      "districtCode": "40",
+      "city": "Secondcreek",
+      "state": "WV",
+      "latitude": 37.6654,
+      "longitude": -80.454
+    },
+    "24976": {
+      "districtCode": "40",
+      "city": "Sinks Grove",
+      "state": "WV",
+      "latitude": 37.6643,
+      "longitude": -80.5409
+    },
+    "24977": {
+      "districtCode": "47",
+      "city": "Smoot",
+      "state": "WV",
+      "latitude": 37.8772,
+      "longitude": -80.668
+    },
+    "24981": {
+      "districtCode": "40",
+      "city": "Talcott",
+      "state": "WV",
+      "latitude": 37.6491,
+      "longitude": -80.7461
+    },
+    "24983": {
+      "districtCode": "40",
+      "city": "Union",
+      "state": "WV",
+      "latitude": 37.5802,
+      "longitude": -80.5248
+    },
+    "24984": {
+      "districtCode": "40",
+      "city": "Waiteville",
+      "state": "WV",
+      "latitude": 37.4645,
+      "longitude": -80.4634
+    },
+    "24985": {
+      "districtCode": "40",
+      "city": "Wayside",
+      "state": "WV",
+      "latitude": 37.5937,
+      "longitude": -80.7458
+    },
+    "24986": {
+      "districtCode": "46",
+      "city": "White Sulphur Springs",
+      "state": "WV",
+      "latitude": 37.7827,
+      "longitude": -80.3129
+    },
+    "24991": {
+      "districtCode": "47",
+      "city": "Williamsburg",
+      "state": "WV",
+      "latitude": 37.9701,
+      "longitude": -80.4923
+    },
+    "24993": {
+      "districtCode": "40",
+      "city": "Wolfcreek",
+      "state": "WV",
+      "latitude": 37.552,
+      "longitude": -80.5397
+    },
+    "25002": {
+      "districtCode": "51",
+      "city": "Alloy",
+      "state": "WV",
+      "latitude": 38.1376,
+      "longitude": -81.2743
+    },
+    "25003": {
+      "districtCode": "55",
+      "city": "Alum Creek",
+      "state": "WV",
+      "latitude": 38.2868,
+      "longitude": -81.8051
+    },
+    "25005": {
+      "districtCode": "15",
+      "city": "Amma",
+      "state": "WV",
+      "latitude": 38.5687,
+      "longitude": -81.2657
+    },
+    "25007": {
+      "districtCode": "43",
+      "city": "Arnett",
+      "state": "WV",
+      "latitude": 37.8334,
+      "longitude": -81.4301
+    },
+    "25008": {
+      "districtCode": "43",
+      "city": "Artie",
+      "state": "WV",
+      "latitude": 37.94,
+      "longitude": -81.3545
+    },
+    "25009": {
+      "districtCode": "32",
+      "city": "Ashford",
+      "state": "WV",
+      "latitude": 38.1823,
+      "longitude": -81.7113
+    },
+    "25011": {
+      "districtCode": "19",
+      "city": "Bancroft",
+      "state": "WV",
+      "latitude": 38.5086,
+      "longitude": -81.841
+    },
+    "25015": {
+      "districtCode": "53",
+      "city": "Belle",
+      "state": "WV",
+      "latitude": 38.2324,
+      "longitude": -81.5024
+    },
+    "25019": {
+      "districtCode": "62",
+      "city": "Bickmore",
+      "state": "WV",
+      "latitude": 38.3729,
+      "longitude": -81.0868
+    },
+    "25021": {
+      "districtCode": "32",
+      "city": "Bim",
+      "state": "WV",
+      "latitude": 37.9218,
+      "longitude": -81.6893
+    },
+    "25022": {
+      "districtCode": "31",
+      "city": "Blair",
+      "state": "WV",
+      "latitude": 37.8784,
+      "longitude": -81.8279
+    },
+    "25024": {
+      "districtCode": "32",
+      "city": "Bloomingrose",
+      "state": "WV",
+      "latitude": 38.1412,
+      "longitude": -81.6367
+    },
+    "25025": {
+      "districtCode": "53",
+      "city": "Blount",
+      "state": "WV",
+      "latitude": 38.3121,
+      "longitude": -81.4052
+    },
+    "25026": {
+      "districtCode": "61",
+      "city": "Blue Creek",
+      "state": "WV",
+      "latitude": 38.4908,
+      "longitude": -81.3928
+    },
+    "25028": {
+      "districtCode": "32",
+      "city": "Bob White",
+      "state": "WV",
+      "latitude": 37.9543,
+      "longitude": -81.7185
+    },
+    "25030": {
+      "districtCode": "62",
+      "city": "Bomont",
+      "state": "WV",
+      "latitude": 38.4498,
+      "longitude": -81.2323
+    },
+    "25031": {
+      "districtCode": "50",
+      "city": "Boomer",
+      "state": "WV",
+      "latitude": 38.1519,
+      "longitude": -81.2656
+    },
+    "25033": {
+      "districtCode": "19",
+      "city": "Buffalo",
+      "state": "WV",
+      "latitude": 38.6092,
+      "longitude": -81.95
+    },
+    "25035": {
+      "districtCode": "52",
+      "city": "Cabin Creek",
+      "state": "WV",
+      "latitude": 38.193,
+      "longitude": -81.4984
+    },
+    "25036": {
+      "districtCode": "50",
+      "city": "Cannelton",
+      "state": "WV",
+      "latitude": 38.1943,
+      "longitude": -81.2959
+    },
+    "25039": {
+      "districtCode": "52",
+      "city": "Cedar Grove",
+      "state": "WV",
+      "latitude": 38.2212,
+      "longitude": -81.4279
+    },
+    "25040": {
+      "districtCode": "51",
+      "city": "Charlton Heights",
+      "state": "WV",
+      "latitude": 38.1237,
+      "longitude": -81.234
+    },
+    "25043": {
+      "districtCode": "62",
+      "city": "Clay",
+      "state": "WV",
+      "latitude": 38.4764,
+      "longitude": -81.0696
+    },
+    "25044": {
+      "districtCode": "43",
+      "city": "Clear Creek",
+      "state": "WV",
+      "latitude": 37.9162,
+      "longitude": -81.3443
+    },
+    "25045": {
+      "districtCode": "61",
+      "city": "Clendenin",
+      "state": "WV",
+      "latitude": 38.4539,
+      "longitude": -81.3572
+    },
+    "25047": {
+      "districtCode": "32",
+      "city": "Clothier",
+      "state": "WV",
+      "latitude": 37.9468,
+      "longitude": -81.8104
+    },
+    "25048": {
+      "districtCode": "43",
+      "city": "Colcord",
+      "state": "WV",
+      "latitude": 37.9439,
+      "longitude": -81.4369
+    },
+    "25049": {
+      "districtCode": "32",
+      "city": "Comfort",
+      "state": "WV",
+      "latitude": 38.1372,
+      "longitude": -81.5962
+    },
+    "25051": {
+      "districtCode": "32",
+      "city": "Costa",
+      "state": "WV",
+      "latitude": 38.1591,
+      "longitude": -81.7092
+    },
+    "25053": {
+      "districtCode": "32",
+      "city": "Danville",
+      "state": "WV",
+      "latitude": 38.0809,
+      "longitude": -81.834
+    },
+    "25054": {
+      "districtCode": "52",
+      "city": "Dawes",
+      "state": "WV",
+      "latitude": 38.1429,
+      "longitude": -81.4521
+    },
+    "25057": {
+      "districtCode": "51",
+      "city": "Deep Water",
+      "state": "WV",
+      "latitude": 38.1268,
+      "longitude": -81.2637
+    },
+    "25059": {
+      "districtCode": "49",
+      "city": "Dixie",
+      "state": "WV",
+      "latitude": 38.2509,
+      "longitude": -81.1932
+    },
+    "25060": {
+      "districtCode": "43",
+      "city": "Dorothy",
+      "state": "WV",
+      "latitude": 37.9622,
+      "longitude": -81.4968
+    },
+    "25061": {
+      "districtCode": "52",
+      "city": "Drybranch",
+      "state": "WV",
+      "latitude": 38.2968,
+      "longitude": -81.5547
+    },
+    "25062": {
+      "districtCode": "43",
+      "city": "Dry Creek",
+      "state": "WV",
+      "latitude": 37.8749,
+      "longitude": -81.4412
+    },
+    "25063": {
+      "districtCode": "62",
+      "city": "Duck",
+      "state": "WV",
+      "latitude": 38.5647,
+      "longitude": -80.9764
+    },
+    "25064": {
+      "districtCode": "60",
+      "city": "Dunbar",
+      "state": "WV",
+      "latitude": 38.3683,
+      "longitude": -81.7425
+    },
+    "25067": {
+      "districtCode": "52",
+      "city": "East Bank",
+      "state": "WV",
+      "latitude": 38.2099,
+      "longitude": -81.4381
+    },
+    "25070": {
+      "districtCode": "19",
+      "city": "Eleanor",
+      "state": "WV",
+      "latitude": 38.5436,
+      "longitude": -81.9414
+    },
+    "25071": {
+      "districtCode": "61",
+      "city": "Elkview",
+      "state": "WV",
+      "latitude": 38.4429,
+      "longitude": -81.4804
+    },
+    "25075": {
+      "districtCode": "52",
+      "city": "Eskdale",
+      "state": "WV",
+      "latitude": 38.0505,
+      "longitude": -81.4227
+    },
+    "25076": {
+      "districtCode": "31",
+      "city": "Ethel",
+      "state": "WV",
+      "latitude": 37.8665,
+      "longitude": -81.9123
+    },
+    "25079": {
+      "districtCode": "61",
+      "city": "Falling Rock",
+      "state": "WV",
+      "latitude": 38.4951,
+      "longitude": -81.3984
+    },
+    "25081": {
+      "districtCode": "32",
+      "city": "Foster",
+      "state": "WV",
+      "latitude": 38.0908,
+      "longitude": -81.7659
+    },
+    "25082": {
+      "districtCode": "20",
+      "city": "Fraziers Bottom",
+      "state": "WV",
+      "latitude": 38.5517,
+      "longitude": -82.0111
+    },
+    "25083": {
+      "districtCode": "52",
+      "city": "Gallagher",
+      "state": "WV",
+      "latitude": 38.0704,
+      "longitude": -81.3625
+    },
+    "25085": {
+      "districtCode": "51",
+      "city": "Gauley Bridge",
+      "state": "WV",
+      "latitude": 38.1689,
+      "longitude": -81.196
+    },
+    "25086": {
+      "districtCode": "52",
+      "city": "Glasgow",
+      "state": "WV",
+      "latitude": 38.2154,
+      "longitude": -81.4246
+    },
+    "25088": {
+      "districtCode": "62",
+      "city": "Glen",
+      "state": "WV",
+      "latitude": 38.3943,
+      "longitude": -81.2426
+    },
+    "25090": {
+      "districtCode": "51",
+      "city": "Glen Ferris",
+      "state": "WV",
+      "latitude": 38.1532,
+      "longitude": -81.2148
+    },
+    "25093": {
+      "districtCode": "32",
+      "city": "Gordon",
+      "state": "WV",
+      "latitude": 37.987,
+      "longitude": -81.6954
+    },
+    "25102": {
+      "districtCode": "52",
+      "city": "Handley",
+      "state": "WV",
+      "latitude": 38.1879,
+      "longitude": -81.3657
+    },
+    "25103": {
+      "districtCode": "52",
+      "city": "Hansford",
+      "state": "WV",
+      "latitude": 38.207,
+      "longitude": -81.3929
+    },
+    "25106": {
+      "districtCode": "18",
+      "city": "Henderson",
+      "state": "WV",
+      "latitude": 38.8265,
+      "longitude": -82.1364
+    },
+    "25107": {
+      "districtCode": "55",
+      "city": "Hernshaw",
+      "state": "WV",
+      "latitude": 38.1942,
+      "longitude": -81.613
+    },
+    "25108": {
+      "districtCode": "32",
+      "city": "Hewett",
+      "state": "WV",
+      "latitude": 37.9581,
+      "longitude": -81.8509
+    },
+    "25109": {
+      "districtCode": "19",
+      "city": "Hometown",
+      "state": "WV",
+      "latitude": 38.5329,
+      "longitude": -81.8612
+    },
+    "25110": {
+      "districtCode": "52",
+      "city": "Hugheston",
+      "state": "WV",
+      "latitude": 38.2095,
+      "longitude": -81.3726
+    },
+    "25111": {
+      "districtCode": "62",
+      "city": "Indore",
+      "state": "WV",
+      "latitude": 38.3498,
+      "longitude": -81.1269
+    },
+    "25112": {
+      "districtCode": "58",
+      "city": "Institute",
+      "state": "WV",
+      "latitude": 38.3837,
+      "longitude": -81.7654
+    },
+    "25113": {
+      "districtCode": "62",
+      "city": "Ivydale",
+      "state": "WV",
+      "latitude": 38.5357,
+      "longitude": -81.0348
+    },
+    "25114": {
+      "districtCode": "32",
+      "city": "Jeffrey",
+      "state": "WV",
+      "latitude": 37.9715,
+      "longitude": -81.8215
+    },
+    "25115": {
+      "districtCode": "51",
+      "city": "Kanawha Falls",
+      "state": "WV",
+      "latitude": 38.1426,
+      "longitude": -81.2065
+    },
+    "25118": {
+      "districtCode": "50",
+      "city": "Kimberly",
+      "state": "WV",
+      "latitude": 38.1249,
+      "longitude": -81.3217
+    },
+    "25119": {
+      "districtCode": "50",
+      "city": "Kincaid",
+      "state": "WV",
+      "latitude": 38.0407,
+      "longitude": -81.2701
+    },
+    "25121": {
+      "districtCode": "31",
+      "city": "Lake",
+      "state": "WV",
+      "latitude": 37.9204,
+      "longitude": -81.9034
+    },
+    "25123": {
+      "districtCode": "18",
+      "city": "Leon",
+      "state": "WV",
+      "latitude": 38.7048,
+      "longitude": -81.9145
+    },
+    "25124": {
+      "districtCode": "19",
+      "city": "Liberty",
+      "state": "WV",
+      "latitude": 38.62,
+      "longitude": -81.7678
+    },
+    "25125": {
+      "districtCode": "62",
+      "city": "Lizemores",
+      "state": "WV",
+      "latitude": 38.3366,
+      "longitude": -81.1633
+    },
+    "25126": {
+      "districtCode": "52",
+      "city": "London",
+      "state": "WV",
+      "latitude": 38.196,
+      "longitude": -81.3714
+    },
+    "25130": {
+      "districtCode": "32",
+      "city": "Madison",
+      "state": "WV",
+      "latitude": 38.0444,
+      "longitude": -81.7938
+    },
+    "25132": {
+      "districtCode": "53",
+      "city": "Mammoth",
+      "state": "WV",
+      "latitude": 38.2634,
+      "longitude": -81.3721
+    },
+    "25133": {
+      "districtCode": "62",
+      "city": "Maysel",
+      "state": "WV",
+      "latitude": 38.4939,
+      "longitude": -81.1227
+    },
+    "25134": {
+      "districtCode": "52",
+      "city": "Miami",
+      "state": "WV",
+      "latitude": 38.1523,
+      "longitude": -81.4479
+    },
+    "25136": {
+      "districtCode": "52",
+      "city": "Montgomery",
+      "state": "WV",
+      "latitude": 38.1725,
+      "longitude": -81.3222
+    },
+    "25139": {
+      "districtCode": "50",
+      "city": "Mount Carbon",
+      "state": "WV",
+      "latitude": 38.1399,
+      "longitude": -81.2931
+    },
+    "25140": {
+      "districtCode": "43",
+      "city": "Naoma",
+      "state": "WV",
+      "latitude": 37.8676,
+      "longitude": -81.4873
+    },
+    "25141": {
+      "districtCode": "62",
+      "city": "Nebo",
+      "state": "WV",
+      "latitude": 38.6271,
+      "longitude": -81.0257
+    },
+    "25142": {
+      "districtCode": "32",
+      "city": "Nellis",
+      "state": "WV",
+      "latitude": 38.153,
+      "longitude": -81.7321
+    },
+    "25143": {
+      "districtCode": "59",
+      "city": "Nitro",
+      "state": "WV",
+      "latitude": 38.4193,
+      "longitude": -81.8293
+    },
+    "25148": {
+      "districtCode": "32",
+      "city": "Orgas",
+      "state": "WV",
+      "latitude": 38.0492,
+      "longitude": -81.5688
+    },
+    "25149": {
+      "districtCode": "32",
+      "city": "Ottawa",
+      "state": "WV",
+      "latitude": 37.9587,
+      "longitude": -81.8165
+    },
+    "25152": {
+      "districtCode": "50",
+      "city": "Page",
+      "state": "WV",
+      "latitude": 38.0529,
+      "longitude": -81.2698
+    },
+    "25154": {
+      "districtCode": "32",
+      "city": "Peytona",
+      "state": "WV",
+      "latitude": 38.125,
+      "longitude": -81.7018
+    },
+    "25156": {
+      "districtCode": "61",
+      "city": "Pinch",
+      "state": "WV",
+      "latitude": 38.402,
+      "longitude": -81.4611
+    },
+    "25159": {
+      "districtCode": "19",
+      "city": "Poca",
+      "state": "WV",
+      "latitude": 38.4791,
+      "longitude": -81.7838
+    },
+    "25160": {
+      "districtCode": "53",
+      "city": "Pond Gap",
+      "state": "WV",
+      "latitude": 38.2904,
+      "longitude": -81.2866
+    },
+    "25161": {
+      "districtCode": "50",
+      "city": "Powellton",
+      "state": "WV",
+      "latitude": 38.099,
+      "longitude": -81.324
+    },
+    "25162": {
+      "districtCode": "52",
+      "city": "Pratt",
+      "state": "WV",
+      "latitude": 38.2101,
+      "longitude": -81.3851
+    },
+    "25164": {
+      "districtCode": "62",
+      "city": "Procious",
+      "state": "WV",
+      "latitude": 38.4912,
+      "longitude": -81.1989
+    },
+    "25165": {
+      "districtCode": "32",
+      "city": "Racine",
+      "state": "WV",
+      "latitude": 38.141,
+      "longitude": -81.6588
+    },
+    "25168": {
+      "districtCode": "19",
+      "city": "Red House",
+      "state": "WV",
+      "latitude": 38.5463,
+      "longitude": -81.9045
+    },
+    "25169": {
+      "districtCode": "32",
+      "city": "Ridgeview",
+      "state": "WV",
+      "latitude": 38.1486,
+      "longitude": -81.7725
+    },
+    "25173": {
+      "districtCode": "50",
+      "city": "Robson",
+      "state": "WV",
+      "latitude": 38.0973,
+      "longitude": -81.2488
+    },
+    "25174": {
+      "districtCode": "43",
+      "city": "Rock Creek",
+      "state": "WV",
+      "latitude": 37.8547,
+      "longitude": -81.4184
+    },
+    "25177": {
+      "districtCode": "58",
+      "city": "Saint Albans",
+      "state": "WV",
+      "latitude": 38.3774,
+      "longitude": -81.8305
+    },
+    "25180": {
+      "districtCode": "43",
+      "city": "Saxon",
+      "state": "WV",
+      "latitude": 37.7901,
+      "longitude": -81.4346
+    },
+    "25181": {
+      "districtCode": "32",
+      "city": "Seth",
+      "state": "WV",
+      "latitude": 38.0971,
+      "longitude": -81.6393
+    },
+    "25183": {
+      "districtCode": "31",
+      "city": "Sharples",
+      "state": "WV",
+      "latitude": 37.9204,
+      "longitude": -81.8293
+    },
+    "25185": {
+      "districtCode": "50",
+      "city": "Mount Olive",
+      "state": "WV",
+      "latitude": 38.2379,
+      "longitude": -81.2334
+    },
+    "25186": {
+      "districtCode": "50",
+      "city": "Smithers",
+      "state": "WV",
+      "latitude": 38.1812,
+      "longitude": -81.3071
+    },
+    "25187": {
+      "districtCode": "18",
+      "city": "Southside",
+      "state": "WV",
+      "latitude": 38.712,
+      "longitude": -81.9966
+    },
+    "25193": {
+      "districtCode": "32",
+      "city": "Sylvester",
+      "state": "WV",
+      "latitude": 38.0091,
+      "longitude": -81.5492
+    },
+    "25201": {
+      "districtCode": "53",
+      "city": "Tad",
+      "state": "WV",
+      "latitude": 38.3334,
+      "longitude": -81.4943
+    },
+    "25202": {
+      "districtCode": "55",
+      "city": "Tornado",
+      "state": "WV",
+      "latitude": 38.3357,
+      "longitude": -81.8476
+    },
+    "25203": {
+      "districtCode": "31",
+      "city": "Turtle Creek",
+      "state": "WV",
+      "latitude": 38.0298,
+      "longitude": -81.8729
+    },
+    "25204": {
+      "districtCode": "32",
+      "city": "Twilight",
+      "state": "WV",
+      "latitude": 37.926,
+      "longitude": -81.6141
+    },
+    "25205": {
+      "districtCode": "32",
+      "city": "Uneeda",
+      "state": "WV",
+      "latitude": 38.0357,
+      "longitude": -81.7807
+    },
+    "25206": {
+      "districtCode": "32",
+      "city": "Van",
+      "state": "WV",
+      "latitude": 37.9712,
+      "longitude": -81.7022
+    },
+    "25208": {
+      "districtCode": "32",
+      "city": "Wharton",
+      "state": "WV",
+      "latitude": 37.9034,
+      "longitude": -81.6773
+    },
+    "25209": {
+      "districtCode": "32",
+      "city": "Whitesville",
+      "state": "WV",
+      "latitude": 37.9916,
+      "longitude": -81.5422
+    },
+    "25211": {
+      "districtCode": "62",
+      "city": "Widen",
+      "state": "WV",
+      "latitude": 38.4662,
+      "longitude": -80.8573
+    },
+    "25213": {
+      "districtCode": "20",
+      "city": "Winfield",
+      "state": "WV",
+      "latitude": 38.5072,
+      "longitude": -81.89
+    },
+    "25214": {
+      "districtCode": "52",
+      "city": "Winifrede",
+      "state": "WV",
+      "latitude": 38.1852,
+      "longitude": -81.5587
+    },
+    "25231": {
+      "districtCode": "16",
+      "city": "Advent",
+      "state": "WV",
+      "latitude": 38.6104,
+      "longitude": -81.5587
+    },
+    "25234": {
+      "districtCode": "62",
+      "city": "Arnoldsburg",
+      "state": "WV",
+      "latitude": 38.8227,
+      "longitude": -81.1551
+    },
+    "25235": {
+      "districtCode": "62",
+      "city": "Chloe",
+      "state": "WV",
+      "latitude": 38.6686,
+      "longitude": -81.0944
+    },
+    "25239": {
+      "districtCode": "17",
+      "city": "Cottageville",
+      "state": "WV",
+      "latitude": 38.8633,
+      "longitude": -81.8186
+    },
+    "25241": {
+      "districtCode": "16",
+      "city": "Evans",
+      "state": "WV",
+      "latitude": 38.8113,
+      "longitude": -81.7909
+    },
+    "25243": {
+      "districtCode": "15",
+      "city": "Gandeeville",
+      "state": "WV",
+      "latitude": 38.7034,
+      "longitude": -81.4243
+    },
+    "25244": {
+      "districtCode": "16",
+      "city": "Gay",
+      "state": "WV",
+      "latitude": 38.7706,
+      "longitude": -81.5532
+    },
+    "25245": {
+      "districtCode": "16",
+      "city": "Given",
+      "state": "WV",
+      "latitude": 38.707,
+      "longitude": -81.7223
+    },
+    "25247": {
+      "districtCode": "17",
+      "city": "Hartford",
+      "state": "WV",
+      "latitude": 39.004,
+      "longitude": -81.989
+    },
+    "25248": {
+      "districtCode": "16",
+      "city": "Kenna",
+      "state": "WV",
+      "latitude": 38.6232,
+      "longitude": -81.6217
+    },
+    "25251": {
+      "districtCode": "15",
+      "city": "Left Hand",
+      "state": "WV",
+      "latitude": 38.6063,
+      "longitude": -81.2467
+    },
+    "25252": {
+      "districtCode": "16",
+      "city": "Le Roy",
+      "state": "WV",
+      "latitude": 38.8888,
+      "longitude": -81.5326
+    },
+    "25253": {
+      "districtCode": "17",
+      "city": "Letart",
+      "state": "WV",
+      "latitude": 38.9311,
+      "longitude": -81.9751
+    },
+    "25259": {
+      "districtCode": "15",
+      "city": "Looneyville",
+      "state": "WV",
+      "latitude": 38.6641,
+      "longitude": -81.2822
+    },
+    "25260": {
+      "districtCode": "17",
+      "city": "Mason",
+      "state": "WV",
+      "latitude": 39.0064,
+      "longitude": -82.0282
+    },
+    "25261": {
+      "districtCode": "62",
+      "city": "Millstone",
+      "state": "WV",
+      "latitude": 38.8015,
+      "longitude": -81.0962
+    },
+    "25262": {
+      "districtCode": "17",
+      "city": "Millwood",
+      "state": "WV",
+      "latitude": 38.8962,
+      "longitude": -81.8248
+    },
+    "25264": {
+      "districtCode": "17",
+      "city": "Mount Alto",
+      "state": "WV",
+      "latitude": 38.8639,
+      "longitude": -81.8784
+    },
+    "25265": {
+      "districtCode": "17",
+      "city": "New Haven",
+      "state": "WV",
+      "latitude": 38.9863,
+      "longitude": -81.9652
+    },
+    "25266": {
+      "districtCode": "15",
+      "city": "Newton",
+      "state": "WV",
+      "latitude": 38.606,
+      "longitude": -81.1623
+    },
+    "25267": {
+      "districtCode": "62",
+      "city": "Normantown",
+      "state": "WV",
+      "latitude": 38.8802,
+      "longitude": -80.9419
+    },
+    "25268": {
+      "districtCode": "62",
+      "city": "Orma",
+      "state": "WV",
+      "latitude": 38.7481,
+      "longitude": -81.0998
+    },
+    "25270": {
+      "districtCode": "15",
+      "city": "Reedy",
+      "state": "WV",
+      "latitude": 38.8889,
+      "longitude": -81.4399
+    },
+    "25271": {
+      "districtCode": "16",
+      "city": "Ripley",
+      "state": "WV",
+      "latitude": 38.809,
+      "longitude": -81.702
+    },
+    "25275": {
+      "districtCode": "16",
+      "city": "Sandyville",
+      "state": "WV",
+      "latitude": 38.9093,
+      "longitude": -81.6543
+    },
+    "25276": {
+      "districtCode": "15",
+      "city": "Spencer",
+      "state": "WV",
+      "latitude": 38.7897,
+      "longitude": -81.3303
+    },
+    "25285": {
+      "districtCode": "62",
+      "city": "Wallback",
+      "state": "WV",
+      "latitude": 38.5432,
+      "longitude": -81.1114
+    },
+    "25286": {
+      "districtCode": "15",
+      "city": "Walton",
+      "state": "WV",
+      "latitude": 38.6023,
+      "longitude": -81.3958
+    },
+    "25287": {
+      "districtCode": "17",
+      "city": "West Columbia",
+      "state": "WV",
+      "latitude": 38.9574,
+      "longitude": -82.0517
+    },
+    "25301": {
+      "districtCode": "54",
+      "city": "Charleston",
+      "state": "WV",
+      "latitude": 38.349,
+      "longitude": -81.6306
+    },
+    "25302": {
+      "districtCode": "61",
+      "city": "Charleston",
+      "state": "WV",
+      "latitude": 38.4015,
+      "longitude": -81.5841
+    },
+    "25303": {
+      "districtCode": "57",
+      "city": "Charleston",
+      "state": "WV",
+      "latitude": 38.3684,
+      "longitude": -81.6996
+    },
+    "25304": {
+      "districtCode": "55",
+      "city": "Charleston",
+      "state": "WV",
+      "latitude": 38.3173,
+      "longitude": -81.5903
+    },
+    "25305": {
+      "districtCode": "54",
+      "city": "Charleston",
+      "state": "WV",
+      "latitude": 38.3358,
+      "longitude": -81.6123
+    },
+    "25306": {
+      "districtCode": "53",
+      "city": "Charleston",
+      "state": "WV",
+      "latitude": 38.3175,
+      "longitude": -81.5274
+    },
+    "25309": {
+      "districtCode": "57",
+      "city": "Charleston",
+      "state": "WV",
+      "latitude": 38.3684,
+      "longitude": -81.6996
+    },
+    "25311": {
+      "districtCode": "53",
+      "city": "Charleston",
+      "state": "WV",
+      "latitude": 38.349,
+      "longitude": -81.5993
+    },
+    "25312": {
+      "districtCode": "60",
+      "city": "Charleston",
+      "state": "WV",
+      "latitude": 38.4096,
+      "longitude": -81.6747
+    },
+    "25313": {
+      "districtCode": "60",
+      "city": "Charleston",
+      "state": "WV",
+      "latitude": 38.4142,
+      "longitude": -81.7582
+    },
+    "25314": {
+      "districtCode": "56",
+      "city": "Charleston",
+      "state": "WV",
+      "latitude": 38.3274,
+      "longitude": -81.669
+    },
+    "25315": {
+      "districtCode": "52",
+      "city": "Charleston",
+      "state": "WV",
+      "latitude": 38.2351,
+      "longitude": -81.5536
+    },
+    "25317": {
+      "districtCode": "54",
+      "city": "Charleston",
+      "state": "WV",
+      "latitude": 38.3356,
+      "longitude": -81.6138
+    },
+    "25320": {
+      "districtCode": "60",
+      "city": "Charleston",
+      "state": "WV",
+      "latitude": 38.5428,
+      "longitude": -81.6334
+    },
+    "25321": {
+      "districtCode": "54",
+      "city": "Charleston",
+      "state": "WV",
+      "latitude": 38.3498,
+      "longitude": -81.6326
+    },
+    "25322": {
+      "districtCode": "54",
+      "city": "Charleston",
+      "state": "WV",
+      "latitude": 38.3498,
+      "longitude": -81.6326
+    },
+    "25323": {
+      "districtCode": "54",
+      "city": "Charleston",
+      "state": "WV",
+      "latitude": 38.3498,
+      "longitude": -81.6326
+    },
+    "25324": {
+      "districtCode": "54",
+      "city": "Charleston",
+      "state": "WV",
+      "latitude": 38.3498,
+      "longitude": -81.6326
+    },
+    "25325": {
+      "districtCode": "54",
+      "city": "Charleston",
+      "state": "WV",
+      "latitude": 38.3498,
+      "longitude": -81.6326
+    },
+    "25326": {
+      "districtCode": "52",
+      "city": "Charleston",
+      "state": "WV",
+      "latitude": 38.2968,
+      "longitude": -81.5547
+    },
+    "25327": {
+      "districtCode": "54",
+      "city": "Charleston",
+      "state": "WV",
+      "latitude": 38.3498,
+      "longitude": -81.6326
+    },
+    "25328": {
+      "districtCode": "54",
+      "city": "Charleston",
+      "state": "WV",
+      "latitude": 38.3498,
+      "longitude": -81.6326
+    },
+    "25329": {
+      "districtCode": "54",
+      "city": "Charleston",
+      "state": "WV",
+      "latitude": 38.3498,
+      "longitude": -81.6326
+    },
+    "25330": {
+      "districtCode": "54",
+      "city": "Charleston",
+      "state": "WV",
+      "latitude": 38.3498,
+      "longitude": -81.6326
+    },
+    "25331": {
+      "districtCode": "54",
+      "city": "Charleston",
+      "state": "WV",
+      "latitude": 38.3498,
+      "longitude": -81.6326
+    },
+    "25332": {
+      "districtCode": "54",
+      "city": "Charleston",
+      "state": "WV",
+      "latitude": 38.3498,
+      "longitude": -81.6326
+    },
+    "25333": {
+      "districtCode": "54",
+      "city": "Charleston",
+      "state": "WV",
+      "latitude": 38.3498,
+      "longitude": -81.6326
+    },
+    "25334": {
+      "districtCode": "54",
+      "city": "Charleston",
+      "state": "WV",
+      "latitude": 38.3498,
+      "longitude": -81.6326
+    },
+    "25335": {
+      "districtCode": "54",
+      "city": "Charleston",
+      "state": "WV",
+      "latitude": 38.3498,
+      "longitude": -81.6326
+    },
+    "25336": {
+      "districtCode": "54",
+      "city": "Charleston",
+      "state": "WV",
+      "latitude": 38.3498,
+      "longitude": -81.6326
+    },
+    "25337": {
+      "districtCode": "54",
+      "city": "Charleston",
+      "state": "WV",
+      "latitude": 38.3498,
+      "longitude": -81.6326
+    },
+    "25338": {
+      "districtCode": "54",
+      "city": "Charleston",
+      "state": "WV",
+      "latitude": 38.3498,
+      "longitude": -81.6326
+    },
+    "25339": {
+      "districtCode": "54",
+      "city": "Charleston",
+      "state": "WV",
+      "latitude": 38.3498,
+      "longitude": -81.6326
+    },
+    "25350": {
+      "districtCode": "54",
+      "city": "Charleston",
+      "state": "WV",
+      "latitude": 38.3498,
+      "longitude": -81.6326
+    },
+    "25356": {
+      "districtCode": "52",
+      "city": "Charleston",
+      "state": "WV",
+      "latitude": 38.2968,
+      "longitude": -81.5547
+    },
+    "25357": {
+      "districtCode": "52",
+      "city": "Charleston",
+      "state": "WV",
+      "latitude": 38.2968,
+      "longitude": -81.5547
+    },
+    "25358": {
+      "districtCode": "52",
+      "city": "Charleston",
+      "state": "WV",
+      "latitude": 38.2968,
+      "longitude": -81.5547
+    },
+    "25360": {
+      "districtCode": "52",
+      "city": "Charleston",
+      "state": "WV",
+      "latitude": 38.2968,
+      "longitude": -81.5547
+    },
+    "25361": {
+      "districtCode": "52",
+      "city": "Charleston",
+      "state": "WV",
+      "latitude": 38.2968,
+      "longitude": -81.5547
+    },
+    "25362": {
+      "districtCode": "52",
+      "city": "Charleston",
+      "state": "WV",
+      "latitude": 38.2968,
+      "longitude": -81.5547
+    },
+    "25364": {
+      "districtCode": "52",
+      "city": "Charleston",
+      "state": "WV",
+      "latitude": 38.2968,
+      "longitude": -81.5547
+    },
+    "25365": {
+      "districtCode": "52",
+      "city": "Charleston",
+      "state": "WV",
+      "latitude": 38.2968,
+      "longitude": -81.5547
+    },
+    "25375": {
+      "districtCode": "54",
+      "city": "Charleston",
+      "state": "WV",
+      "latitude": 38.3498,
+      "longitude": -81.6326
+    },
+    "25387": {
+      "districtCode": "54",
+      "city": "Charleston",
+      "state": "WV",
+      "latitude": 38.3498,
+      "longitude": -81.6326
+    },
+    "25389": {
+      "districtCode": "54",
+      "city": "Charleston",
+      "state": "WV",
+      "latitude": 38.354,
+      "longitude": -81.6394
+    },
+    "25392": {
+      "districtCode": "54",
+      "city": "Charleston",
+      "state": "WV",
+      "latitude": 38.3498,
+      "longitude": -81.6326
+    },
+    "25396": {
+      "districtCode": "54",
+      "city": "Charleston",
+      "state": "WV",
+      "latitude": 38.3498,
+      "longitude": -81.6326
+    },
+    "25401": {
+      "districtCode": "93",
+      "city": "Martinsburg",
+      "state": "WV",
+      "latitude": 39.4567,
+      "longitude": -77.9727
+    },
+    "25402": {
+      "districtCode": "93",
+      "city": "Martinsburg",
+      "state": "WV",
+      "latitude": 39.4562,
+      "longitude": -77.9639
+    },
+    "25403": {
+      "districtCode": "92",
+      "city": "Martinsburg",
+      "state": "WV",
+      "latitude": 39.5227,
+      "longitude": -77.9747
+    },
+    "25404": {
+      "districtCode": "97",
+      "city": "Martinsburg",
+      "state": "WV",
+      "latitude": 39.4852,
+      "longitude": -77.8954
+    },
+    "25405": {
+      "districtCode": "96",
+      "city": "Martinsburg",
+      "state": "WV",
+      "latitude": 39.4092,
+      "longitude": -77.9615
+    },
+    "25410": {
+      "districtCode": "98",
+      "city": "Bakerton",
+      "state": "WV",
+      "latitude": 39.3159,
+      "longitude": -77.8772
+    },
+    "25411": {
+      "districtCode": "90",
+      "city": "Berkeley Springs",
+      "state": "WV",
+      "latitude": 39.5526,
+      "longitude": -78.1877
+    },
+    "25413": {
+      "districtCode": "91",
+      "city": "Bunker Hill",
+      "state": "WV",
+      "latitude": 39.3276,
+      "longitude": -78.0487
+    },
+    "25414": {
+      "districtCode": "99",
+      "city": "Charles Town",
+      "state": "WV",
+      "latitude": 39.2771,
+      "longitude": -77.8563
+    },
+    "25419": {
+      "districtCode": "94",
+      "city": "Falling Waters",
+      "state": "WV",
+      "latitude": 39.5865,
+      "longitude": -77.8852
+    },
+    "25420": {
+      "districtCode": "91",
+      "city": "Gerrardstown",
+      "state": "WV",
+      "latitude": 39.378,
+      "longitude": -78.1141
+    },
+    "25421": {
+      "districtCode": "91",
+      "city": "Glengary",
+      "state": "WV",
+      "latitude": 39.3813,
+      "longitude": -78.1435
+    },
+    "25422": {
+      "districtCode": "89",
+      "city": "Great Cacapon",
+      "state": "WV",
+      "latitude": 39.5836,
+      "longitude": -78.3331
+    },
+    "25423": {
+      "districtCode": "100",
+      "city": "Halltown",
+      "state": "WV",
+      "latitude": 39.314,
+      "longitude": -77.7978
+    },
+    "25425": {
+      "districtCode": "100",
+      "city": "Harpers Ferry",
+      "state": "WV",
+      "latitude": 39.3153,
+      "longitude": -77.7694
+    },
+    "25427": {
+      "districtCode": "92",
+      "city": "Hedgesville",
+      "state": "WV",
+      "latitude": 39.5214,
+      "longitude": -78.0912
+    },
+    "25428": {
+      "districtCode": "96",
+      "city": "Inwood",
+      "state": "WV",
+      "latitude": 39.3701,
+      "longitude": -78.0242
+    },
+    "25429": {
+      "districtCode": "98",
+      "city": "Martinsburg",
+      "state": "WV",
+      "latitude": 39.32,
+      "longitude": -77.94
+    },
+    "25430": {
+      "districtCode": "98",
+      "city": "Kearneysville",
+      "state": "WV",
+      "latitude": 39.322,
+      "longitude": -77.9588
+    },
+    "25431": {
+      "districtCode": "89",
+      "city": "Levels",
+      "state": "WV",
+      "latitude": 39.4976,
+      "longitude": -78.5508
+    },
+    "25432": {
+      "districtCode": "100",
+      "city": "Millville",
+      "state": "WV",
+      "latitude": 39.294,
+      "longitude": -77.7858
+    },
+    "25434": {
+      "districtCode": "89",
+      "city": "Paw Paw",
+      "state": "WV",
+      "latitude": 39.4923,
+      "longitude": -78.4586
+    },
+    "25437": {
+      "districtCode": "89",
+      "city": "Points",
+      "state": "WV",
+      "latitude": 39.4401,
+      "longitude": -78.6103
+    },
+    "25438": {
+      "districtCode": "98",
+      "city": "Ranson",
+      "state": "WV",
+      "latitude": 39.2995,
+      "longitude": -77.8606
+    },
+    "25440": {
+      "districtCode": "91",
+      "city": "Ridgeway",
+      "state": "WV",
+      "latitude": 39.2973,
+      "longitude": -78.0717
+    },
+    "25441": {
+      "districtCode": "98",
+      "city": "Rippon",
+      "state": "WV",
+      "latitude": 39.3159,
+      "longitude": -77.8772
+    },
+    "25442": {
+      "districtCode": "100",
+      "city": "Shenandoah Junction",
+      "state": "WV",
+      "latitude": 39.3716,
+      "longitude": -77.8229
+    },
+    "25443": {
+      "districtCode": "100",
+      "city": "Shepherdstown",
+      "state": "WV",
+      "latitude": 39.4311,
+      "longitude": -77.8158
+    },
+    "25444": {
+      "districtCode": "89",
+      "city": "Slanesville",
+      "state": "WV",
+      "latitude": 39.3732,
+      "longitude": -78.5228
+    },
+    "25446": {
+      "districtCode": "98",
+      "city": "Summit Point",
+      "state": "WV",
+      "latitude": 39.2338,
+      "longitude": -77.9586
+    },
+    "25501": {
+      "districtCode": "30",
+      "city": "Alkol",
+      "state": "WV",
+      "latitude": 38.1609,
+      "longitude": -81.984
+    },
+    "25502": {
+      "districtCode": "18",
+      "city": "Apple Grove",
+      "state": "WV",
+      "latitude": 38.6575,
+      "longitude": -82.1068
+    },
+    "25503": {
+      "districtCode": "18",
+      "city": "Ashton",
+      "state": "WV",
+      "latitude": 38.6032,
+      "longitude": -82.1123
+    },
+    "25504": {
+      "districtCode": "23",
+      "city": "Barboursville",
+      "state": "WV",
+      "latitude": 38.3893,
+      "longitude": -82.296
+    },
+    "25505": {
+      "districtCode": "31",
+      "city": "Big Creek",
+      "state": "WV",
+      "latitude": 38.0043,
+      "longitude": -82.0401
+    },
+    "25506": {
+      "districtCode": "23",
+      "city": "Branchland",
+      "state": "WV",
+      "latitude": 38.2694,
+      "longitude": -82.2684
+    },
+    "25507": {
+      "districtCode": "27",
+      "city": "Ceredo",
+      "state": "WV",
+      "latitude": 38.3965,
+      "longitude": -82.5588
+    },
+    "25508": {
+      "districtCode": "31",
+      "city": "Chapmanville",
+      "state": "WV",
+      "latitude": 37.9737,
+      "longitude": -82.0174
+    },
+    "25510": {
+      "districtCode": "22",
+      "city": "Culloden",
+      "state": "WV",
+      "latitude": 38.4198,
+      "longitude": -82.069
+    },
+    "25511": {
+      "districtCode": "29",
+      "city": "Dunlow",
+      "state": "WV",
+      "latitude": 38.0231,
+      "longitude": -82.4315
+    },
+    "25512": {
+      "districtCode": "29",
+      "city": "East Lynn",
+      "state": "WV",
+      "latitude": 38.1995,
+      "longitude": -82.3279
+    },
+    "25514": {
+      "districtCode": "29",
+      "city": "Fort Gay",
+      "state": "WV",
+      "latitude": 38.1335,
+      "longitude": -82.5541
+    },
+    "25515": {
+      "districtCode": "18",
+      "city": "Gallipolis Ferry",
+      "state": "WV",
+      "latitude": 38.765,
+      "longitude": -82.1535
+    },
+    "25517": {
+      "districtCode": "29",
+      "city": "Genoa",
+      "state": "WV",
+      "latitude": 38.1321,
+      "longitude": -82.4183
+    },
+    "25520": {
+      "districtCode": "18",
+      "city": "Glenwood",
+      "state": "WV",
+      "latitude": 38.5909,
+      "longitude": -82.1773
+    },
+    "25521": {
+      "districtCode": "30",
+      "city": "Griffithsville",
+      "state": "WV",
+      "latitude": 38.2197,
+      "longitude": -81.9995
+    },
+    "25523": {
+      "districtCode": "30",
+      "city": "Hamlin",
+      "state": "WV",
+      "latitude": 38.2896,
+      "longitude": -82.1047
+    },
+    "25524": {
+      "districtCode": "31",
+      "city": "Harts",
+      "state": "WV",
+      "latitude": 38.0341,
+      "longitude": -82.1008
+    },
+    "25526": {
+      "districtCode": "21",
+      "city": "Hurricane",
+      "state": "WV",
+      "latitude": 38.4257,
+      "longitude": -81.9943
+    },
+    "25529": {
+      "districtCode": "32",
+      "city": "Julian",
+      "state": "WV",
+      "latitude": 38.1264,
+      "longitude": -81.8642
+    },
+    "25530": {
+      "districtCode": "28",
+      "city": "Kenova",
+      "state": "WV",
+      "latitude": 38.3569,
+      "longitude": -82.5255
+    },
+    "25534": {
+      "districtCode": "29",
+      "city": "Kiahsville",
+      "state": "WV",
+      "latitude": 38.0915,
+      "longitude": -82.3274
+    },
+    "25535": {
+      "districtCode": "28",
+      "city": "Lavalette",
+      "state": "WV",
+      "latitude": 38.3305,
+      "longitude": -82.4287
+    },
+    "25537": {
+      "districtCode": "22",
+      "city": "Lesage",
+      "state": "WV",
+      "latitude": 38.477,
+      "longitude": -82.2957
+    },
+    "25540": {
+      "districtCode": "30",
+      "city": "Midkiff",
+      "state": "WV",
+      "latitude": 38.1762,
+      "longitude": -82.1788
+    },
+    "25541": {
+      "districtCode": "22",
+      "city": "Milton",
+      "state": "WV",
+      "latitude": 38.414,
+      "longitude": -82.1458
+    },
+    "25544": {
+      "districtCode": "30",
+      "city": "Myra",
+      "state": "WV",
+      "latitude": 38.2198,
+      "longitude": -82.1351
+    },
+    "25545": {
+      "districtCode": "22",
+      "city": "Ona",
+      "state": "WV",
+      "latitude": 38.4529,
+      "longitude": -82.2181
+    },
+    "25547": {
+      "districtCode": "31",
+      "city": "Pecks Mill",
+      "state": "WV",
+      "latitude": 37.9298,
+      "longitude": -81.9654
+    },
+    "25550": {
+      "districtCode": "18",
+      "city": "Point Pleasant",
+      "state": "WV",
+      "latitude": 38.8632,
+      "longitude": -82.1132
+    },
+    "25555": {
+      "districtCode": "28",
+      "city": "Prichard",
+      "state": "WV",
+      "latitude": 38.23,
+      "longitude": -82.5753
+    },
+    "25557": {
+      "districtCode": "30",
+      "city": "Ranger",
+      "state": "WV",
+      "latitude": 38.097,
+      "longitude": -82.1633
+    },
+    "25559": {
+      "districtCode": "23",
+      "city": "Salt Rock",
+      "state": "WV",
+      "latitude": 38.3265,
+      "longitude": -82.247
+    },
+    "25560": {
+      "districtCode": "19",
+      "city": "Scott Depot",
+      "state": "WV",
+      "latitude": 38.4501,
+      "longitude": -81.9005
+    },
+    "25562": {
+      "districtCode": "28",
+      "city": "Shoals",
+      "state": "WV",
+      "latitude": 38.3432,
+      "longitude": -82.4905
+    },
+    "25564": {
+      "districtCode": "30",
+      "city": "Sod",
+      "state": "WV",
+      "latitude": 38.2559,
+      "longitude": -81.891
+    },
+    "25565": {
+      "districtCode": "30",
+      "city": "Spurlockville",
+      "state": "WV",
+      "latitude": 38.1057,
+      "longitude": -82.0272
+    },
+    "25567": {
+      "districtCode": "30",
+      "city": "Sumerco",
+      "state": "WV",
+      "latitude": 38.2312,
+      "longitude": -81.9115
+    },
+    "25569": {
+      "districtCode": "20",
+      "city": "Teays",
+      "state": "WV",
+      "latitude": 38.4754,
+      "longitude": -81.8805
+    },
+    "25570": {
+      "districtCode": "28",
+      "city": "Wayne",
+      "state": "WV",
+      "latitude": 38.2258,
+      "longitude": -82.4339
+    },
+    "25571": {
+      "districtCode": "30",
+      "city": "West Hamlin",
+      "state": "WV",
+      "latitude": 38.2886,
+      "longitude": -82.1843
+    },
+    "25572": {
+      "districtCode": "30",
+      "city": "Woodville",
+      "state": "WV",
+      "latitude": 38.1615,
+      "longitude": -81.8921
+    },
+    "25573": {
+      "districtCode": "30",
+      "city": "Yawkey",
+      "state": "WV",
+      "latitude": 38.2193,
+      "longitude": -81.9568
+    },
+    "25601": {
+      "districtCode": "33",
+      "city": "Logan",
+      "state": "WV",
+      "latitude": 37.8487,
+      "longitude": -81.9935
+    },
+    "25606": {
+      "districtCode": "33",
+      "city": "Accoville",
+      "state": "WV",
+      "latitude": 37.7687,
+      "longitude": -81.8371
+    },
+    "25607": {
+      "districtCode": "33",
+      "city": "Amherstdale",
+      "state": "WV",
+      "latitude": 37.7959,
+      "longitude": -81.7833
+    },
+    "25608": {
+      "districtCode": "34",
+      "city": "Baisden",
+      "state": "WV",
+      "latitude": 37.584,
+      "longitude": -81.9051
+    },
+    "25611": {
+      "districtCode": "33",
+      "city": "Bruno",
+      "state": "WV",
+      "latitude": 37.6907,
+      "longitude": -81.869
+    },
+    "25612": {
+      "districtCode": "33",
+      "city": "Chauncey",
+      "state": "WV",
+      "latitude": 37.7662,
+      "longitude": -81.9876
+    },
+    "25614": {
+      "districtCode": "31",
+      "city": "Cora",
+      "state": "WV",
+      "latitude": 37.8332,
+      "longitude": -81.9024
+    },
+    "25617": {
+      "districtCode": "33",
+      "city": "Davin",
+      "state": "WV",
+      "latitude": 37.7265,
+      "longitude": -81.8057
+    },
+    "25621": {
+      "districtCode": "34",
+      "city": "Gilbert",
+      "state": "WV",
+      "latitude": 37.6366,
+      "longitude": -81.9501
+    },
+    "25624": {
+      "districtCode": "33",
+      "city": "Henlawson",
+      "state": "WV",
+      "latitude": 37.9023,
+      "longitude": -81.9882
+    },
+    "25625": {
+      "districtCode": "33",
+      "city": "Holden",
+      "state": "WV",
+      "latitude": 37.83,
+      "longitude": -82.0585
+    },
+    "25628": {
+      "districtCode": "33",
+      "city": "Kistler",
+      "state": "WV",
+      "latitude": 37.7562,
+      "longitude": -81.8601
+    },
+    "25630": {
+      "districtCode": "33",
+      "city": "Lorado",
+      "state": "WV",
+      "latitude": 37.7957,
+      "longitude": -81.7148
+    },
+    "25632": {
+      "districtCode": "33",
+      "city": "Lyburn",
+      "state": "WV",
+      "latitude": 37.7656,
+      "longitude": -81.9217
+    },
+    "25634": {
+      "districtCode": "33",
+      "city": "Mallory",
+      "state": "WV",
+      "latitude": 37.7307,
+      "longitude": -81.8379
+    },
+    "25635": {
+      "districtCode": "33",
+      "city": "Man",
+      "state": "WV",
+      "latitude": 37.7357,
+      "longitude": -81.8754
+    },
+    "25637": {
+      "districtCode": "33",
+      "city": "Mount Gay",
+      "state": "WV",
+      "latitude": 37.8415,
+      "longitude": -82.0087
+    },
+    "25638": {
+      "districtCode": "33",
+      "city": "Omar",
+      "state": "WV",
+      "latitude": 37.7557,
+      "longitude": -81.9996
+    },
+    "25639": {
+      "districtCode": "33",
+      "city": "Peach Creek",
+      "state": "WV",
+      "latitude": 37.8752,
+      "longitude": -81.9826
+    },
+    "25644": {
+      "districtCode": "33",
+      "city": "Sarah Ann",
+      "state": "WV",
+      "latitude": 37.7112,
+      "longitude": -81.9873
+    },
+    "25646": {
+      "districtCode": "33",
+      "city": "Stollings",
+      "state": "WV",
+      "latitude": 37.8303,
+      "longitude": -81.9639
+    },
+    "25647": {
+      "districtCode": "33",
+      "city": "Switzer",
+      "state": "WV",
+      "latitude": 37.7846,
+      "longitude": -81.9908
+    },
+    "25649": {
+      "districtCode": "33",
+      "city": "Verdunville",
+      "state": "WV",
+      "latitude": 37.8445,
+      "longitude": -82.0551
+    },
+    "25650": {
+      "districtCode": "34",
+      "city": "Verner",
+      "state": "WV",
+      "latitude": 37.6634,
+      "longitude": -81.8504
+    },
+    "25651": {
+      "districtCode": "34",
+      "city": "Wharncliffe",
+      "state": "WV",
+      "latitude": 37.5554,
+      "longitude": -81.9657
+    },
+    "25652": {
+      "districtCode": "33",
+      "city": "Whitman",
+      "state": "WV",
+      "latitude": 37.8035,
+      "longitude": -82.0466
+    },
+    "25653": {
+      "districtCode": "33",
+      "city": "Wilkinson",
+      "state": "WV",
+      "latitude": 37.8279,
+      "longitude": -81.9976
+    },
+    "25654": {
+      "districtCode": "33",
+      "city": "Yolyn",
+      "state": "WV",
+      "latitude": 37.7818,
+      "longitude": -81.892
+    },
+    "25661": {
+      "districtCode": "34",
+      "city": "Williamson",
+      "state": "WV",
+      "latitude": 37.6902,
+      "longitude": -82.2642
+    },
+    "25665": {
+      "districtCode": "34",
+      "city": "Borderland",
+      "state": "WV",
+      "latitude": 37.7214,
+      "longitude": -82.3084
+    },
+    "25666": {
+      "districtCode": "29",
+      "city": "Breeden",
+      "state": "WV",
+      "latitude": 37.9198,
+      "longitude": -82.2547
+    },
+    "25667": {
+      "districtCode": "34",
+      "city": "Chattaroy",
+      "state": "WV",
+      "latitude": 37.7047,
+      "longitude": -82.2739
+    },
+    "25669": {
+      "districtCode": "29",
+      "city": "Crum",
+      "state": "WV",
+      "latitude": 37.9389,
+      "longitude": -82.4624
+    },
+    "25670": {
+      "districtCode": "34",
+      "city": "Delbarton",
+      "state": "WV",
+      "latitude": 37.7189,
+      "longitude": -82.1931
+    },
+    "25671": {
+      "districtCode": "29",
+      "city": "Dingess",
+      "state": "WV",
+      "latitude": 37.8703,
+      "longitude": -82.1951
+    },
+    "25672": {
+      "districtCode": "34",
+      "city": "Edgarton",
+      "state": "WV",
+      "latitude": 37.7431,
+      "longitude": -82.108
+    },
+    "25674": {
+      "districtCode": "29",
+      "city": "Kermit",
+      "state": "WV",
+      "latitude": 37.8642,
+      "longitude": -82.3741
+    },
+    "25676": {
+      "districtCode": "29",
+      "city": "Lenore",
+      "state": "WV",
+      "latitude": 37.799,
+      "longitude": -82.2868
+    },
+    "25678": {
+      "districtCode": "34",
+      "city": "Matewan",
+      "state": "WV",
+      "latitude": 37.5903,
+      "longitude": -82.0652
+    },
+    "25685": {
+      "districtCode": "29",
+      "city": "Naugatuck",
+      "state": "WV",
+      "latitude": 37.7898,
+      "longitude": -82.349
+    },
+    "25686": {
+      "districtCode": "34",
+      "city": "Newtown",
+      "state": "WV",
+      "latitude": 37.7431,
+      "longitude": -82.108
+    },
+    "25688": {
+      "districtCode": "34",
+      "city": "North Matewan",
+      "state": "WV",
+      "latitude": 37.6265,
+      "longitude": -82.1482
+    },
+    "25690": {
+      "districtCode": "34",
+      "city": "Ragland",
+      "state": "WV",
+      "latitude": 37.6898,
+      "longitude": -82.1244
+    },
+    "25691": {
+      "districtCode": "34",
+      "city": "Rawl",
+      "state": "WV",
+      "latitude": 37.6498,
+      "longitude": -82.2196
+    },
+    "25692": {
+      "districtCode": "34",
+      "city": "Red Jacket",
+      "state": "WV",
+      "latitude": 37.6484,
+      "longitude": -82.1401
+    },
+    "25696": {
+      "districtCode": "34",
+      "city": "Varney",
+      "state": "WV",
+      "latitude": 37.6693,
+      "longitude": -82.1221
+    },
+    "25699": {
+      "districtCode": "29",
+      "city": "Wilsondale",
+      "state": "WV",
+      "latitude": 37.9537,
+      "longitude": -82.3276
+    },
+    "25701": {
+      "districtCode": "25",
+      "city": "Huntington",
+      "state": "WV",
+      "latitude": 38.4097,
+      "longitude": -82.4423
+    },
+    "25702": {
+      "districtCode": "24",
+      "city": "Huntington",
+      "state": "WV",
+      "latitude": 38.4286,
+      "longitude": -82.3911
+    },
+    "25703": {
+      "districtCode": "25",
+      "city": "Huntington",
+      "state": "WV",
+      "latitude": 38.4211,
+      "longitude": -82.4227
+    },
+    "25704": {
+      "districtCode": "27",
+      "city": "Huntington",
+      "state": "WV",
+      "latitude": 38.3849,
+      "longitude": -82.5036
+    },
+    "25705": {
+      "districtCode": "26",
+      "city": "Huntington",
+      "state": "WV",
+      "latitude": 38.4096,
+      "longitude": -82.369
+    },
+    "25706": {
+      "districtCode": "23",
+      "city": "Huntington",
+      "state": "WV",
+      "latitude": 38.4134,
+      "longitude": -82.2774
+    },
+    "25707": {
+      "districtCode": "23",
+      "city": "Huntington",
+      "state": "WV",
+      "latitude": 38.4134,
+      "longitude": -82.2774
+    },
+    "25708": {
+      "districtCode": "25",
+      "city": "Huntington",
+      "state": "WV",
+      "latitude": 38.4192,
+      "longitude": -82.4452
+    },
+    "25709": {
+      "districtCode": "25",
+      "city": "Huntington",
+      "state": "WV",
+      "latitude": 38.4192,
+      "longitude": -82.4452
+    },
+    "25710": {
+      "districtCode": "25",
+      "city": "Huntington",
+      "state": "WV",
+      "latitude": 38.4192,
+      "longitude": -82.4452
+    },
+    "25711": {
+      "districtCode": "23",
+      "city": "Huntington",
+      "state": "WV",
+      "latitude": 38.4134,
+      "longitude": -82.2774
+    },
+    "25712": {
+      "districtCode": "23",
+      "city": "Huntington",
+      "state": "WV",
+      "latitude": 38.4134,
+      "longitude": -82.2774
+    },
+    "25713": {
+      "districtCode": "23",
+      "city": "Huntington",
+      "state": "WV",
+      "latitude": 38.4134,
+      "longitude": -82.2774
+    },
+    "25714": {
+      "districtCode": "23",
+      "city": "Huntington",
+      "state": "WV",
+      "latitude": 38.4134,
+      "longitude": -82.2774
+    },
+    "25715": {
+      "districtCode": "23",
+      "city": "Huntington",
+      "state": "WV",
+      "latitude": 38.4134,
+      "longitude": -82.2774
+    },
+    "25716": {
+      "districtCode": "23",
+      "city": "Huntington",
+      "state": "WV",
+      "latitude": 38.4134,
+      "longitude": -82.2774
+    },
+    "25717": {
+      "districtCode": "25",
+      "city": "Huntington",
+      "state": "WV",
+      "latitude": 38.4192,
+      "longitude": -82.4452
+    },
+    "25718": {
+      "districtCode": "25",
+      "city": "Huntington",
+      "state": "WV",
+      "latitude": 38.4192,
+      "longitude": -82.4452
+    },
+    "25719": {
+      "districtCode": "25",
+      "city": "Huntington",
+      "state": "WV",
+      "latitude": 38.4192,
+      "longitude": -82.4452
+    },
+    "25720": {
+      "districtCode": "23",
+      "city": "Huntington",
+      "state": "WV",
+      "latitude": 38.4134,
+      "longitude": -82.2774
+    },
+    "25721": {
+      "districtCode": "25",
+      "city": "Huntington",
+      "state": "WV",
+      "latitude": 38.4192,
+      "longitude": -82.4452
+    },
+    "25722": {
+      "districtCode": "25",
+      "city": "Huntington",
+      "state": "WV",
+      "latitude": 38.4192,
+      "longitude": -82.4452
+    },
+    "25723": {
+      "districtCode": "25",
+      "city": "Huntington",
+      "state": "WV",
+      "latitude": 38.4192,
+      "longitude": -82.4452
+    },
+    "25724": {
+      "districtCode": "25",
+      "city": "Huntington",
+      "state": "WV",
+      "latitude": 38.4192,
+      "longitude": -82.4452
+    },
+    "25725": {
+      "districtCode": "23",
+      "city": "Huntington",
+      "state": "WV",
+      "latitude": 38.4134,
+      "longitude": -82.2774
+    },
+    "25726": {
+      "districtCode": "23",
+      "city": "Huntington",
+      "state": "WV",
+      "latitude": 38.4134,
+      "longitude": -82.2774
+    },
+    "25727": {
+      "districtCode": "23",
+      "city": "Huntington",
+      "state": "WV",
+      "latitude": 38.4134,
+      "longitude": -82.2774
+    },
+    "25728": {
+      "districtCode": "23",
+      "city": "Huntington",
+      "state": "WV",
+      "latitude": 38.4134,
+      "longitude": -82.2774
+    },
+    "25729": {
+      "districtCode": "23",
+      "city": "Huntington",
+      "state": "WV",
+      "latitude": 38.4134,
+      "longitude": -82.2774
+    },
+    "25755": {
+      "districtCode": "25",
+      "city": "Huntington",
+      "state": "WV",
+      "latitude": 38.4221,
+      "longitude": -82.4317
+    },
+    "25770": {
+      "districtCode": "23",
+      "city": "Huntington",
+      "state": "WV",
+      "latitude": 38.4134,
+      "longitude": -82.2774
+    },
+    "25771": {
+      "districtCode": "23",
+      "city": "Huntington",
+      "state": "WV",
+      "latitude": 38.4134,
+      "longitude": -82.2774
+    },
+    "25772": {
+      "districtCode": "23",
+      "city": "Huntington",
+      "state": "WV",
+      "latitude": 38.4134,
+      "longitude": -82.2774
+    },
+    "25773": {
+      "districtCode": "23",
+      "city": "Huntington",
+      "state": "WV",
+      "latitude": 38.4134,
+      "longitude": -82.2774
+    },
+    "25774": {
+      "districtCode": "23",
+      "city": "Huntington",
+      "state": "WV",
+      "latitude": 38.4134,
+      "longitude": -82.2774
+    },
+    "25775": {
+      "districtCode": "23",
+      "city": "Huntington",
+      "state": "WV",
+      "latitude": 38.4134,
+      "longitude": -82.2774
+    },
+    "25776": {
+      "districtCode": "23",
+      "city": "Huntington",
+      "state": "WV",
+      "latitude": 38.4134,
+      "longitude": -82.2774
+    },
+    "25777": {
+      "districtCode": "23",
+      "city": "Huntington",
+      "state": "WV",
+      "latitude": 38.4134,
+      "longitude": -82.2774
+    },
+    "25778": {
+      "districtCode": "23",
+      "city": "Huntington",
+      "state": "WV",
+      "latitude": 38.4134,
+      "longitude": -82.2774
+    },
+    "25779": {
+      "districtCode": "23",
+      "city": "Huntington",
+      "state": "WV",
+      "latitude": 38.4134,
+      "longitude": -82.2774
+    },
+    "25801": {
+      "districtCode": "44",
+      "city": "Beckley",
+      "state": "WV",
+      "latitude": 37.7932,
+      "longitude": -81.2061
+    },
+    "25802": {
+      "districtCode": "42",
+      "city": "Beckley",
+      "state": "WV",
+      "latitude": 37.7489,
+      "longitude": -81.2245
+    },
+    "25810": {
+      "districtCode": "35",
+      "city": "Allen Junction",
+      "state": "WV",
+      "latitude": 37.5893,
+      "longitude": -81.3507
+    },
+    "25811": {
+      "districtCode": "42",
+      "city": "Amigo",
+      "state": "WV",
+      "latitude": 37.5965,
+      "longitude": -81.3209
+    },
+    "25812": {
+      "districtCode": "51",
+      "city": "Ansted",
+      "state": "WV",
+      "latitude": 38.1369,
+      "longitude": -81.0955
+    },
+    "25813": {
+      "districtCode": "41",
+      "city": "Beaver",
+      "state": "WV",
+      "latitude": 37.7516,
+      "longitude": -81.0731
+    },
+    "25817": {
+      "districtCode": "43",
+      "city": "Bolt",
+      "state": "WV",
+      "latitude": 37.7673,
+      "longitude": -81.4156
+    },
+    "25818": {
+      "districtCode": "45",
+      "city": "Bradley",
+      "state": "WV",
+      "latitude": 37.8654,
+      "longitude": -81.194
+    },
+    "25820": {
+      "districtCode": "39",
+      "city": "Camp Creek",
+      "state": "WV",
+      "latitude": 37.4841,
+      "longitude": -81.1111
+    },
+    "25823": {
+      "districtCode": "42",
+      "city": "Coal City",
+      "state": "WV",
+      "latitude": 37.679,
+      "longitude": -81.2104
+    },
+    "25825": {
+      "districtCode": "42",
+      "city": "Cool Ridge",
+      "state": "WV",
+      "latitude": 37.6655,
+      "longitude": -81.0933
+    },
+    "25826": {
+      "districtCode": "35",
+      "city": "Corinne",
+      "state": "WV",
+      "latitude": 37.5729,
+      "longitude": -81.3565
+    },
+    "25827": {
+      "districtCode": "42",
+      "city": "Crab Orchard",
+      "state": "WV",
+      "latitude": 37.7385,
+      "longitude": -81.2536
+    },
+    "25831": {
+      "districtCode": "51",
+      "city": "Danese",
+      "state": "WV",
+      "latitude": 37.9567,
+      "longitude": -80.9379
+    },
+    "25832": {
+      "districtCode": "41",
+      "city": "Daniels",
+      "state": "WV",
+      "latitude": 37.7256,
+      "longitude": -81.1087
+    },
+    "25833": {
+      "districtCode": "51",
+      "city": "Dothan",
+      "state": "WV",
+      "latitude": 38.0413,
+      "longitude": -81.0648
+    },
+    "25836": {
+      "districtCode": "42",
+      "city": "Eccles",
+      "state": "WV",
+      "latitude": 37.7792,
+      "longitude": -81.2635
+    },
+    "25837": {
+      "districtCode": "51",
+      "city": "Edmond",
+      "state": "WV",
+      "latitude": 38.0544,
+      "longitude": -81.0326
+    },
+    "25839": {
+      "districtCode": "43",
+      "city": "Fairdale",
+      "state": "WV",
+      "latitude": 37.7815,
+      "longitude": -81.3632
+    },
+    "25840": {
+      "districtCode": "51",
+      "city": "Fayetteville",
+      "state": "WV",
+      "latitude": 38.064,
+      "longitude": -81.0943
+    },
+    "25841": {
+      "districtCode": "41",
+      "city": "Flat Top",
+      "state": "WV",
+      "latitude": 37.55,
+      "longitude": -81.128
+    },
+    "25843": {
+      "districtCode": "42",
+      "city": "Ghent",
+      "state": "WV",
+      "latitude": 37.6208,
+      "longitude": -81.1019
+    },
+    "25844": {
+      "districtCode": "43",
+      "city": "Glen Daniel",
+      "state": "WV",
+      "latitude": 37.8251,
+      "longitude": -81.3858
+    },
+    "25845": {
+      "districtCode": "35",
+      "city": "Glen Fork",
+      "state": "WV",
+      "latitude": 37.6959,
+      "longitude": -81.529
+    },
+    "25846": {
+      "districtCode": "45",
+      "city": "Glen Jean",
+      "state": "WV",
+      "latitude": 37.9265,
+      "longitude": -81.1501
+    },
+    "25848": {
+      "districtCode": "43",
+      "city": "Glen Rogers",
+      "state": "WV",
+      "latitude": 37.7217,
+      "longitude": -81.429
+    },
+    "25849": {
+      "districtCode": "42",
+      "city": "Glen White",
+      "state": "WV",
+      "latitude": 37.7306,
+      "longitude": -81.2799
+    },
+    "25851": {
+      "districtCode": "43",
+      "city": "Harper",
+      "state": "WV",
+      "latitude": 37.8025,
+      "longitude": -81.2828
+    },
+    "25853": {
+      "districtCode": "42",
+      "city": "Helen",
+      "state": "WV",
+      "latitude": 37.6375,
+      "longitude": -81.3138
+    },
+    "25854": {
+      "districtCode": "51",
+      "city": "Hico",
+      "state": "WV",
+      "latitude": 38.1094,
+      "longitude": -80.9638
+    },
+    "25855": {
+      "districtCode": "45",
+      "city": "Hilltop",
+      "state": "WV",
+      "latitude": 37.9429,
+      "longitude": -81.1509
+    },
+    "25857": {
+      "districtCode": "42",
+      "city": "Josephine",
+      "state": "WV",
+      "latitude": 37.6221,
+      "longitude": -81.2176
+    },
+    "25860": {
+      "districtCode": "45",
+      "city": "Lanark",
+      "state": "WV",
+      "latitude": 37.8276,
+      "longitude": -81.1462
+    },
+    "25862": {
+      "districtCode": "51",
+      "city": "Lansing",
+      "state": "WV",
+      "latitude": 38.0869,
+      "longitude": -81.0588
+    },
+    "25864": {
+      "districtCode": "50",
+      "city": "Layland",
+      "state": "WV",
+      "latitude": 37.8893,
+      "longitude": -80.9712
+    },
+    "25865": {
+      "districtCode": "43",
+      "city": "Lester",
+      "state": "WV",
+      "latitude": 37.7265,
+      "longitude": -81.3095
+    },
+    "25866": {
+      "districtCode": "50",
+      "city": "Lochgelly",
+      "state": "WV",
+      "latitude": 38.0107,
+      "longitude": -81.1451
+    },
+    "25868": {
+      "districtCode": "51",
+      "city": "Lookout",
+      "state": "WV",
+      "latitude": 38.0654,
+      "longitude": -80.9684
+    },
+    "25870": {
+      "districtCode": "35",
+      "city": "Maben",
+      "state": "WV",
+      "latitude": 37.6387,
+      "longitude": -81.394
+    },
+    "25871": {
+      "districtCode": "42",
+      "city": "Mabscott",
+      "state": "WV",
+      "latitude": 37.77,
+      "longitude": -81.2103
+    },
+    "25873": {
+      "districtCode": "42",
+      "city": "Mac Arthur",
+      "state": "WV",
+      "latitude": 37.7517,
+      "longitude": -81.2148
+    },
+    "25875": {
+      "districtCode": "35",
+      "city": "Mc Graws",
+      "state": "WV",
+      "latitude": 37.6033,
+      "longitude": -81.54
+    },
+    "25876": {
+      "districtCode": "35",
+      "city": "Saulsville",
+      "state": "WV",
+      "latitude": 37.6429,
+      "longitude": -81.4568
+    },
+    "25878": {
+      "districtCode": "42",
+      "city": "Midway",
+      "state": "WV",
+      "latitude": 37.7171,
+      "longitude": -81.24
+    },
+    "25879": {
+      "districtCode": "50",
+      "city": "Minden",
+      "state": "WV",
+      "latitude": 37.9758,
+      "longitude": -81.115
+    },
+    "25880": {
+      "districtCode": "45",
+      "city": "Mount Hope",
+      "state": "WV",
+      "latitude": 37.8782,
+      "longitude": -81.2058
+    },
+    "25882": {
+      "districtCode": "35",
+      "city": "Mullens",
+      "state": "WV",
+      "latitude": 37.5842,
+      "longitude": -81.389
+    },
+    "25888": {
+      "districtCode": "45",
+      "city": "Mount Hope",
+      "state": "WV",
+      "latitude": 37.893,
+      "longitude": -81.1668
+    },
+    "25901": {
+      "districtCode": "50",
+      "city": "Oak Hill",
+      "state": "WV",
+      "latitude": 37.9723,
+      "longitude": -81.1487
+    },
+    "25902": {
+      "districtCode": "42",
+      "city": "Odd",
+      "state": "WV",
+      "latitude": 37.593,
+      "longitude": -81.1872
+    },
+    "25904": {
+      "districtCode": "50",
+      "city": "Pax",
+      "state": "WV",
+      "latitude": 37.911,
+      "longitude": -81.2648
+    },
+    "25906": {
+      "districtCode": "45",
+      "city": "Piney View",
+      "state": "WV",
+      "latitude": 37.8376,
+      "longitude": -81.1286
+    },
+    "25907": {
+      "districtCode": "45",
+      "city": "Prince",
+      "state": "WV",
+      "latitude": 37.8532,
+      "longitude": -81.0817
+    },
+    "25908": {
+      "districtCode": "42",
+      "city": "Princewick",
+      "state": "WV",
+      "latitude": 37.6724,
+      "longitude": -81.2561
+    },
+    "25909": {
+      "districtCode": "45",
+      "city": "Prosperity",
+      "state": "WV",
+      "latitude": 37.8381,
+      "longitude": -81.2004
+    },
+    "25911": {
+      "districtCode": "44",
+      "city": "Raleigh",
+      "state": "WV",
+      "latitude": 37.7585,
+      "longitude": -81.1675
+    },
+    "25913": {
+      "districtCode": "35",
+      "city": "Ravencliff",
+      "state": "WV",
+      "latitude": 37.7141,
+      "longitude": -81.4895
+    },
+    "25915": {
+      "districtCode": "42",
+      "city": "Rhodell",
+      "state": "WV",
+      "latitude": 37.6254,
+      "longitude": -81.2749
+    },
+    "25916": {
+      "districtCode": "35",
+      "city": "Sabine",
+      "state": "WV",
+      "latitude": 37.6787,
+      "longitude": -81.5015
+    },
+    "25917": {
+      "districtCode": "45",
+      "city": "Scarbro",
+      "state": "WV",
+      "latitude": 37.9488,
+      "longitude": -81.1531
+    },
+    "25918": {
+      "districtCode": "41",
+      "city": "Shady Spring",
+      "state": "WV",
+      "latitude": 37.7416,
+      "longitude": -81.0149
+    },
+    "25919": {
+      "districtCode": "44",
+      "city": "Skelton",
+      "state": "WV",
+      "latitude": 37.8005,
+      "longitude": -81.1806
+    },
+    "25920": {
+      "districtCode": "43",
+      "city": "Slab Fork",
+      "state": "WV",
+      "latitude": 37.6871,
+      "longitude": -81.334
+    },
+    "25921": {
+      "districtCode": "42",
+      "city": "Sophia",
+      "state": "WV",
+      "latitude": 37.7076,
+      "longitude": -81.2507
+    },
+    "25922": {
+      "districtCode": "39",
+      "city": "Spanishburg",
+      "state": "WV",
+      "latitude": 37.4605,
+      "longitude": -81.1128
+    },
+    "25926": {
+      "districtCode": "44",
+      "city": "Beckley",
+      "state": "WV",
+      "latitude": 37.79,
+      "longitude": -81.18
+    },
+    "25927": {
+      "districtCode": "45",
+      "city": "Stanaford",
+      "state": "WV",
+      "latitude": 37.8159,
+      "longitude": -81.1523
+    },
+    "25928": {
+      "districtCode": "35",
+      "city": "Stephenson",
+      "state": "WV",
+      "latitude": 37.5798,
+      "longitude": -81.3339
+    },
+    "25932": {
+      "districtCode": "43",
+      "city": "Surveyor",
+      "state": "WV",
+      "latitude": 37.7565,
+      "longitude": -81.3092
+    },
+    "25936": {
+      "districtCode": "50",
+      "city": "Thurmond",
+      "state": "WV",
+      "latitude": 37.9554,
+      "longitude": -81.0714
+    },
+    "25938": {
+      "districtCode": "51",
+      "city": "Victor",
+      "state": "WV",
+      "latitude": 38.1402,
+      "longitude": -81.0322
+    },
+    "25942": {
+      "districtCode": "51",
+      "city": "Winona",
+      "state": "WV",
+      "latitude": 38.0465,
+      "longitude": -80.9923
+    },
+    "25943": {
+      "districtCode": "35",
+      "city": "Wyco",
+      "state": "WV",
+      "latitude": 37.599,
+      "longitude": -81.3429
+    },
+    "25951": {
+      "districtCode": "40",
+      "city": "Hinton",
+      "state": "WV",
+      "latitude": 37.664,
+      "longitude": -80.8678
+    },
+    "25958": {
+      "districtCode": "48",
+      "city": "Charmco",
+      "state": "WV",
+      "latitude": 38.0023,
+      "longitude": -80.737
+    },
+    "25962": {
+      "districtCode": "47",
+      "city": "Rainelle",
+      "state": "WV",
+      "latitude": 37.9661,
+      "longitude": -80.7821
+    },
+    "25965": {
+      "districtCode": "41",
+      "city": "Elton",
+      "state": "WV",
+      "latitude": 37.83,
+      "longitude": -80.78
+    },
+    "25966": {
+      "districtCode": "40",
+      "city": "Green Sulphur Springs",
+      "state": "WV",
+      "latitude": 37.6485,
+      "longitude": -80.8774
+    },
+    "25969": {
+      "districtCode": "41",
+      "city": "Jumping Branch",
+      "state": "WV",
+      "latitude": 37.6188,
+      "longitude": -81.0018
+    },
+    "25971": {
+      "districtCode": "41",
+      "city": "Lerona",
+      "state": "WV",
+      "latitude": 37.4925,
+      "longitude": -80.9796
+    },
+    "25972": {
+      "districtCode": "48",
+      "city": "Leslie",
+      "state": "WV",
+      "latitude": 38.0446,
+      "longitude": -80.7229
+    },
+    "25976": {
+      "districtCode": "51",
+      "city": "Meadow Bridge",
+      "state": "WV",
+      "latitude": 37.878,
+      "longitude": -80.8521
+    },
+    "25977": {
+      "districtCode": "41",
+      "city": "Meadow Creek",
+      "state": "WV",
+      "latitude": 37.8101,
+      "longitude": -80.9231
+    },
+    "25978": {
+      "districtCode": "41",
+      "city": "Nimitz",
+      "state": "WV",
+      "latitude": 37.6286,
+      "longitude": -80.9446
+    },
+    "25979": {
+      "districtCode": "41",
+      "city": "Pipestem",
+      "state": "WV",
+      "latitude": 37.5303,
+      "longitude": -80.9463
+    },
+    "25981": {
+      "districtCode": "48",
+      "city": "Quinwood",
+      "state": "WV",
+      "latitude": 38.0576,
+      "longitude": -80.7068
+    },
+    "25984": {
+      "districtCode": "47",
+      "city": "Rupert",
+      "state": "WV",
+      "latitude": 37.9685,
+      "longitude": -80.6696
+    },
+    "25985": {
+      "districtCode": "41",
+      "city": "Sandstone",
+      "state": "WV",
+      "latitude": 37.7599,
+      "longitude": -80.8716
+    },
+    "25986": {
+      "districtCode": "51",
+      "city": "Spring Dale",
+      "state": "WV",
+      "latitude": 37.8798,
+      "longitude": -80.8034
+    },
+    "25989": {
+      "districtCode": "41",
+      "city": "White Oak",
+      "state": "WV",
+      "latitude": 37.6929,
+      "longitude": -81.0729
+    },
+    "26003": {
+      "districtCode": "4",
+      "city": "Wheeling",
+      "state": "WV",
+      "latitude": 40.1027,
+      "longitude": -80.6476
+    },
+    "26030": {
+      "districtCode": "3",
+      "city": "Beech Bottom",
+      "state": "WV",
+      "latitude": 40.2259,
+      "longitude": -80.6513
+    },
+    "26031": {
+      "districtCode": "6",
+      "city": "Benwood",
+      "state": "WV",
+      "latitude": 40.0181,
+      "longitude": -80.7342
+    },
+    "26032": {
+      "districtCode": "3",
+      "city": "Bethany",
+      "state": "WV",
+      "latitude": 40.2107,
+      "longitude": -80.5503
+    },
+    "26033": {
+      "districtCode": "7",
+      "city": "Cameron",
+      "state": "WV",
+      "latitude": 39.8227,
+      "longitude": -80.5669
+    },
+    "26034": {
+      "districtCode": "1",
+      "city": "Chester",
+      "state": "WV",
+      "latitude": 40.5981,
+      "longitude": -80.5584
+    },
+    "26035": {
+      "districtCode": "2",
+      "city": "Colliers",
+      "state": "WV",
+      "latitude": 40.3484,
+      "longitude": -80.5493
+    },
+    "26036": {
+      "districtCode": "6",
+      "city": "Dallas",
+      "state": "WV",
+      "latitude": 39.9783,
+      "longitude": -80.5508
+    },
+    "26037": {
+      "districtCode": "3",
+      "city": "Follansbee",
+      "state": "WV",
+      "latitude": 40.3296,
+      "longitude": -80.585
+    },
+    "26038": {
+      "districtCode": "6",
+      "city": "Glen Dale",
+      "state": "WV",
+      "latitude": 39.9597,
+      "longitude": -80.7323
+    },
+    "26039": {
+      "districtCode": "7",
+      "city": "Glen Easton",
+      "state": "WV",
+      "latitude": 39.8531,
+      "longitude": -80.6661
+    },
+    "26040": {
+      "districtCode": "6",
+      "city": "Mcmechen",
+      "state": "WV",
+      "latitude": 39.9881,
+      "longitude": -80.7315
+    },
+    "26041": {
+      "districtCode": "6",
+      "city": "Moundsville",
+      "state": "WV",
+      "latitude": 39.9148,
+      "longitude": -80.731
+    },
+    "26047": {
+      "districtCode": "1",
+      "city": "New Cumberland",
+      "state": "WV",
+      "latitude": 40.5228,
+      "longitude": -80.5901
+    },
+    "26050": {
+      "districtCode": "1",
+      "city": "Newell",
+      "state": "WV",
+      "latitude": 40.614,
+      "longitude": -80.6011
+    },
+    "26055": {
+      "districtCode": "7",
+      "city": "Proctor",
+      "state": "WV",
+      "latitude": 39.7207,
+      "longitude": -80.7618
+    },
+    "26056": {
+      "districtCode": "1",
+      "city": "New Manchester",
+      "state": "WV",
+      "latitude": 40.5315,
+      "longitude": -80.5801
+    },
+    "26058": {
+      "districtCode": "3",
+      "city": "Short Creek",
+      "state": "WV",
+      "latitude": 40.1856,
+      "longitude": -80.6745
+    },
+    "26059": {
+      "districtCode": "4",
+      "city": "Triadelphia",
+      "state": "WV",
+      "latitude": 40.0699,
+      "longitude": -80.5953
+    },
+    "26060": {
+      "districtCode": "4",
+      "city": "Valley Grove",
+      "state": "WV",
+      "latitude": 40.0946,
+      "longitude": -80.5551
+    },
+    "26062": {
+      "districtCode": "2",
+      "city": "Weirton",
+      "state": "WV",
+      "latitude": 40.4137,
+      "longitude": -80.5683
+    },
+    "26070": {
+      "districtCode": "3",
+      "city": "Wellsburg",
+      "state": "WV",
+      "latitude": 40.2548,
+      "longitude": -80.5961
+    },
+    "26074": {
+      "districtCode": "3",
+      "city": "West Liberty",
+      "state": "WV",
+      "latitude": 40.1698,
+      "longitude": -80.5958
+    },
+    "26075": {
+      "districtCode": "3",
+      "city": "Windsor Heights",
+      "state": "WV",
+      "latitude": 40.1927,
+      "longitude": -80.6659
+    },
+    "26101": {
+      "districtCode": "12",
+      "city": "Parkersburg",
+      "state": "WV",
+      "latitude": 39.2644,
+      "longitude": -81.5354
+    },
+    "26102": {
+      "districtCode": "12",
+      "city": "Parkersburg",
+      "state": "WV",
+      "latitude": 39.2183,
+      "longitude": -81.4979
+    },
+    "26103": {
+      "districtCode": "13",
+      "city": "Parkersburg",
+      "state": "WV",
+      "latitude": 39.2364,
+      "longitude": -81.5405
+    },
+    "26104": {
+      "districtCode": "10",
+      "city": "Parkersburg",
+      "state": "WV",
+      "latitude": 39.2804,
+      "longitude": -81.4936
+    },
+    "26105": {
+      "districtCode": "11",
+      "city": "Vienna",
+      "state": "WV",
+      "latitude": 39.3251,
+      "longitude": -81.5411
+    },
+    "26106": {
+      "districtCode": "12",
+      "city": "Parkersburg",
+      "state": "WV",
+      "latitude": 39.2183,
+      "longitude": -81.4979
+    },
+    "26120": {
+      "districtCode": "12",
+      "city": "Mineral Wells",
+      "state": "WV",
+      "latitude": 39.2183,
+      "longitude": -81.4979
+    },
+    "26121": {
+      "districtCode": "12",
+      "city": "Mineral Wells",
+      "state": "WV",
+      "latitude": 39.2183,
+      "longitude": -81.4979
+    },
+    "26133": {
+      "districtCode": "14",
+      "city": "Belleville",
+      "state": "WV",
+      "latitude": 39.1314,
+      "longitude": -81.6923
+    },
+    "26134": {
+      "districtCode": "9",
+      "city": "Belmont",
+      "state": "WV",
+      "latitude": 39.3795,
+      "longitude": -81.2584
+    },
+    "26136": {
+      "districtCode": "62",
+      "city": "Big Bend",
+      "state": "WV",
+      "latitude": 38.9719,
+      "longitude": -81.136
+    },
+    "26137": {
+      "districtCode": "62",
+      "city": "Big Springs",
+      "state": "WV",
+      "latitude": 38.9854,
+      "longitude": -81.0721
+    },
+    "26138": {
+      "districtCode": "15",
+      "city": "Brohard",
+      "state": "WV",
+      "latitude": 39.0338,
+      "longitude": -81.1775
+    },
+    "26141": {
+      "districtCode": "62",
+      "city": "Creston",
+      "state": "WV",
+      "latitude": 38.9378,
+      "longitude": -81.2369
+    },
+    "26142": {
+      "districtCode": "10",
+      "city": "Davisville",
+      "state": "WV",
+      "latitude": 39.2126,
+      "longitude": -81.4799
+    },
+    "26143": {
+      "districtCode": "15",
+      "city": "Elizabeth",
+      "state": "WV",
+      "latitude": 39.0566,
+      "longitude": -81.3989
+    },
+    "26146": {
+      "districtCode": "9",
+      "city": "Friendly",
+      "state": "WV",
+      "latitude": 39.4961,
+      "longitude": -81.0572
+    },
+    "26147": {
+      "districtCode": "62",
+      "city": "Grantsville",
+      "state": "WV",
+      "latitude": 38.9324,
+      "longitude": -81.0763
+    },
+    "26148": {
+      "districtCode": "9",
+      "city": "Macfarlan",
+      "state": "WV",
+      "latitude": 39.0806,
+      "longitude": -81.1776
+    },
+    "26149": {
+      "districtCode": "8",
+      "city": "Middlebourne",
+      "state": "WV",
+      "latitude": 39.4942,
+      "longitude": -80.9076
+    },
+    "26150": {
+      "districtCode": "14",
+      "city": "Mineral Wells",
+      "state": "WV",
+      "latitude": 39.1897,
+      "longitude": -81.5139
+    },
+    "26151": {
+      "districtCode": "62",
+      "city": "Mount Zion",
+      "state": "WV",
+      "latitude": 38.8286,
+      "longitude": -81.1322
+    },
+    "26152": {
+      "districtCode": "15",
+      "city": "Munday",
+      "state": "WV",
+      "latitude": 39.0054,
+      "longitude": -81.2062
+    },
+    "26155": {
+      "districtCode": "7",
+      "city": "New Martinsville",
+      "state": "WV",
+      "latitude": 39.6588,
+      "longitude": -80.8565
+    },
+    "26159": {
+      "districtCode": "8",
+      "city": "Paden City",
+      "state": "WV",
+      "latitude": 39.6044,
+      "longitude": -80.9265
+    },
+    "26160": {
+      "districtCode": "15",
+      "city": "Palestine",
+      "state": "WV",
+      "latitude": 38.9741,
+      "longitude": -81.428
+    },
+    "26161": {
+      "districtCode": "9",
+      "city": "Petroleum",
+      "state": "WV",
+      "latitude": 39.1741,
+      "longitude": -81.2406
+    },
+    "26162": {
+      "districtCode": "8",
+      "city": "Porters Falls",
+      "state": "WV",
+      "latitude": 39.5798,
+      "longitude": -80.7762
+    },
+    "26164": {
+      "districtCode": "17",
+      "city": "Ravenswood",
+      "state": "WV",
+      "latitude": 38.9468,
+      "longitude": -81.7524
+    },
+    "26167": {
+      "districtCode": "8",
+      "city": "Reader",
+      "state": "WV",
+      "latitude": 39.5836,
+      "longitude": -80.7516
+    },
+    "26169": {
+      "districtCode": "14",
+      "city": "Rockport",
+      "state": "WV",
+      "latitude": 39.0798,
+      "longitude": -81.5713
+    },
+    "26170": {
+      "districtCode": "9",
+      "city": "Saint Marys",
+      "state": "WV",
+      "latitude": 39.386,
+      "longitude": -81.1725
+    },
+    "26175": {
+      "districtCode": "8",
+      "city": "Sistersville",
+      "state": "WV",
+      "latitude": 39.5584,
+      "longitude": -80.9818
+    },
+    "26178": {
+      "districtCode": "9",
+      "city": "Smithville",
+      "state": "WV",
+      "latitude": 39.0671,
+      "longitude": -81.062
+    },
+    "26180": {
+      "districtCode": "10",
+      "city": "Walker",
+      "state": "WV",
+      "latitude": 39.1821,
+      "longitude": -81.3866
+    },
+    "26181": {
+      "districtCode": "14",
+      "city": "Washington",
+      "state": "WV",
+      "latitude": 39.2068,
+      "longitude": -81.6577
+    },
+    "26184": {
+      "districtCode": "10",
+      "city": "Waverly",
+      "state": "WV",
+      "latitude": 39.3157,
+      "longitude": -81.3819
+    },
+    "26187": {
+      "districtCode": "10",
+      "city": "Williamstown",
+      "state": "WV",
+      "latitude": 39.3824,
+      "longitude": -81.4566
+    },
+    "26201": {
+      "districtCode": "65",
+      "city": "Buckhannon",
+      "state": "WV",
+      "latitude": 38.9755,
+      "longitude": -80.2407
+    },
+    "26202": {
+      "districtCode": "48",
+      "city": "Fenwick",
+      "state": "WV",
+      "latitude": 38.2447,
+      "longitude": -80.635
+    },
+    "26203": {
+      "districtCode": "48",
+      "city": "Erbacon",
+      "state": "WV",
+      "latitude": 38.5419,
+      "longitude": -80.5742
+    },
+    "26205": {
+      "districtCode": "48",
+      "city": "Craigsville",
+      "state": "WV",
+      "latitude": 38.3254,
+      "longitude": -80.6444
+    },
+    "26206": {
+      "districtCode": "48",
+      "city": "Cowen",
+      "state": "WV",
+      "latitude": 38.4133,
+      "longitude": -80.5358
+    },
+    "26208": {
+      "districtCode": "48",
+      "city": "Camden On Gauley",
+      "state": "WV",
+      "latitude": 38.3871,
+      "longitude": -80.5907
+    },
+    "26209": {
+      "districtCode": "66",
+      "city": "Snowshoe",
+      "state": "WV",
+      "latitude": 38.4133,
+      "longitude": -80.0068
+    },
+    "26210": {
+      "districtCode": "65",
+      "city": "Adrian",
+      "state": "WV",
+      "latitude": 38.8993,
+      "longitude": -80.2269
+    },
+    "26215": {
+      "districtCode": "48",
+      "city": "Cleveland",
+      "state": "WV",
+      "latitude": 38.7133,
+      "longitude": -80.388
+    },
+    "26217": {
+      "districtCode": "48",
+      "city": "Diana",
+      "state": "WV",
+      "latitude": 38.5755,
+      "longitude": -80.432
+    },
+    "26218": {
+      "districtCode": "65",
+      "city": "French Creek",
+      "state": "WV",
+      "latitude": 38.8993,
+      "longitude": -80.2269
+    },
+    "26219": {
+      "districtCode": "65",
+      "city": "Frenchton",
+      "state": "WV",
+      "latitude": 38.8993,
+      "longitude": -80.2269
+    },
+    "26222": {
+      "districtCode": "48",
+      "city": "Hacker Valley",
+      "state": "WV",
+      "latitude": 38.6526,
+      "longitude": -80.3837
+    },
+    "26224": {
+      "districtCode": "65",
+      "city": "Helvetia",
+      "state": "WV",
+      "latitude": 38.7713,
+      "longitude": -80.1382
+    },
+    "26228": {
+      "districtCode": "65",
+      "city": "Kanawha Head",
+      "state": "WV",
+      "latitude": 38.7618,
+      "longitude": -80.3727
+    },
+    "26229": {
+      "districtCode": "65",
+      "city": "Lorentz",
+      "state": "WV",
+      "latitude": 39.0109,
+      "longitude": -80.3023
+    },
+    "26230": {
+      "districtCode": "66",
+      "city": "Pickens",
+      "state": "WV",
+      "latitude": 38.6551,
+      "longitude": -80.2117
+    },
+    "26234": {
+      "districtCode": "65",
+      "city": "Rock Cave",
+      "state": "WV",
+      "latitude": 38.7811,
+      "longitude": -80.3163
+    },
+    "26236": {
+      "districtCode": "65",
+      "city": "Selbyville",
+      "state": "WV",
+      "latitude": 38.754,
+      "longitude": -80.2365
+    },
+    "26237": {
+      "districtCode": "65",
+      "city": "Tallmansville",
+      "state": "WV",
+      "latitude": 38.8564,
+      "longitude": -80.158
+    },
+    "26238": {
+      "districtCode": "68",
+      "city": "Volga",
+      "state": "WV",
+      "latitude": 39.0784,
+      "longitude": -80.1354
+    },
+    "26241": {
+      "districtCode": "67",
+      "city": "Elkins",
+      "state": "WV",
+      "latitude": 38.9253,
+      "longitude": -79.8471
+    },
+    "26250": {
+      "districtCode": "68",
+      "city": "Belington",
+      "state": "WV",
+      "latitude": 39.0244,
+      "longitude": -79.9495
+    },
+    "26253": {
+      "districtCode": "67",
+      "city": "Beverly",
+      "state": "WV",
+      "latitude": 38.828,
+      "longitude": -79.8651
+    },
+    "26254": {
+      "districtCode": "67",
+      "city": "Bowden",
+      "state": "WV",
+      "latitude": 38.9087,
+      "longitude": -79.7098
+    },
+    "26257": {
+      "districtCode": "66",
+      "city": "Coalton",
+      "state": "WV",
+      "latitude": 38.9144,
+      "longitude": -79.9767
+    },
+    "26259": {
+      "districtCode": "66",
+      "city": "Dailey",
+      "state": "WV",
+      "latitude": 38.7987,
+      "longitude": -79.8962
+    },
+    "26260": {
+      "districtCode": "85",
+      "city": "Davis",
+      "state": "WV",
+      "latitude": 39.0882,
+      "longitude": -79.4563
+    },
+    "26261": {
+      "districtCode": "48",
+      "city": "Richwood",
+      "state": "WV",
+      "latitude": 38.223,
+      "longitude": -80.5445
+    },
+    "26263": {
+      "districtCode": "67",
+      "city": "Dryfork",
+      "state": "WV",
+      "latitude": 38.9489,
+      "longitude": -79.4376
+    },
+    "26264": {
+      "districtCode": "66",
+      "city": "Durbin",
+      "state": "WV",
+      "latitude": 38.5457,
+      "longitude": -79.8251
+    },
+    "26266": {
+      "districtCode": "48",
+      "city": "Upperglade",
+      "state": "WV",
+      "latitude": 38.4185,
+      "longitude": -80.4965
+    },
+    "26267": {
+      "districtCode": "65",
+      "city": "Ellamore",
+      "state": "WV",
+      "latitude": 38.9243,
+      "longitude": -80.0904
+    },
+    "26268": {
+      "districtCode": "66",
+      "city": "Glady",
+      "state": "WV",
+      "latitude": 38.7534,
+      "longitude": -79.8147
+    },
+    "26269": {
+      "districtCode": "85",
+      "city": "Hambleton",
+      "state": "WV",
+      "latitude": 39.0821,
+      "longitude": -79.6453
+    },
+    "26270": {
+      "districtCode": "67",
+      "city": "Harman",
+      "state": "WV",
+      "latitude": 38.9234,
+      "longitude": -79.5246
+    },
+    "26271": {
+      "districtCode": "85",
+      "city": "Hendricks",
+      "state": "WV",
+      "latitude": 39.0748,
+      "longitude": -79.6303
+    },
+    "26273": {
+      "districtCode": "66",
+      "city": "Huttonsville",
+      "state": "WV",
+      "latitude": 38.6784,
+      "longitude": -79.9775
+    },
+    "26275": {
+      "districtCode": "68",
+      "city": "Junior",
+      "state": "WV",
+      "latitude": 38.9784,
+      "longitude": -79.9494
+    },
+    "26276": {
+      "districtCode": "67",
+      "city": "Kerens",
+      "state": "WV",
+      "latitude": 39.0299,
+      "longitude": -79.7754
+    },
+    "26278": {
+      "districtCode": "66",
+      "city": "Mabie",
+      "state": "WV",
+      "latitude": 38.8765,
+      "longitude": -79.9831
+    },
+    "26280": {
+      "districtCode": "66",
+      "city": "Mill Creek",
+      "state": "WV",
+      "latitude": 38.7325,
+      "longitude": -79.9786
+    },
+    "26282": {
+      "districtCode": "66",
+      "city": "Monterville",
+      "state": "WV",
+      "latitude": 38.5517,
+      "longitude": -80.1224
+    },
+    "26283": {
+      "districtCode": "67",
+      "city": "Montrose",
+      "state": "WV",
+      "latitude": 39.0964,
+      "longitude": -79.7896
+    },
+    "26285": {
+      "districtCode": "66",
+      "city": "Norton",
+      "state": "WV",
+      "latitude": 38.9318,
+      "longitude": -79.9656
+    },
+    "26287": {
+      "districtCode": "85",
+      "city": "Parsons",
+      "state": "WV",
+      "latitude": 39.096,
+      "longitude": -79.6787
+    },
+    "26288": {
+      "districtCode": "48",
+      "city": "Webster Springs",
+      "state": "WV",
+      "latitude": 38.4832,
+      "longitude": -80.4476
+    },
+    "26289": {
+      "districtCode": "85",
+      "city": "Red Creek",
+      "state": "WV",
+      "latitude": 39.1179,
+      "longitude": -79.5637
+    },
+    "26291": {
+      "districtCode": "66",
+      "city": "Slatyfork",
+      "state": "WV",
+      "latitude": 38.388,
+      "longitude": -79.9906
+    },
+    "26292": {
+      "districtCode": "85",
+      "city": "Thomas",
+      "state": "WV",
+      "latitude": 39.1505,
+      "longitude": -79.503
+    },
+    "26293": {
+      "districtCode": "66",
+      "city": "Valley Bend",
+      "state": "WV",
+      "latitude": 38.7718,
+      "longitude": -79.9253
+    },
+    "26294": {
+      "districtCode": "66",
+      "city": "Valley Head",
+      "state": "WV",
+      "latitude": 38.5315,
+      "longitude": -80.0343
+    },
+    "26296": {
+      "districtCode": "67",
+      "city": "Whitmer",
+      "state": "WV",
+      "latitude": 38.7516,
+      "longitude": -79.5819
+    },
+    "26298": {
+      "districtCode": "48",
+      "city": "Bergoo",
+      "state": "WV",
+      "latitude": 38.4865,
+      "longitude": -80.3006
+    },
+    "26301": {
+      "districtCode": "70",
+      "city": "Clarksburg",
+      "state": "WV",
+      "latitude": 39.2874,
+      "longitude": -80.3419
+    },
+    "26302": {
+      "districtCode": "71",
+      "city": "Clarksburg",
+      "state": "WV",
+      "latitude": 39.2677,
+      "longitude": -80.3077
+    },
+    "26306": {
+      "districtCode": "69",
+      "city": "Clarksburg",
+      "state": "WV",
+      "latitude": 39.2852,
+      "longitude": -80.3853
+    },
+    "26320": {
+      "districtCode": "9",
+      "city": "Alma",
+      "state": "WV",
+      "latitude": 39.4506,
+      "longitude": -80.8701
+    },
+    "26321": {
+      "districtCode": "64",
+      "city": "Alum Bridge",
+      "state": "WV",
+      "latitude": 39.0425,
+      "longitude": -80.6882
+    },
+    "26323": {
+      "districtCode": "71",
+      "city": "Anmoore",
+      "state": "WV",
+      "latitude": 39.2587,
+      "longitude": -80.2875
+    },
+    "26325": {
+      "districtCode": "9",
+      "city": "Auburn",
+      "state": "WV",
+      "latitude": 39.0864,
+      "longitude": -80.8837
+    },
+    "26327": {
+      "districtCode": "9",
+      "city": "Berea",
+      "state": "WV",
+      "latitude": 39.1365,
+      "longitude": -80.9337
+    },
+    "26330": {
+      "districtCode": "71",
+      "city": "Bridgeport",
+      "state": "WV",
+      "latitude": 39.2954,
+      "longitude": -80.2427
+    },
+    "26335": {
+      "districtCode": "63",
+      "city": "Burnsville",
+      "state": "WV",
+      "latitude": 38.7775,
+      "longitude": -80.657
+    },
+    "26337": {
+      "districtCode": "9",
+      "city": "Cairo",
+      "state": "WV",
+      "latitude": 39.2325,
+      "longitude": -81.1554
+    },
+    "26338": {
+      "districtCode": "69",
+      "city": "Camden",
+      "state": "WV",
+      "latitude": 39.0893,
+      "longitude": -80.5915
+    },
+    "26339": {
+      "districtCode": "8",
+      "city": "Center Point",
+      "state": "WV",
+      "latitude": 39.4125,
+      "longitude": -80.6352
+    },
+    "26342": {
+      "districtCode": "62",
+      "city": "Coxs Mills",
+      "state": "WV",
+      "latitude": 39.0301,
+      "longitude": -80.8498
+    },
+    "26343": {
+      "districtCode": "64",
+      "city": "Crawford",
+      "state": "WV",
+      "latitude": 38.872,
+      "longitude": -80.4368
+    },
+    "26346": {
+      "districtCode": "9",
+      "city": "Ellenboro",
+      "state": "WV",
+      "latitude": 39.2969,
+      "longitude": -81.0621
+    },
+    "26347": {
+      "districtCode": "73",
+      "city": "Flemington",
+      "state": "WV",
+      "latitude": 39.2665,
+      "longitude": -80.132
+    },
+    "26348": {
+      "districtCode": "72",
+      "city": "Folsom",
+      "state": "WV",
+      "latitude": 39.4693,
+      "longitude": -80.5258
+    },
+    "26349": {
+      "districtCode": "68",
+      "city": "Galloway",
+      "state": "WV",
+      "latitude": 39.2318,
+      "longitude": -80.122
+    },
+    "26351": {
+      "districtCode": "63",
+      "city": "Glenville",
+      "state": "WV",
+      "latitude": 38.9409,
+      "longitude": -80.8313
+    },
+    "26354": {
+      "districtCode": "73",
+      "city": "Grafton",
+      "state": "WV",
+      "latitude": 39.3414,
+      "longitude": -80.0285
+    },
+    "26361": {
+      "districtCode": "72",
+      "city": "Gypsy",
+      "state": "WV",
+      "latitude": 39.3687,
+      "longitude": -80.3179
+    },
+    "26362": {
+      "districtCode": "9",
+      "city": "Harrisville",
+      "state": "WV",
+      "latitude": 39.1453,
+      "longitude": -81.0341
+    },
+    "26366": {
+      "districtCode": "72",
+      "city": "Haywood",
+      "state": "WV",
+      "latitude": 39.3812,
+      "longitude": -80.3359
+    },
+    "26369": {
+      "districtCode": "72",
+      "city": "Hepzibah",
+      "state": "WV",
+      "latitude": 39.3312,
+      "longitude": -80.3325
+    },
+    "26372": {
+      "districtCode": "64",
+      "city": "Horner",
+      "state": "WV",
+      "latitude": 38.9726,
+      "longitude": -80.3656
+    },
+    "26374": {
+      "districtCode": "83",
+      "city": "Independence",
+      "state": "WV",
+      "latitude": 39.4464,
+      "longitude": -79.8822
+    },
+    "26376": {
+      "districtCode": "64",
+      "city": "Ireland",
+      "state": "WV",
+      "latitude": 38.7763,
+      "longitude": -80.4567
+    },
+    "26377": {
+      "districtCode": "72",
+      "city": "Jacksonburg",
+      "state": "WV",
+      "latitude": 39.5416,
+      "longitude": -80.6437
+    },
+    "26378": {
+      "districtCode": "64",
+      "city": "Jane Lew",
+      "state": "WV",
+      "latitude": 39.11,
+      "longitude": -80.4311
+    },
+    "26384": {
+      "districtCode": "63",
+      "city": "Linn",
+      "state": "WV",
+      "latitude": 38.9573,
+      "longitude": -80.73
+    },
+    "26385": {
+      "districtCode": "69",
+      "city": "Lost Creek",
+      "state": "WV",
+      "latitude": 39.1725,
+      "longitude": -80.3777
+    },
+    "26386": {
+      "districtCode": "72",
+      "city": "Lumberport",
+      "state": "WV",
+      "latitude": 39.3781,
+      "longitude": -80.3676
+    },
+    "26404": {
+      "districtCode": "72",
+      "city": "Meadowbrook",
+      "state": "WV",
+      "latitude": 39.3518,
+      "longitude": -80.3187
+    },
+    "26405": {
+      "districtCode": "68",
+      "city": "Moatsville",
+      "state": "WV",
+      "latitude": 39.2234,
+      "longitude": -79.9017
+    },
+    "26408": {
+      "districtCode": "69",
+      "city": "Mount Clare",
+      "state": "WV",
+      "latitude": 39.2107,
+      "longitude": -80.2899
+    },
+    "26410": {
+      "districtCode": "84",
+      "city": "Newburg",
+      "state": "WV",
+      "latitude": 39.4027,
+      "longitude": -79.828
+    },
+    "26411": {
+      "districtCode": "8",
+      "city": "New Milton",
+      "state": "WV",
+      "latitude": 39.1899,
+      "longitude": -80.7076
+    },
+    "26412": {
+      "districtCode": "63",
+      "city": "Orlando",
+      "state": "WV",
+      "latitude": 38.8712,
+      "longitude": -80.5937
+    },
+    "26415": {
+      "districtCode": "9",
+      "city": "Pennsboro",
+      "state": "WV",
+      "latitude": 39.2791,
+      "longitude": -81.0019
+    },
+    "26416": {
+      "districtCode": "68",
+      "city": "Philippi",
+      "state": "WV",
+      "latitude": 39.1613,
+      "longitude": -80.0492
+    },
+    "26419": {
+      "districtCode": "72",
+      "city": "Pine Grove",
+      "state": "WV",
+      "latitude": 39.5755,
+      "longitude": -80.6667
+    },
+    "26421": {
+      "districtCode": "9",
+      "city": "Pullman",
+      "state": "WV",
+      "latitude": 39.19,
+      "longitude": -80.9347
+    },
+    "26422": {
+      "districtCode": "69",
+      "city": "Reynoldsville",
+      "state": "WV",
+      "latitude": 39.2884,
+      "longitude": -80.4348
+    },
+    "26424": {
+      "districtCode": "73",
+      "city": "Rosemont",
+      "state": "WV",
+      "latitude": 39.2687,
+      "longitude": -80.1629
+    },
+    "26425": {
+      "districtCode": "84",
+      "city": "Rowlesburg",
+      "state": "WV",
+      "latitude": 39.313,
+      "longitude": -79.7049
+    },
+    "26426": {
+      "districtCode": "72",
+      "city": "Salem",
+      "state": "WV",
+      "latitude": 39.2829,
+      "longitude": -80.559
+    },
+    "26430": {
+      "districtCode": "63",
+      "city": "Sand Fork",
+      "state": "WV",
+      "latitude": 38.914,
+      "longitude": -80.7498
+    },
+    "26431": {
+      "districtCode": "72",
+      "city": "Shinnston",
+      "state": "WV",
+      "latitude": 39.3888,
+      "longitude": -80.2834
+    },
+    "26434": {
+      "districtCode": "8",
+      "city": "Shirley",
+      "state": "WV",
+      "latitude": 39.3981,
+      "longitude": -80.7651
+    },
+    "26435": {
+      "districtCode": "73",
+      "city": "Simpson",
+      "state": "WV",
+      "latitude": 39.2668,
+      "longitude": -80.0934
+    },
+    "26436": {
+      "districtCode": "8",
+      "city": "Smithburg",
+      "state": "WV",
+      "latitude": 39.2893,
+      "longitude": -80.7343
+    },
+    "26437": {
+      "districtCode": "72",
+      "city": "Smithfield",
+      "state": "WV",
+      "latitude": 39.5134,
+      "longitude": -80.5582
+    },
+    "26438": {
+      "districtCode": "72",
+      "city": "Spelter",
+      "state": "WV",
+      "latitude": 39.3465,
+      "longitude": -80.3206
+    },
+    "26440": {
+      "districtCode": "73",
+      "city": "Thornton",
+      "state": "WV",
+      "latitude": 39.3329,
+      "longitude": -79.9096
+    },
+    "26443": {
+      "districtCode": "62",
+      "city": "Troy",
+      "state": "WV",
+      "latitude": 39.0839,
+      "longitude": -80.7549
+    },
+    "26444": {
+      "districtCode": "84",
+      "city": "Tunnelton",
+      "state": "WV",
+      "latitude": 39.3625,
+      "longitude": -79.7478
+    },
+    "26447": {
+      "districtCode": "64",
+      "city": "Walkersville",
+      "state": "WV",
+      "latitude": 38.8507,
+      "longitude": -80.4802
+    },
+    "26448": {
+      "districtCode": "72",
+      "city": "Wallace",
+      "state": "WV",
+      "latitude": 39.4117,
+      "longitude": -80.4865
+    },
+    "26451": {
+      "districtCode": "69",
+      "city": "West Milford",
+      "state": "WV",
+      "latitude": 39.1996,
+      "longitude": -80.4026
+    },
+    "26452": {
+      "districtCode": "64",
+      "city": "Weston",
+      "state": "WV",
+      "latitude": 39.0411,
+      "longitude": -80.4737
+    },
+    "26456": {
+      "districtCode": "8",
+      "city": "West Union",
+      "state": "WV",
+      "latitude": 39.2762,
+      "longitude": -80.7911
+    },
+    "26461": {
+      "districtCode": "69",
+      "city": "Clarksburg",
+      "state": "WV",
+      "latitude": 39.29,
+      "longitude": -80.39
+    },
+    "26463": {
+      "districtCode": "72",
+      "city": "Wyatt",
+      "state": "WV",
+      "latitude": 39.4351,
+      "longitude": -80.3534
+    },
+    "26501": {
+      "districtCode": "77",
+      "city": "Morgantown",
+      "state": "WV",
+      "latitude": 39.6099,
+      "longitude": -79.9831
+    },
+    "26502": {
+      "districtCode": "77",
+      "city": "Morgantown",
+      "state": "WV",
+      "latitude": 39.6253,
+      "longitude": -79.9672
+    },
+    "26504": {
+      "districtCode": "77",
+      "city": "Morgantown",
+      "state": "WV",
+      "latitude": 39.5785,
+      "longitude": -80.093
+    },
+    "26505": {
+      "districtCode": "81",
+      "city": "Morgantown",
+      "state": "WV",
+      "latitude": 39.6505,
+      "longitude": -79.944
+    },
+    "26506": {
+      "districtCode": "80",
+      "city": "Morgantown",
+      "state": "WV",
+      "latitude": 39.6453,
+      "longitude": -79.9627
+    },
+    "26507": {
+      "districtCode": "82",
+      "city": "Morgantown",
+      "state": "WV",
+      "latitude": 39.6808,
+      "longitude": -79.8365
+    },
+    "26508": {
+      "districtCode": "78",
+      "city": "Morgantown",
+      "state": "WV",
+      "latitude": 39.5953,
+      "longitude": -79.9229
+    },
+    "26519": {
+      "districtCode": "83",
+      "city": "Albright",
+      "state": "WV",
+      "latitude": 39.5701,
+      "longitude": -79.6358
+    },
+    "26520": {
+      "districtCode": "83",
+      "city": "Arthurdale",
+      "state": "WV",
+      "latitude": 39.4951,
+      "longitude": -79.8151
+    },
+    "26521": {
+      "districtCode": "77",
+      "city": "Blacksville",
+      "state": "WV",
+      "latitude": 39.7142,
+      "longitude": -80.2265
+    },
+    "26524": {
+      "districtCode": "83",
+      "city": "Bretz",
+      "state": "WV",
+      "latitude": 39.5423,
+      "longitude": -79.8006
+    },
+    "26525": {
+      "districtCode": "83",
+      "city": "Bruceton Mills",
+      "state": "WV",
+      "latitude": 39.6454,
+      "longitude": -79.6159
+    },
+    "26527": {
+      "districtCode": "77",
+      "city": "Cassville",
+      "state": "WV",
+      "latitude": 39.6656,
+      "longitude": -80.0637
+    },
+    "26531": {
+      "districtCode": "78",
+      "city": "Dellslow",
+      "state": "WV",
+      "latitude": 39.6053,
+      "longitude": -79.8958
+    },
+    "26534": {
+      "districtCode": "80",
+      "city": "Granville",
+      "state": "WV",
+      "latitude": 39.6459,
+      "longitude": -79.9873
+    },
+    "26537": {
+      "districtCode": "84",
+      "city": "Kingwood",
+      "state": "WV",
+      "latitude": 39.4819,
+      "longitude": -79.7063
+    },
+    "26541": {
+      "districtCode": "77",
+      "city": "Maidsville",
+      "state": "WV",
+      "latitude": 39.6884,
+      "longitude": -79.9801
+    },
+    "26542": {
+      "districtCode": "83",
+      "city": "Masontown",
+      "state": "WV",
+      "latitude": 39.5731,
+      "longitude": -79.7906
+    },
+    "26543": {
+      "districtCode": "77",
+      "city": "Osage",
+      "state": "WV",
+      "latitude": 39.6587,
+      "longitude": -80.0076
+    },
+    "26544": {
+      "districtCode": "77",
+      "city": "Pentress",
+      "state": "WV",
+      "latitude": 39.5785,
+      "longitude": -80.093
+    },
+    "26546": {
+      "districtCode": "77",
+      "city": "Pursglove",
+      "state": "WV",
+      "latitude": 39.6746,
+      "longitude": -80.035
+    },
+    "26547": {
+      "districtCode": "83",
+      "city": "Reedsville",
+      "state": "WV",
+      "latitude": 39.5127,
+      "longitude": -79.812
+    },
+    "26554": {
+      "districtCode": "75",
+      "city": "Fairmont",
+      "state": "WV",
+      "latitude": 39.4941,
+      "longitude": -80.2213
+    },
+    "26555": {
+      "districtCode": "76",
+      "city": "Fairmont",
+      "state": "WV",
+      "latitude": 39.5143,
+      "longitude": -80.2185
+    },
+    "26559": {
+      "districtCode": "76",
+      "city": "Barrackville",
+      "state": "WV",
+      "latitude": 39.5052,
+      "longitude": -80.1725
+    },
+    "26560": {
+      "districtCode": "76",
+      "city": "Baxter",
+      "state": "WV",
+      "latitude": 39.544,
+      "longitude": -80.1423
+    },
+    "26561": {
+      "districtCode": "72",
+      "city": "Big Run",
+      "state": "WV",
+      "latitude": 39.5845,
+      "longitude": -80.5776
+    },
+    "26562": {
+      "districtCode": "77",
+      "city": "Burton",
+      "state": "WV",
+      "latitude": 39.6511,
+      "longitude": -80.4161
+    },
+    "26563": {
+      "districtCode": "75",
+      "city": "Carolina",
+      "state": "WV",
+      "latitude": 39.4782,
+      "longitude": -80.272
+    },
+    "26566": {
+      "districtCode": "74",
+      "city": "Colfax",
+      "state": "WV",
+      "latitude": 39.4348,
+      "longitude": -80.1317
+    },
+    "26568": {
+      "districtCode": "72",
+      "city": "Enterprise",
+      "state": "WV",
+      "latitude": 39.4209,
+      "longitude": -80.2779
+    },
+    "26570": {
+      "districtCode": "76",
+      "city": "Fairview",
+      "state": "WV",
+      "latitude": 39.6103,
+      "longitude": -80.2529
+    },
+    "26571": {
+      "districtCode": "75",
+      "city": "Farmington",
+      "state": "WV",
+      "latitude": 39.5029,
+      "longitude": -80.2566
+    },
+    "26572": {
+      "districtCode": "75",
+      "city": "Four States",
+      "state": "WV",
+      "latitude": 39.4798,
+      "longitude": -80.3098
+    },
+    "26574": {
+      "districtCode": "76",
+      "city": "Grant Town",
+      "state": "WV",
+      "latitude": 39.5587,
+      "longitude": -80.1805
+    },
+    "26575": {
+      "districtCode": "7",
+      "city": "Hundred",
+      "state": "WV",
+      "latitude": 39.6917,
+      "longitude": -80.4746
+    },
+    "26576": {
+      "districtCode": "75",
+      "city": "Idamay",
+      "state": "WV",
+      "latitude": 39.4877,
+      "longitude": -80.2666
+    },
+    "26578": {
+      "districtCode": "75",
+      "city": "Kingmont",
+      "state": "WV",
+      "latitude": 39.4466,
+      "longitude": -80.1762
+    },
+    "26581": {
+      "districtCode": "7",
+      "city": "Littleton",
+      "state": "WV",
+      "latitude": 39.6592,
+      "longitude": -80.5695
+    },
+    "26582": {
+      "districtCode": "75",
+      "city": "Mannington",
+      "state": "WV",
+      "latitude": 39.522,
+      "longitude": -80.3552
+    },
+    "26585": {
+      "districtCode": "74",
+      "city": "Metz",
+      "state": "WV",
+      "latitude": 39.6078,
+      "longitude": -80.4168
+    },
+    "26586": {
+      "districtCode": "74",
+      "city": "Montana Mines",
+      "state": "WV",
+      "latitude": 39.5191,
+      "longitude": -80.0897
+    },
+    "26587": {
+      "districtCode": "75",
+      "city": "Rachel",
+      "state": "WV",
+      "latitude": 39.5225,
+      "longitude": -80.2957
+    },
+    "26588": {
+      "districtCode": "74",
+      "city": "Rivesville",
+      "state": "WV",
+      "latitude": 39.5568,
+      "longitude": -80.1417
+    },
+    "26590": {
+      "districtCode": "77",
+      "city": "Wana",
+      "state": "WV",
+      "latitude": 39.6735,
+      "longitude": -80.3183
+    },
+    "26591": {
+      "districtCode": "74",
+      "city": "Worthington",
+      "state": "WV",
+      "latitude": 39.4522,
+      "longitude": -80.2905
+    },
+    "26601": {
+      "districtCode": "63",
+      "city": "Sutton",
+      "state": "WV",
+      "latitude": 38.6541,
+      "longitude": -80.676
+    },
+    "26610": {
+      "districtCode": "49",
+      "city": "Birch River",
+      "state": "WV",
+      "latitude": 38.4914,
+      "longitude": -80.7459
+    },
+    "26611": {
+      "districtCode": "63",
+      "city": "Cedarville",
+      "state": "WV",
+      "latitude": 38.8451,
+      "longitude": -80.8323
+    },
+    "26615": {
+      "districtCode": "63",
+      "city": "Copen",
+      "state": "WV",
+      "latitude": 38.8376,
+      "longitude": -80.7295
+    },
+    "26617": {
+      "districtCode": "62",
+      "city": "Dille",
+      "state": "WV",
+      "latitude": 38.489,
+      "longitude": -80.8257
+    },
+    "26619": {
+      "districtCode": "63",
+      "city": "Exchange",
+      "state": "WV",
+      "latitude": 38.7358,
+      "longitude": -80.7324
+    },
+    "26621": {
+      "districtCode": "63",
+      "city": "Flatwoods",
+      "state": "WV",
+      "latitude": 38.7232,
+      "longitude": -80.6498
+    },
+    "26623": {
+      "districtCode": "63",
+      "city": "Frametown",
+      "state": "WV",
+      "latitude": 38.6305,
+      "longitude": -80.8589
+    },
+    "26624": {
+      "districtCode": "63",
+      "city": "Gassaway",
+      "state": "WV",
+      "latitude": 38.6862,
+      "longitude": -80.7863
+    },
+    "26627": {
+      "districtCode": "63",
+      "city": "Heaters",
+      "state": "WV",
+      "latitude": 38.7621,
+      "longitude": -80.6406
+    },
+    "26629": {
+      "districtCode": "63",
+      "city": "Little Birch",
+      "state": "WV",
+      "latitude": 38.579,
+      "longitude": -80.7068
+    },
+    "26631": {
+      "districtCode": "63",
+      "city": "Napier",
+      "state": "WV",
+      "latitude": 38.7909,
+      "longitude": -80.5887
+    },
+    "26636": {
+      "districtCode": "63",
+      "city": "Rosedale",
+      "state": "WV",
+      "latitude": 38.7393,
+      "longitude": -80.9429
+    },
+    "26638": {
+      "districtCode": "62",
+      "city": "Shock",
+      "state": "WV",
+      "latitude": 38.7617,
+      "longitude": -81.0045
+    },
+    "26651": {
+      "districtCode": "49",
+      "city": "Summersville",
+      "state": "WV",
+      "latitude": 38.3009,
+      "longitude": -80.8353
+    },
+    "26656": {
+      "districtCode": "49",
+      "city": "Belva",
+      "state": "WV",
+      "latitude": 38.2491,
+      "longitude": -81.1566
+    },
+    "26660": {
+      "districtCode": "49",
+      "city": "Calvin",
+      "state": "WV",
+      "latitude": 38.3368,
+      "longitude": -80.7145
+    },
+    "26662": {
+      "districtCode": "49",
+      "city": "Canvas",
+      "state": "WV",
+      "latitude": 38.2624,
+      "longitude": -80.7446
+    },
+    "26667": {
+      "districtCode": "49",
+      "city": "Drennen",
+      "state": "WV",
+      "latitude": 38.3184,
+      "longitude": -80.8342
+    },
+    "26671": {
+      "districtCode": "49",
+      "city": "Gilboa",
+      "state": "WV",
+      "latitude": 38.3184,
+      "longitude": -80.8342
+    },
+    "26675": {
+      "districtCode": "49",
+      "city": "Keslers Cross Lanes",
+      "state": "WV",
+      "latitude": 38.2354,
+      "longitude": -80.9357
+    },
+    "26676": {
+      "districtCode": "48",
+      "city": "Leivasy",
+      "state": "WV",
+      "latitude": 38.1558,
+      "longitude": -80.6827
+    },
+    "26678": {
+      "districtCode": "49",
+      "city": "Mount Lookout",
+      "state": "WV",
+      "latitude": 38.1821,
+      "longitude": -80.9108
+    },
+    "26679": {
+      "districtCode": "49",
+      "city": "Mount Nebo",
+      "state": "WV",
+      "latitude": 38.1653,
+      "longitude": -80.7976
+    },
+    "26680": {
+      "districtCode": "51",
+      "city": "Nallen",
+      "state": "WV",
+      "latitude": 38.1107,
+      "longitude": -80.877
+    },
+    "26681": {
+      "districtCode": "48",
+      "city": "Nettie",
+      "state": "WV",
+      "latitude": 38.209,
+      "longitude": -80.6953
+    },
+    "26684": {
+      "districtCode": "49",
+      "city": "Pool",
+      "state": "WV",
+      "latitude": 38.1637,
+      "longitude": -80.8643
+    },
+    "26690": {
+      "districtCode": "51",
+      "city": "Swiss",
+      "state": "WV",
+      "latitude": 38.2255,
+      "longitude": -81.1273
+    },
+    "26691": {
+      "districtCode": "49",
+      "city": "Tioga",
+      "state": "WV",
+      "latitude": 38.4045,
+      "longitude": -80.6667
+    },
+    "26704": {
+      "districtCode": "89",
+      "city": "Augusta",
+      "state": "WV",
+      "latitude": 39.2998,
+      "longitude": -78.5931
+    },
+    "26705": {
+      "districtCode": "84",
+      "city": "Aurora",
+      "state": "WV",
+      "latitude": 39.3181,
+      "longitude": -79.5764
+    },
+    "26707": {
+      "districtCode": "85",
+      "city": "Bayard",
+      "state": "WV",
+      "latitude": 39.2729,
+      "longitude": -79.3645
+    },
+    "26710": {
+      "districtCode": "88",
+      "city": "Burlington",
+      "state": "WV",
+      "latitude": 39.3376,
+      "longitude": -78.9181
+    },
+    "26711": {
+      "districtCode": "89",
+      "city": "Capon Bridge",
+      "state": "WV",
+      "latitude": 39.2802,
+      "longitude": -78.4644
+    },
+    "26714": {
+      "districtCode": "88",
+      "city": "Delray",
+      "state": "WV",
+      "latitude": 39.1945,
+      "longitude": -78.6042
+    },
+    "26716": {
+      "districtCode": "84",
+      "city": "Eglon",
+      "state": "WV",
+      "latitude": 39.2925,
+      "longitude": -79.5109
+    },
+    "26717": {
+      "districtCode": "88",
+      "city": "Elk Garden",
+      "state": "WV",
+      "latitude": 39.3631,
+      "longitude": -79.1539
+    },
+    "26719": {
+      "districtCode": "88",
+      "city": "Fort Ashby",
+      "state": "WV",
+      "latitude": 39.497,
+      "longitude": -78.7743
+    },
+    "26720": {
+      "districtCode": "85",
+      "city": "Gormania",
+      "state": "WV",
+      "latitude": 39.2803,
+      "longitude": -79.3296
+    },
+    "26722": {
+      "districtCode": "88",
+      "city": "Green Spring",
+      "state": "WV",
+      "latitude": 39.5029,
+      "longitude": -78.6272
+    },
+    "26726": {
+      "districtCode": "87",
+      "city": "Keyser",
+      "state": "WV",
+      "latitude": 39.4527,
+      "longitude": -78.8926
+    },
+    "26731": {
+      "districtCode": "85",
+      "city": "Lahmansville",
+      "state": "WV",
+      "latitude": 39.1642,
+      "longitude": -79.0433
+    },
+    "26739": {
+      "districtCode": "85",
+      "city": "Mount Storm",
+      "state": "WV",
+      "latitude": 39.2652,
+      "longitude": -79.2255
+    },
+    "26743": {
+      "districtCode": "88",
+      "city": "New Creek",
+      "state": "WV",
+      "latitude": 39.3612,
+      "longitude": -79.0452
+    },
+    "26750": {
+      "districtCode": "88",
+      "city": "Piedmont",
+      "state": "WV",
+      "latitude": 39.4799,
+      "longitude": -79.0489
+    },
+    "26753": {
+      "districtCode": "87",
+      "city": "Ridgeley",
+      "state": "WV",
+      "latitude": 39.5636,
+      "longitude": -78.7887
+    },
+    "26755": {
+      "districtCode": "88",
+      "city": "Rio",
+      "state": "WV",
+      "latitude": 39.1847,
+      "longitude": -78.727
+    },
+    "26757": {
+      "districtCode": "89",
+      "city": "Romney",
+      "state": "WV",
+      "latitude": 39.3424,
+      "longitude": -78.7481
+    },
+    "26761": {
+      "districtCode": "88",
+      "city": "Shanks",
+      "state": "WV",
+      "latitude": 39.2849,
+      "longitude": -78.6995
+    },
+    "26763": {
+      "districtCode": "88",
+      "city": "Springfield",
+      "state": "WV",
+      "latitude": 39.463,
+      "longitude": -78.695
+    },
+    "26764": {
+      "districtCode": "84",
+      "city": "Terra Alta",
+      "state": "WV",
+      "latitude": 39.4456,
+      "longitude": -79.5464
+    },
+    "26767": {
+      "districtCode": "87",
+      "city": "Wiley Ford",
+      "state": "WV",
+      "latitude": 39.6133,
+      "longitude": -78.775
+    },
+    "26801": {
+      "districtCode": "86",
+      "city": "Baker",
+      "state": "WV",
+      "latitude": 39.0656,
+      "longitude": -78.7748
+    },
+    "26802": {
+      "districtCode": "86",
+      "city": "Brandywine",
+      "state": "WV",
+      "latitude": 38.6357,
+      "longitude": -79.2096
+    },
+    "26804": {
+      "districtCode": "67",
+      "city": "Circleville",
+      "state": "WV",
+      "latitude": 38.623,
+      "longitude": -79.5367
+    },
+    "26807": {
+      "districtCode": "67",
+      "city": "Franklin",
+      "state": "WV",
+      "latitude": 38.64,
+      "longitude": -79.3538
+    },
+    "26808": {
+      "districtCode": "89",
+      "city": "High View",
+      "state": "WV",
+      "latitude": 39.2225,
+      "longitude": -78.4425
+    },
+    "26810": {
+      "districtCode": "86",
+      "city": "Lost City",
+      "state": "WV",
+      "latitude": 38.9812,
+      "longitude": -78.7448
+    },
+    "26812": {
+      "districtCode": "86",
+      "city": "Mathias",
+      "state": "WV",
+      "latitude": 38.8744,
+      "longitude": -78.8814
+    },
+    "26814": {
+      "districtCode": "67",
+      "city": "Riverton",
+      "state": "WV",
+      "latitude": 38.744,
+      "longitude": -79.4359
+    },
+    "26815": {
+      "districtCode": "86",
+      "city": "Sugar Grove",
+      "state": "WV",
+      "latitude": 38.489,
+      "longitude": -79.3593
+    },
+    "26817": {
+      "districtCode": "89",
+      "city": "Bloomery",
+      "state": "WV",
+      "latitude": 39.3604,
+      "longitude": -78.3917
+    },
+    "26818": {
+      "districtCode": "86",
+      "city": "Fisher",
+      "state": "WV",
+      "latitude": 39.075,
+      "longitude": -79.0342
+    },
+    "26823": {
+      "districtCode": "89",
+      "city": "Capon Springs",
+      "state": "WV",
+      "latitude": 39.1362,
+      "longitude": -78.4845
+    },
+    "26833": {
+      "districtCode": "85",
+      "city": "Maysville",
+      "state": "WV",
+      "latitude": 39.0712,
+      "longitude": -79.1937
+    },
+    "26836": {
+      "districtCode": "86",
+      "city": "Moorefield",
+      "state": "WV",
+      "latitude": 38.9907,
+      "longitude": -78.9745
+    },
+    "26838": {
+      "districtCode": "86",
+      "city": "Milam",
+      "state": "WV",
+      "latitude": 38.8125,
+      "longitude": -79.0729
+    },
+    "26845": {
+      "districtCode": "86",
+      "city": "Old Fields",
+      "state": "WV",
+      "latitude": 39.1502,
+      "longitude": -78.9509
+    },
+    "26847": {
+      "districtCode": "85",
+      "city": "Petersburg",
+      "state": "WV",
+      "latitude": 38.9908,
+      "longitude": -79.1293
+    },
+    "26851": {
+      "districtCode": "86",
+      "city": "Wardensville",
+      "state": "WV",
+      "latitude": 39.0562,
+      "longitude": -78.6175
+    },
+    "26852": {
+      "districtCode": "88",
+      "city": "Purgitsville",
+      "state": "WV",
+      "latitude": 39.2681,
+      "longitude": -78.906
+    },
+    "26855": {
+      "districtCode": "85",
+      "city": "Cabins",
+      "state": "WV",
+      "latitude": 38.9512,
+      "longitude": -79.2783
+    },
+    "26865": {
+      "districtCode": "89",
+      "city": "Yellow Spring",
+      "state": "WV",
+      "latitude": 39.1823,
+      "longitude": -78.5095
+    },
+    "26866": {
+      "districtCode": "67",
+      "city": "Upper Tract",
+      "state": "WV",
+      "latitude": 38.795,
+      "longitude": -79.2586
+    },
+    "26884": {
+      "districtCode": "67",
+      "city": "Seneca Rocks",
+      "state": "WV",
+      "latitude": 38.8296,
+      "longitude": -79.3866
+    },
+    "26886": {
+      "districtCode": "67",
+      "city": "Onego",
+      "state": "WV",
+      "latitude": 38.8017,
+      "longitude": -79.4507
+    }
+  }
+}

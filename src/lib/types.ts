@@ -40,6 +40,14 @@ export type Representative = {
   scoreBreakdown: ScoreBreakdownItem[];
 };
 
+export type RepresentativeSearchResolution = {
+  mode: "zip-centroid";
+  zipCode: string;
+  districtCode: string | null;
+  districtLabel: string | null;
+  methodology: string;
+};
+
 export type CivicEvent = {
   slug: string;
   title: string;
@@ -79,4 +87,3 @@ export type MethodologyCard = {
   version: string;
   evidencePolicy: string;
 };
-

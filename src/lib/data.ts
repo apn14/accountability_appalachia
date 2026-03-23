@@ -9,7 +9,9 @@ import {
   ScoreType
 } from "@prisma/client";
 
+import wvHouseZipIndex from "@/data/wv-house-zip-index.json";
 import { prisma } from "@/lib/prisma";
+import { RepresentativeSearchResolution } from "@/lib/types";
 
 const representativeInclude = {
   party: true,
@@ -161,6 +163,73 @@ function buildEventStatusLabel(status: string, representativeName?: string | nul
   return status.toLowerCase().replaceAll("_", " ");
 }
 
+function normalizeDistrictCode(value: string | null | undefined) {
+  return String(value ?? "")
+    .replace(/\D/g, "")
+    .replace(/^0+/, "");
+}
+
+function extractZipCode(query?: string) {
+  if (!query) {
+    return null;
+  }
+
+  const match = query.match(/\b(\d{5})(?:-\d{4})?\b/);
+  return match?.[1] ?? null;
+}
+
+function matchesOfficeLevel(
+  representative: Prisma.RepresentativeGetPayload<{ include: typeof representativeInclude }>,
+  officeLevel?: string
+) {
+  const currentTerm = getCurrentTerm(representative);
+
+  if (!officeLevel || officeLevel === "ALL") {
+    return true;
+  }
+
+  return currentTerm?.office.level === officeLevel;
+}
+
+function matchesTextQuery(
+  representative: ReturnType<typeof buildRepresentativeCard>,
+  query?: string
+) {
+  if (!query) {
+    return true;
+  }
+
+  return [
+    representative.name,
+    representative.officeTitle,
+    representative.jurisdiction,
+    representative.district
+  ]
+    .join(" ")
+    .toLowerCase()
+    .includes(query.toLowerCase());
+}
+
+export function getRepresentativeSearchResolution(
+  query?: string
+): RepresentativeSearchResolution | null {
+  const zipCode = extractZipCode(query);
+
+  if (!zipCode) {
+    return null;
+  }
+
+  const match = wvHouseZipIndex.zipToDistrict[zipCode as keyof typeof wvHouseZipIndex.zipToDistrict];
+
+  return {
+    mode: "zip-centroid",
+    zipCode,
+    districtCode: match?.districtCode ?? null,
+    districtLabel: match?.districtCode ? `District ${match.districtCode}` : null,
+    methodology: wvHouseZipIndex.methodology
+  };
+}
+
 export async function getHomePageData() {
   const [
     representativeRecords,
@@ -258,35 +327,25 @@ export async function searchRepresentatives(query?: string, officeLevel?: string
     orderBy: { fullName: "asc" }
   });
 
-  return representativeRecords
-    .filter((representative) => {
+  const officeLevelMatches = representativeRecords.filter((representative) =>
+    matchesOfficeLevel(representative, officeLevel)
+  );
+  const resolution = getRepresentativeSearchResolution(query);
+
+  if (resolution?.districtCode) {
+    const zipMatches = officeLevelMatches.filter((representative) => {
       const currentTerm = getCurrentTerm(representative);
-
-      if (!officeLevel || officeLevel === "ALL") {
-        return true;
-      }
-
-      return currentTerm?.office.level === officeLevel;
-    })
-    .map(buildRepresentativeCard)
-    .filter((representative) => {
-      const matchesQuery =
-        !query ||
-        [
-          representative.name,
-          representative.officeTitle,
-          representative.jurisdiction,
-          representative.district
-        ]
-          .join(" ")
-          .toLowerCase()
-          .includes(query.toLowerCase());
-
-      const matchesOfficeLevel =
-        !officeLevel || officeLevel === "ALL";
-
-      return matchesQuery && matchesOfficeLevel;
+      return normalizeDistrictCode(currentTerm?.district?.districtCode) === resolution.districtCode;
     });
+
+    if (zipMatches.length) {
+      return zipMatches.map(buildRepresentativeCard);
+    }
+  }
+
+  return officeLevelMatches
+    .map(buildRepresentativeCard)
+    .filter((representative) => matchesTextQuery(representative, query));
 }
 
 export async function getRepresentativeProfile(slug: string) {

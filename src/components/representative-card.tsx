@@ -19,9 +19,7 @@ export function RepresentativeCard({ representative }: RepresentativeCardProps) 
             {representative.officeTitle}
           </p>
           <h3 className="mt-1 font-serif text-2xl text-ink">{representative.name}</h3>
-          <p className="mt-1 text-sm text-muted">
-            {representative.jurisdiction} • {representative.district}
-          </p>
+          <p className="mt-1 text-sm text-muted">{representative.jurisdiction} | {representative.district}</p>
           <p className="mt-3 text-sm leading-6 text-muted">{representative.biography}</p>
         </div>
       </div>
@@ -45,11 +43,13 @@ export function RepresentativeCard({ representative }: RepresentativeCardProps) 
             </span>
           ))}
         </div>
-        <Link href={`/representatives/${representative.slug}`} className="text-sm font-semibold text-ink underline decoration-rust underline-offset-4">
+        <Link
+          href={`/representatives/${representative.slug}`}
+          className="text-sm font-semibold text-ink underline decoration-rust underline-offset-4"
+        >
           View profile
         </Link>
       </div>
     </article>
   );
 }
-

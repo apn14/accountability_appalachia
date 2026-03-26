@@ -13,6 +13,7 @@ jobs:
         env:
           CRON_INGEST_URL: ${{ secrets.CRON_INGEST_URL }}
           CRON_SECRET: ${{ secrets.CRON_SECRET }}
+          VERCEL_AUTOMATION_BYPASS_SECRET: ${{ secrets.VERCEL_AUTOMATION_BYPASS_SECRET }}
         run: |
           if [ -z "$CRON_INGEST_URL" ]; then
             echo "Missing CRON_INGEST_URL secret"
@@ -23,11 +24,20 @@ jobs:
             exit 1
           fi
 
+          bypass_args=()
+          if [ -n "$VERCEL_AUTOMATION_BYPASS_SECRET" ]; then
+            bypass_args+=(
+              -H "x-vercel-protection-bypass: $VERCEL_AUTOMATION_BYPASS_SECRET"
+              -H "x-vercel-set-bypass-cookie: true"
+            )
+          fi
+
           http_code=$(curl --silent --show-error \
             --output response.json \
             --write-out "%{http_code}" \
             -X POST \
             -H "Authorization: Bearer $CRON_SECRET" \
+            "${bypass_args[@]}" \
             "$CRON_INGEST_URL")
 
           echo "HTTP status: $http_code"

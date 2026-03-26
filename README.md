@@ -75,3 +75,4 @@ npm run ingest:wv-house
 - Public, inferred, and opinion-based signals are intended to remain clearly separated in both the schema and the user experience.
 - For Vercel deployment, use a hosted Postgres `DATABASE_URL` and initialize that database before the first production deploy. See [vercel-deployment.md](/c:/Users/ajayn/Documents/Various_Projects_Folder/accountability_appalachia/docs/vercel-deployment.md).
 - Hourly free scraping is configured through [hourly-wv-house-sync.yml](/c:/Users/ajayn/Documents/Various_Projects_Folder/accountability_appalachia/.github/workflows/hourly-wv-house-sync.yml), because Vercel Hobby cron does not support hourly schedules.
+- If Vercel Deployment Protection is enabled, also add `VERCEL_AUTOMATION_BYPASS_SECRET` to GitHub repository secrets so the scheduled workflow can reach the protected production URL.

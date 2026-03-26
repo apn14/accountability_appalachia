@@ -116,6 +116,7 @@ For a free hourly setup, this repo uses GitHub Actions instead of Vercel Cron:
 
 - `CRON_INGEST_URL`
 - `CRON_SECRET`
+- `VERCEL_AUTOMATION_BYPASS_SECRET` if Vercel Deployment Protection is enabled
 
 Example `CRON_INGEST_URL`:
 
@@ -127,6 +128,8 @@ Use the same `CRON_SECRET` value in both:
 
 - GitHub repository secrets
 - Vercel environment variables
+
+If Vercel Deployment Protection is enabled for your production URL, create a Protection Bypass token in Vercel and store it as `VERCEL_AUTOMATION_BYPASS_SECRET` in GitHub repository secrets. The workflow will send that header before your app-level `CRON_SECRET` check runs.
 
 ### Schedule details
 
